@@ -1,5 +1,14 @@
 tutorial = {}
 
+-- intllib support
+local S
+if (minetest.get_modpath("intllib")) then
+	dofile(minetest.get_modpath("intllib").."/intllib.lua")
+	S = intllib.Getter(minetest.get_current_modname())
+else
+  S = function ( s ) return s end
+end
+
 -- Saves tutorial state into file
 function tutorial.save_state()
 	local str = minetest.serialize(tutorial.state)
@@ -42,7 +51,7 @@ end
 
 function tutorial.register_infosign(itemstringpart, caption, fulltext)
 	minetest.register_node("tutorial:sign_"..itemstringpart, {
-		description = "Tutorial Sign '"..caption.."'",
+		description = string.format(S("tutorial sign '%s'"), caption),
 		drawtype = "signlike",
 		tiles = {"default_sign_wall.png"},
 		inventory_image = "default_sign_wall.png",
@@ -61,7 +70,7 @@ function tutorial.register_infosign(itemstringpart, caption, fulltext)
 			local meta = minetest.get_meta(pos)
 			local formspec = ""..
 			"size[12,6]"..
-			"label[-0.15,-0.4;"..caption.."]"..
+			"label[-0.15,-0.4;"..minetest.formspec_escape(caption).."]"..
 			"tablecolumns[text]"..
 			"tableoptions[background=#000000;highlight=#000000;border=false]"..
 			"table[0,0.25;12,5.2;infosign_text;"..
@@ -861,7 +870,7 @@ tutorial.register_infosign("online", "Online Resources", tutorial.texts.online)
 tutorial.register_infosign("subgame", "Subgames", tutorial.texts.subgame)
 
 minetest.register_node("tutorial:wall", {
-	description = "Reinforced Wall",
+	description = S("reinforced wall"),
 	tiles = {"default_stone_brick.png"},
 	is_ground_content = true,
 	groups = {immortal=1},
@@ -869,7 +878,7 @@ minetest.register_node("tutorial:wall", {
 })
 
 minetest.register_node("tutorial:reinforced_glass", {
-	description = "Reinforced Glass",
+	description = S("reinforced glass"),
 	drawtype = "glasslike",
 	tiles = {"tutorial_reinforced_glass.png"},
 	inventory_image = minetest.inventorycube("tutorial_reinforced_glass.png"),
@@ -880,7 +889,7 @@ minetest.register_node("tutorial:reinforced_glass", {
 })
 
 minetest.register_node("tutorial:weak_glass", {
-	description = "Weak Glass",
+	description = S("weak glass"),
 	drawtype = "glasslike",
 	tiles = {"tutorial_weak_glass.png"},
 	inventory_image = minetest.inventorycube("tutorial_weak_glass.png"),
@@ -893,7 +902,7 @@ minetest.register_node("tutorial:weak_glass", {
 
 
 minetest.register_tool("tutorial:snatcher", {
-	description = "Apple Snatcher",
+	description = S("apple snatcher"),
 	inventory_image = "tutorial_snatcher.png",
 	wield_image = "tutorial_snatcher.png",
 	wield_scale = { x = 1, y = 1, z = 1 },
@@ -903,7 +912,7 @@ minetest.register_tool("tutorial:snatcher", {
 
 --[[ A special switch which, when flipped, exchanges day for night and vice versa. ]]
 minetest.register_node("tutorial:day", {
-	description = "Day/Night Switch (Day)",
+	description = S("day/night switch (day)"),
 	tiles = { "tutorial_day.png" },
 	groups = {immortal=1},
 	on_rightclick = function(pos, node, clicker, itemstack, pointed_thing)
@@ -912,7 +921,7 @@ minetest.register_node("tutorial:day", {
 	end
 })
 minetest.register_node("tutorial:night", {
-	description = "Day/Night Switch (Night)",
+	description = S("day/night switch (night)"),
 	tiles = { "tutorial_night.png" },
 	groups = {immortal=1},
 	on_rightclick = function(pos, node, clicker, itemstack, pointed_thing)
@@ -924,7 +933,7 @@ minetest.register_node("tutorial:night", {
 --[[ A special switch which "activates" and "deactivates" the waterfall in Tutorial World.
 It only works on a prepared map! ]]
 minetest.register_node("tutorial:waterfall_on", {
-	description = "Waterfall Switch (on)",
+	description = S("waterfall switch (on)"),
 	tiles = { "tutorial_waterfall_on.png" },
 	groups = {immortal=1},
 	on_rightclick = function(pos, node, clicker, itemstack, pointed_thing)
@@ -938,7 +947,7 @@ minetest.register_node("tutorial:waterfall_on", {
 	end
 })
 minetest.register_node("tutorial:waterfall_off", {
-	description = "Waterfall Switch (off)",
+	description = S("waterfall switch (off)"),
 	tiles = { "tutorial_waterfall_off.png" },
 	groups = {immortal=1},
 	on_rightclick = function(pos, node, clicker, itemstack, pointed_thing)
@@ -974,24 +983,24 @@ minetest.register_on_joinplayer(function(player)
 	local formspec = nil
 	if(minetest.is_singleplayer() == false) then
 		formspec = "size[12,6]"..
-		"label[-0.15,-0.4;Warning: Not playing in singleplayer mode]"..
+		"label[-0.15,-0.4;"..F("Warning: You're not playing in singleplayer mode").."]"..
 		"tablecolumns[text]"..
 		"tableoptions[background=#000000;highlight=#000000;border=false]"..
 		"table[0,0.25;12,5.2;creative_text;"..
 		tutorial.texts.notsingleplayer..
 		"]"..
-		"button_exit[2.5,5.5;3,1;close;Continue anyways]"..
-		"button_exit[6.5,5.5;3,1;leave;Leave tutorial]"
+		"button_exit[2.5,5.5;3,1;close;"..F("Continue anyways").."]"..
+		"button_exit[6.5,5.5;3,1;leave;"..F("Leave tutorial").."]"
 	elseif(minetest.setting_getbool("creative_mode")) then
 		formspec = "size[12,6]"..
-		"label[-0.15,-0.4;Warning: Creative mode is active]"..
+		"label[-0.15,-0.4;"..F("Warning: Creative mode is active").."]"..
 		"tablecolumns[text]"..
 		"tableoptions[background=#000000;highlight=#000000;border=false]"..
 		"table[0,0.25;12,5.2;creative_text;"..
 		tutorial.texts.creative..
 		"]"..
-		"button_exit[2.5,5.5;3,1;close;Continue anyways]"..
-		"button_exit[6.5,5.5;3,1;leave;Leave tutorial]"
+		"button_exit[2.5,5.5;3,1;close;"..F("Continue anyways").."]"..
+		"button_exit[6.5,5.5;3,1;leave;"..F("Leave tutorial").."]"
 
 	else
 		if(tutorial.state.first_join==true) then
@@ -1002,7 +1011,7 @@ minetest.register_on_joinplayer(function(player)
 			"table[0,0.25;12,5.2;intro_text;"..
 			tutorial.texts.intro..
 			"]"..
-			"button_exit[4.5,5.5;3,1;close;Close]"
+			"button_exit[4.5,5.5;3,1;close;"..F("Close").."]"
 		end
 		tutorial.state.first_join = false
 		tutorial.save_state()
@@ -1015,7 +1024,7 @@ end
 
 minetest.register_on_player_receive_fields(function(player, formname, fields)
 	if(fields.leave) then
-		minetest.kick_player(player:get_player_name(), "You voluntarily have exited the tutorial.")
+		minetest.kick_player(player:get_player_name(), S("You voluntarily have exited the tutorial."))
 	end
 	if(fields.gotostart) then
 		tutorial.back_to_start(player)
@@ -1036,7 +1045,7 @@ minetest.register_globalstep(function(dtime)
 			if(player:getpos().y < -12 and (not minetest.setting_getbool("creative_mode"))) then
 			-- teleport players back to the start when they fell away
 				tutorial.back_to_start(player)
-				tutorial.show_default_dialog(name, "You fell from the castle!", tutorial.texts.fallout)
+				tutorial.show_default_dialog(name, S("You fell from the castle!"), tutorial.texts.fallout)
 
 			else
 				local inv = player:get_inventory()
@@ -1047,7 +1056,7 @@ minetest.register_globalstep(function(dtime)
 					if(inv:contains_item("main", gold_stack)) then
 						tutorial.show_default_dialog(
 							name,
-							"Gold ingot",
+							S("Gold ingots in the tutorial"),
 							tutorial.texts.first_gold
 						)
 						tutorial.state.first_gold = true
@@ -1058,15 +1067,15 @@ minetest.register_globalstep(function(dtime)
 					local gold_stack = ItemStack("default:gold_ingot "..tostring(tutorial.gold))
 					if(inv:contains_item("main", gold_stack)) then
 						local formspec = "size[12,6]"..
-						"label[-0.15,-0.4;You've finished the tutorial!]"..
+						"label[-0.15,-0.4;"..F("You've finished the tutorial!").."]"..
 						"tablecolumns[text]"..
 						"tableoptions[background=#000000;highlight=#000000;border=false]"..
 						"table[0,0.25;12,5.2;creative_text;"..
 						tutorial.texts.last_gold..
 						"]"..
-						"button_exit[0.5,5.5;3,1;close;Continue]"..
-						"button_exit[4.5,5.5;3,1;leave;Leave tutorial]"..
-						"button_exit[8.5,5.5;3,1;gotoend;Go to Good-Bye room]"
+						"button_exit[0.5,5.5;3,1;close;"..F("Continue").."]"..
+						"button_exit[4.5,5.5;3,1;leave;"..F("Leave tutorial").."]"..
+						"button_exit[8.5,5.5;3,1;gotoend;"..F("Go to Good-Bye room").."]"
 
 						minetest.show_formspec(name, "tutorial_last_gold", formspec)
 
@@ -1080,7 +1089,7 @@ minetest.register_globalstep(function(dtime)
 					if(inv:contains_item("main", diamond_stack)) then
 						tutorial.show_default_dialog(
 							name,
-							"You found a hidden diamond!",
+							S("You found a hidden diamond!"),
 							tutorial.texts.first_diamond
 						)
 						tutorial.state.first_diamond = true
@@ -1092,7 +1101,7 @@ minetest.register_globalstep(function(dtime)
 					if(inv:contains_item("main", diamond_stack)) then
 						tutorial.show_default_dialog(
 							name,
-							"You have collected all hidden diamonds!",
+							S("You have collected all hidden diamonds!"),
 							tutorial.texts.last_diamond
 						)
 						tutorial.state.last_diamond = true
