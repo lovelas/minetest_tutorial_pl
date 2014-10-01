@@ -13,11 +13,6 @@ else
   F = function ( s ) return minetest.formspec_escape(s) end
 end
 
-minetest.register_craftitem("default:paper", {
-	description = S("white paper"),
-	inventory_image = "default_paper.png",
-})
-
 minetest.register_craftitem("default:book", {
 	description = S("book"),
 	inventory_image = "default_book.png",

@@ -256,9 +256,9 @@ default.chest_formspec =
 	default.gui_bg..
 	default.gui_bg_img..
 	default.gui_slots..
-	"label[0,-0.2;Chest inventory:]"..
+	"label[0,-0.2;"..F("Chest inventory:").."]"..
 	"list[current_name;main;0,0.3;8,4;]"..
-	"label[0,4.35;Player inventory:]"..
+	"label[0,4.35;"..F("Player inventory:").."]"..
 	"list[current_player;main;0,4.85;8,1;]"..
 	"list[current_player;main;0,6.08;8,3;8]"..
 	"label[0,8.8;"..default.gui_controls.."]"..

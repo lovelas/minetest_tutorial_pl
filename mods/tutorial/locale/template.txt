@@ -1,0 +1,77 @@
+# Section headers
+Introduction
+Minetest
+Player Camera
+Small Abysses
+Jumping (1)
+Jumping (2)
+Sneaking
+Information about the following tutorial sections
+Hotbar
+Comestibles and Eating
+Chests
+Climbing Ladders
+Swimming
+Diving
+Swimming up a Waterfall
+Viscosity
+Liquid sources and flowing liquids
+Pointing (1)
+Pointing (2)
+Health and Damage
+Death and Respawning
+Items
+Tools
+Using the Inventory
+Comment About Chests
+Building Some Blocks
+Mining blocks
+Mining example: Cobblestone
+Mining example: Stone
+Mining example: Conglomerate
+Mining example: Wooden Planks
+Mining example: Weak glass
+Unminable blocks
+Special blocks
+Falling blocks
+Attached blocks
+Crafting basics
+Crafting using Shapeless Recipes
+Crafting Groups
+Furnace Operation Instructions
+Repairing Tools
+End of the Basic Tutorial
+Controls Overview
+Online Resources
+Subgames
+
+# Misc. formspec captions
+Warning: You're not playing in singleplayer mode
+Warning: Creative mode is active
+You fell from the castle!
+Gold ingots in the tutorial
+You've finished the tutorial!
+You found a hidden diamond!
+You have collected all hidden diamonds!
+
+# Sign infotext (%s is replaced with sign caption
+%s (Rightclick to read)
+
+# Kick message
+You have voluntarily exited the tutorial.
+
+# Formspec buttons
+Continue anyways
+Close
+Leave tutorial
+
+# Items
+reinforced wall
+reinforced glass
+weak glass
+apple snatcher
+day/night switch (day)
+day/night switch (night)
+waterfall switch (on)
+waterfall switch (off)
+tutorial sign '%s'

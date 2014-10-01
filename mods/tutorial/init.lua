@@ -87,7 +87,7 @@ function tutorial.register_infosign(itemstringpart, caption, fulltext)
 			"table[0,0.25;12,5.2;infosign_text;"..
 			tutorial.convert_newlines(F(fulltext))..
 			"]"..
-			"button_exit[4.5,5.5;3,1;close;Close]"
+			"button_exit[4.5,5.5;3,1;close;"..F("Close").."]"
 			meta:set_string("formspec", formspec)
 			meta:set_string("infotext", string.format(S("%s (Right-click to read)"), caption))
 		end
@@ -1037,7 +1037,7 @@ end
 
 minetest.register_on_player_receive_fields(function(player, formname, fields)
 	if(fields.leave) then
-		minetest.kick_player(player:get_player_name(), S("You voluntarily have exited the tutorial."))
+		minetest.kick_player(player:get_player_name(), S("You have voluntarily exited the tutorial."))
 	end
 	if(fields.gotostart) then
 		tutorial.back_to_start(player)

@@ -170,7 +170,7 @@ for v=0,7 do
 	})
 
 	minetest.register_node("supplemental:liquidsource"..v, {
-		description = string.format(S("Test Liquid Source %i"), v),
+		description = string.format(S("test liquid source %i"), v),
 		inventory_image = minetest.inventorycube("supplemental_testliquid"..v..".png"),
 		drawtype = "liquid",
 		tiles = {"supplemental_testliquid"..v..".png"},
