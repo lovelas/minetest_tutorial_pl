@@ -1,12 +1,13 @@
 tutorial = {}
 
 -- intllib support
-local S
 if (minetest.get_modpath("intllib")) then
 	dofile(minetest.get_modpath("intllib").."/intllib.lua")
 	S = intllib.Getter(minetest.get_current_modname())
+	F = minetest.formspec_escape(S(s))
 else
   S = function ( s ) return s end
+  F = function ( s ) return minetest.formspec_escape(s) end
 end
 
 -- Saves tutorial state into file
@@ -316,12 +317,12 @@ time to restore the bubbles.
 
 Movement in a liquid is slightly different than on solid ground:
 
-   Swim forwards: [W],"..
-   Swim backwards: [S],"..
-   Swim leftwards: [A],"..
-   Swim rightwards: [D],"..
-   Swim upwards: [Space],"..
-   Swim downwards: [Shift],"..
+   Swim forwards: [W]
+   Swim backwards: [S]
+   Swim leftwards: [A]
+   Swim rightwards: [D]
+   Swim upwards: [Space]
+   Swim downwards: [Shift]
 
 At the bottom of the pool lies a gold ingot. Try to get it!]]
 
@@ -999,13 +1000,13 @@ minetest.register_on_joinplayer(function(player)
 		"tablecolumns[text]"..
 		"tableoptions[background=#000000;highlight=#000000;border=false]"..
 		"table[0,0.25;12,5.2;creative_text;"..
-		tutorial.texts.notsingleplayer..
+		tutorial.convert_newlines(F(tutorial.texts.notsingleplayer))..
 		"]"..
 		"button_exit[2.5,5.5;3,1;close;"..F("Continue anyways").."]"..
 		"button_exit[6.5,5.5;3,1;leave;"..F("Leave tutorial").."]"
 	elseif(minetest.setting_getbool("creative_mode")) then
 		formspec = "size[12,6]"..
-		"label[-0.15,-0.4;"..F("Warning: Creative mode is active").."]"..
+		"label[-0.15,-0.4;"..(F("Warning: Creative mode is active")).."]"..
 		"tablecolumns[text]"..
 		"tableoptions[background=#000000;highlight=#000000;border=false]"..
 		"table[0,0.25;12,5.2;creative_text;"..
