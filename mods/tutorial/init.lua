@@ -49,6 +49,16 @@ if(read==false) then
 	tutorial.state.last_diamond = false
 end
 
+function tutorial.convert_newlines(str)
+	local function convert(s)
+		return s:gsub("\n", function(slash, what)
+			return ","
+		end)
+	end
+
+	return convert(str)
+end
+
 function tutorial.register_infosign(itemstringpart, caption, fulltext)
 	minetest.register_node("tutorial:sign_"..itemstringpart, {
 		description = string.format(S("tutorial sign '%s'"), caption),
@@ -70,15 +80,15 @@ function tutorial.register_infosign(itemstringpart, caption, fulltext)
 			local meta = minetest.get_meta(pos)
 			local formspec = ""..
 			"size[12,6]"..
-			"label[-0.15,-0.4;"..minetest.formspec_escape(caption).."]"..
+			"label[-0.15,-0.4;"..F(caption).."]"..
 			"tablecolumns[text]"..
 			"tableoptions[background=#000000;highlight=#000000;border=false]"..
 			"table[0,0.25;12,5.2;infosign_text;"..
-			fulltext..
+			tutorial.convert_newlines(F(fulltext))..
 			"]"..
 			"button_exit[4.5,5.5;3,1;close;Close]"
 			meta:set_string("formspec", formspec)
-			meta:set_string("infotext", "\""..caption.."\" (Right-click to read)")
+			meta:set_string("infotext", string.format(S("%s (Right-click to read)"), caption))
 		end
 	})
 end
@@ -91,732 +101,735 @@ tutorial.gold = 13
 -- Number of hidden diamonds
 tutorial.diamonds = 12
 
+
+	
 tutorial.texts = {}
-tutorial.texts.intro = ""..
-"Welcome! This tutorial will teach you the most crucial basics of Minetest.,"..
-"This tutorial assumes that you have not changed the default keybindings yet.,"..
-","..
-"Let's start for the most important keybindings right now:,"..
-","..
-"   Look around: Move the mouse,"..
-"   Walk forwards: \\[W\\],"..
-"   Strafe left: \\[A\\],"..
-"   Walk backwards: \\[S\\],"..
-"   Strafe right: \\[D\\],"..
-"   Action: \\[Right mouse button\\],"..
-"   Pause menu (you can exit the game here): \\[Esc\\],"..
-","..
-"You will find signs with more introductionary texts throughout this tutorial.,"..
-"The \"action\" key has many uses. For now\\, let's just say you need it to read,"..
-"the signs. Look at one and right-click it to read it.,"..
-","..
-"To look at a sign\\, make sure you are close enough to it and the crosshair in the,"..
-"center of the screen points directly on the sign.,"..
-","..
-"You can exit the tutorial at any time\\, the world will be automatically saved.,"..
-","..
-"Now feel free to walk around a bit and read the other signs to learn more."
+tutorial.texts.intro =
+[[Welcome! This tutorial will teach you the most crucial basics of Minetest.
+This tutorial assumes that you have not changed the default keybindings yet.
 
-tutorial.texts.minetest = ""..
-"Minetest itself is not a game\\, it is a game engine.,"..
-"To be able to actually play\\, it\\, you need something called a \"Minetest game\"\\,,"..
-"sometimes also called \"subgame\" or just \"game\". In this tutorial\\, we use the term,"..
-"\"subgame\".,"..
-","..
-"Don't worry\\, Minetest comes pre-installed with a rather simple default subgame\\, oddly,"..
-"also called \"Minetest\".,"..
-","..
-"This tutorial teaches you the basics of Minetest (the engine)\\, things which are true for,"..
-"all subgames. This tutorial does not teach you how to play a particular subgame\\, not,"..
-"even the default one.,"..
-","..
-"Minetest as well as the default subgame are unfinished at the moment\\, so please forgive,"..
-"us when not everything works out perfectly."
+Let's start for the most important keybindings right now:
 
-tutorial.texts.subgame = ""..
-"Now since you probably now the basics\\, you may want to actually play or build something.,"..
-"Minetest comes bundled with a default subgame\\, which you may try out now.,"..
-"Sadly\\, there is currently no tutorial for the default subgame.,"..
-"You may want to read the \"Getting Started\" section of the Community Wiki\\,,"..
-"which is more specific about the default subgame.,"..
-"Said document can be found at:,"..
-","..
-"<http://wiki.minetest.net/Getting_Started>,"..
-","..
-"Alternatively\\, you may check out one of the subgames which are shared on the Minetest forums."
+   Look around: Move the mouse
+   Walk forwards: [W]
+   Strafe left: [A]
+   Walk backwards: [S]
+   Strafe right: [D]
+   Action: [Right mouse button]
+  Pause menu (you can exit the game here): [Esc]
 
+You will find signs with more introductionary texts throughout this tutorial.
+The "action" key has many uses. For now, let's just say you need it to read
+the signs. Look at one and right-click it to read it.
 
-tutorial.texts.creative= ""..
-"The creative mode is turned on. If you are here to learn how to play Minetest\\,,"..
-"you should probably leave now\\, turn creative mode off and restart the,"..
-"tutorial.,"..
-","..
-"Roughly spoken\\, creative mode is for messing around with the game without,"..
-"the normal gameplay restraints.,"..
-","..
-"You can leave now by pressing \"Leave tutorial\"\\, or later\\, by pressing \\[Esc\\]."
+To look at a sign, make sure you are close enough to it and the crosshair in the
+center of the screen points directly on the sign.
 
-tutorial.texts.notsingleplayer = ""..
-"You are now playing the tutorial in multiplayer mode.,"..
-"But this tutorial is optimized for the singleplayer mode.,"..
-"This tutorial does not work properly with more than 1 player.,"..
-","..
-"Unless you are sure no other players will join\\, you should,"..
-"leave now and start the tutorial in singleplayer mode."
+You can exit the tutorial at any time, the world will be automatically saved.
 
-tutorial.texts.cam = ""..
-"Minetest has 3 different camera modes which determine the way you see the world.,"..
-"The three modes are:,"..
-","..
-"- First-person view (default),"..
-"- Third-person view from behind,"..
-"- Third-person view from the front,"..
-","..
-"You can change the camera mode by pressing \\[F7\\] (but you have to close this,"..
-"window first).,"..
-","..
-"   Switch camera mode: \\[F7\\]"
+Now feel free to walk around a bit and read the other signs to learn more.]]
 
-tutorial.texts.blocks = ""..
-"The world of Minetest is made entirely out of blocks\\, or cubes\\, to be precise.,"..
-"Blocks can be added or removed with the correct tools.,"..
-","..
-"In this section\\, we'll show you a few special but common blocks which behave in unexpected,"..
-"ways.,"..
-","..
-"Of course\\, subgames can come up with more special weird blocks."
+tutorial.texts.minetest =
+[[Minetest itself is not a game, it is a game engine.
+To be able to actually play it, you need something called a "Minetest game",
+sometimes also called "subgame" or just "game". In this tutorial, we use the term,
+"subgame".
 
-tutorial.texts.falling_node = ""..
-"Some blocks need to rest on top of another block\\, otherwise\\, they fall down.,"..
-"Try it and mine the block below the uppermost block."
+Don't worry, Minetest comes pre-installed with a rather simple default subgame, oddly,
+also called "Minetest"
 
-tutorial.texts.attached_node = ""..
-"Some blocks have to be attached to another block\\, otherwise\\, they drop as an item\\,,"..
-"as if you would have mined it.,"..
-","..
-"Attached here is a picture frame. You can't collect or mine it directly\\, but if you mine,"..
-"the block it is attached to\\, it will drop as an item which you can collect."
+This tutorial teaches you the basics of Minetest (the engine)\\, things which are true for
+all subgames. This tutorial does not teach you how to play a particular subgame, not
+even the default one.
 
-tutorial.texts.disable_jump = ""..
-"These nasty blocks on the floor prevent you from jumping when you stand on them."
+Minetest as well as the default subgame are unfinished at the moment, so please forgive
+us when not everything works out perfectly.]]
 
-tutorial.texts.runover = ""..
-"This abyss behind this sign is so small that you can even walk over it\\,,"..
-"as long as you don't stop midway. But you can jump over it anyways\\, just to be,"..
-"safe."
+tutorial.texts.subgame =
+[[
+Now since you probably now the basics, you may want to actually play or build something.
+Minetest comes bundled with a default subgame, which you may try out now.
+Sadly, there is currently no tutorial for the default subgame.
+You may want to read the "Getting Started" section of the Community Wiki,
+which is more specific about the default subgame.
+Said document can be found at:
 
-tutorial.texts.jumpup = ""..
-"You can't reach this upper block by walking. But luckily\\, you are able to jump.,"..
-"For our purposes\\, you can jump just high enough to reach one block above you.,"..
-"But you can't two blocks high.,"..
-"Press the space bar once to jump at a constant height.,"..
-","..
-"   Jump: \\[Space\\]"..
-","..
-"Now try it to continue."
+<http://wiki.minetest.net/Getting_Started>
+
+Alternatively, you may check out one of the subgames which are shared on the Minetest forums.]]
 
 
-tutorial.texts.jumpover = ""..
-"Here is a slightly larger abyss here. Luckily\\, you can also jump just far enough to,"..
-"cross a gap of this width. Don't worry\\, the abyss is not deep enough to hurt you,"..
-"when you fall down. There are stairs which lead back up here.,"..
-","..
-"   Jump: \\[Space\\]"
+tutorial.texts.creative =
+[[The creative mode is turned on. If you are here to learn how to play Minetest,
+you should probably leave now, turn creative mode off and restart the
+tutorial.
 
-tutorial.texts.orientation = ""..
-"From this point on\\, there will be branching paths. For orientation\\, we placed,"..
-"some arrow signs. They just show a short text when you hover them\\, that's all.,"..
-","..
-"You don't have to follow the sections in any particular order\\, with one exception\\,,"..
-"for which you will be informed."
+Roughly spoken, creative mode is for messing around with the game without
+the normal gameplay restraints.
 
-tutorial.texts.sneak = ""..
-"Sneaking is a special move. As long as you sneak\\, you walk slower\\, but you are,"..
-"guaranteed to not accidentally fall off the edge of a block. This also allows you to,"..
-"\"lean over\" in a sense.,"..
-"To sneak\\, keep the sneak key pressed. As soon as you release the sneak key\\,,"..
-"you walk at normal speed again. Be careful not releasing the sneak key when you,"..
-"are at a ledge\\, you might fall!,"..
-","..
-"   Sneak: \\[Shift\\]"..
-","..
-"Keep in mind that the \\[Shift\\] key is used for a large number of other things in Minetest.,"..
-"Sneaking only works when you are not in a liquid stand on solid ground and are not at a,"..
-"ladder.,"..
-","..
-"You may try out sneaking at this little blocky pyramid."
+You can leave now by pressing "Leave tutorial", or later, by pressing [Esc].]]
 
-tutorial.texts.hotbar = ""..
-"At the bottom of the screen you see 8 squares. This is called the 'hotbar'.,"..
-"The hotbar allows you to quickly access some items from your inventory.,"..
-"In our case\\, the upper 8 slots in your inventory.,"..
-"You can change the selected item with the mouse wheel\\, if you have one\\, or with the,"..
-"number keys.,"..
-","..
-"   Select previous item in hotbar: \\[Mouse wheel up\\],"..
-"   Select next item in hotbar: \\[Mouse wheel down\\],"..
-"   Select item #N in hotbar: the key with the number #N,"..
-","..
-"The item you've seleted is also the item you wield. This will be important later for,"..
-"tools\\, mining\\, building\\, etc."
+tutorial.texts.notsingleplayer =
+[[You are now playing the tutorial in multiplayer mode.
+But this tutorial is optimized for the singleplayer mode.
+This tutorial does not work properly with more than 1 player.
 
+Unless you are sure no other players will join, you should
+leave now and start the tutorial in singleplayer mode.]]
 
-tutorial.texts.eat = ""..
-"In this chest you find some comestibles. Comestibles are items which instantly,"..
-"heal you when eaten. This removes the item from your inventory.,"..
-"To eat one\\, select the comestible in your hotbar\\, then click the left mouse button.,"..
-"Unlike other items\\, you cannot punch or attack while holding a comestible. To be able,"..
-"to attack\\, you have to select something else.,"..
-"Of course\\, this does not have to be the only way to heal you.,"..
-","..
-"   Eat comestible: \\[Left mouse button\\],"..
-","..
-"Don't forget to take the gold ingot."
+tutorial.texts.cam =
+[=[Minetest has 3 different camera modes which determine the way you see the world.
+The three modes are:
 
-tutorial.texts.chest = ""..
-"Treasure chests are a common sight in Minetest. They are actually not built-in,"..
-"into the game."
+- First-person view (default)
+- Third-person view from behind
+- Third-person view from the front
 
-tutorial.texts.damageblock = ""..
-"Careful! These spikes hurt you when you stand inside\\, so don't walk into them.,"..
-"Try to walk around and get the gold ingot.,"..
-","..
-"They damage you every second you stand in them.,"..
-","..
-"This is one of the many ways you can get hurt in Minetest."
+You can change the camera mode by pressing [F7] (but you have to close this
+window first).
 
-tutorial.texts.ladder = ""..
-"This is a ladder. Ladders help you to climb up great heights or to climb down safely.,"..
-"To climb a ladder\\, go into the block occupied by the ladder and hold one of the,"..
-"following keys:,"..
-","..
-"   Climb up ladder: \\[Space\\],"..
-"   Climb down ladder: \\[Shift\\],"..
-","..
-"Note that sneaking and jumping do not work when you are at a ladder."
+   Switch camera mode: [F7]]=]
 
-tutorial.texts.swim = ""..
-"What you see here is a small swimming pool. You are able to swim and dive.,"..
-"Diving usually costs you breath. While diving\\, 10 bubbles appear in the heads-up display.,"..
-"These bubbles disappear over time while diving and when you are out of bubbles\\,,"..
-"you slowly lose some health points. You have to back up to the surface from time to,"..
-"time to restore the bubbles.,"..
-","..
-"Movement in a liquid is slightly different than on solid ground:,"..
-","..
-"   Swim forwards: \\[W\\],"..
-"   Swim backwards: \\[S\\],"..
-"   Swim leftwards: \\[A\\],"..
-"   Swim rightwards: \\[D\\],"..
-"   Swim upwards: \\[Space\\],"..
-"   Swim downwards: \\[Shift\\],"..
-","..
-"At the bottom of the pool lies a gold ingot. Try to get it!"
+tutorial.texts.blocks =
+[[The world of Minetest is made entirely out of blocks, or cubes, to be precise.
+Blocks can be added or removed with the correct tools.
+
+In this section, we'll show you a few special but common blocks which behave in unexpected,
+ways.,
+
+Of course, subgames can come up with more special weird blocks.]]
+
+tutorial.texts.falling_node =
+[[Some blocks need to rest on top of another block, otherwise, they fall down.
+Try it and mine the block below the uppermost block.]]
+
+tutorial.texts.attached_node =
+[[Some blocks have to be attached to another block, otherwise, they drop as an item
+as if you would have mined it.
+
+Attached here is a picture frame. You can't collect or mine it directly, but if you mine
+the block it is attached to, it will drop as an item which you can collect.]]
+
+tutorial.texts.disable_jump =
+[[These nasty blocks on the floor prevent you from jumping when you stand on them.]]
+
+tutorial.texts.runover = 
+[[This abyss behind this sign is so small that you can even walk over it,
+as long as you don't stop midway. But you can jump over it anyways, just to be,
+safe.]]
+
+tutorial.texts.jumpup =
+[[You can't reach this upper block by walking. But luckily, you are able to jump.
+For our purposes, you can jump just high enough to reach one block above you.
+But you can't two blocks high.
+Press the space bar once to jump at a constant height.
+
+   Jump: [Space]
+
+Now try it to continue.]]
 
 
-tutorial.texts.dive = ""..
-"To get to the other side\\, you have to dive here. Don't worry\\, the tunnel is not,"..
-"long. But don't stay too long in the water\\, or else you take damage.,"..
-"At the bottom of the pool lies a gold ingot. Try to get it!,"..
-","..
-"   Swim forwards: \\[W\\],"..
-"   Swim backwards: \\[S\\],"..
-"   Swim leftwards: \\[A\\],"..
-"   Swim rightwards: \\[D\\],"..
-"   Swim upwards: \\[Space\\],"..
-"   Swim downwards: \\[Shift\\]"
+tutorial.texts.jumpover =
+[=[Here is a slightly larger abyss. Luckily, you can also jump just far enough to
+cross a gap of this width. Don't worry, the abyss is not deep enough to hurt you
+when you fall down. There are stairs which lead back up here.
+
+   Jump: [Space]]=]
+
+tutorial.texts.orientation =
+[[From this point on, there will be branching paths. For orientation, we placed
+some arrow signs. They just show a short text when you hover them, that's all.
+
+You don't have to follow the sections in any particular order, with one exception,
+for which you will be informed.]]
+
+tutorial.texts.sneak =
+[=[Sneaking is a special move. As long as you sneak, you walk slower, but you are
+guaranteed to not accidentally fall off the edge of a block. This also allows you to
+"lean over" in a sense.
+To sneak, keep the sneak key pressed. As soon as you release the sneak key,
+you walk at normal speed again. Be careful not releasing the sneak key when you
+are at a ledge, you might fall!
+
+   Sneak: [Shift]
+
+Keep in mind that the [Shift] key is used for a large number of other things in Minetest.
+Sneaking only works when you are not in a liquid stand on solid ground and are not at a
+ladder.
+
+You may try out sneaking at this little blocky pyramid.]=]
+
+tutorial.texts.hotbar =
+[[At the bottom of the screen you see 8 squares. This is called the 'hotbar'.
+The hotbar allows you to quickly access some items from your inventory.
+In our case, the upper 8 slots in your inventory.
+You can change the selected item with the mouse wheel, if you have one, or with the
+number keys.
+
+   Select previous item in hotbar: [Mouse wheel up]
+   Select next item in hotbar: [Mouse wheel down]
+   Select item #N in hotbar: the key with the number #N
+
+The item you've seleted is also the item you wield. This will be important later for
+tools, mining, building, etc.]]
+
+
+tutorial.texts.eat =
+[[In this chest you find some comestibles. Comestibles are items which instantly
+heal you when eaten. This removes the item from your inventory.
+To eat one, select the comestible in your hotbar, then click the left mouse button.
+Unlike other items, you cannot punch or attack while holding a comestible. To be able
+to attack, you have to select something else.
+Of course, this does not have to be the only way to heal you.
+
+   Eat comestible: [Left mouse button]
+
+Don't forget to take the gold ingot.]]
+
+tutorial.texts.chest =
+[[Treasure chests are a common sight in Minetest. They are actually not built-in
+into the game.]]
+
+tutorial.texts.damageblock =
+[[Careful! These spikes hurt you when you stand inside, so don't walk into them.
+Try to walk around and get the gold ingot.
+
+They damage you every second you stand in them.
+
+This is one of the many ways you can get hurt in Minetest.]]
+
+tutorial.texts.ladder =
+[[This is a ladder. Ladders help you to climb up great heights or to climb down safely.
+To climb a ladder, go into the block occupied by the ladder and hold one of the
+following keys:
+
+   Climb up ladder: [Space]
+   Climb down ladder: [Shift]
+
+Note that sneaking and jumping do not work when you are at a ladder.]]
+
+tutorial.texts.swim =
+[[What you see here is a small swimming pool. You are able to swim and dive.
+Diving usually costs you breath. While diving, 10 bubbles appear in the heads-up display.
+These bubbles disappear over time while diving and when you are out of bubbles,
+you slowly lose some health points. You have to back up to the surface from time to
+time to restore the bubbles.
+
+Movement in a liquid is slightly different than on solid ground:
+
+   Swim forwards: [W],"..
+   Swim backwards: [S],"..
+   Swim leftwards: [A],"..
+   Swim rightwards: [D],"..
+   Swim upwards: [Space],"..
+   Swim downwards: [Shift],"..
+
+At the bottom of the pool lies a gold ingot. Try to get it!]]
+
+
+tutorial.texts.dive = 
+[=[To get to the other side, you have to dive here. Don't worry, the tunnel is not
+long. But don't stay too long in the water, or else you take damage.
+At the bottom of the pool lies a gold ingot. Try to get it!
+
+   Swim forwards: [W]
+   Swim backwards: [S]
+   Swim leftwards: [A]
+   Swim rightwards: [D]
+   Swim upwards: [Space]
+   Swim downwards: [Shift]]=]
 
 tutorial.texts.waterfall = ""..
-"You can easily swim up this waterfall. Go into the water and hold the space bar until you're,"..
-"at the top."..
-","..
-"   Swim forwards: \\[W\\],"..
-"   Swim backwards: \\[S\\],"..
-"   Swim leftwards: \\[A\\],"..
-"   Swim rightwards: \\[D\\],"..
-"   Swim upwards: \\[Space\\],"..
-"   Swim downwards: \\[Shift\\]"
+[=[You can easily swim up this waterfall. Go into the water and hold the space bar until you're
+at the top
 
-tutorial.texts.liquidtypes = ""..
-"Liquids behave somewhat weirdly Minetest. Actually\\, there are 2 kinds of liquids.,"..
-"If you watched the waterfall closely\\, you may have noticed that there is a slight difference,"..
-"between the water blocks that make the waterfall\\, and those up here in the basin.,"..
-","..
-"Minetest distinguishes between liquid source and flowing liquid.,"..
-","..
-"A liquid source block is always a full cube.,"..
-"A flowing liquid block looks slightly different. Often\\, it is not a full cube\\, but has a more or less,"..
-"triangular shape. Also\\, flowing liquids usually have an unique \"flowing\" animation\\, but this may,"..
-"not be the case for all liuqids.,"..
-","..
-"Up in the basin\\, you see four rows of liquid sources\\, followed by one row of flowing,"..
-"liquids\\, followed by the waterfall itself. The waterfall itself is solely made of flowing liquids.,"..
-","..
-"Liquid sources generate flowing liquids around them. Liquid sources can also exist on their own.,"..
-"Flowing liquids are not able to exist on their own. They have to originate from a liquid source.,"..
-"If the liquid source is gone\\, or the way to one is blocked\\, the flowing liquid will slowly dry,"..
-"out.,"..
-","..
-"To the left of this sign is a special block. When used\\, it will block the liquid flow.,"..
-"Use that block\\, being close enough and looking at it\\, and watch the waterfall dry out.,"..
-","..
-"   Use something: \\[Right mouse button\\]"
+   Swim forwards: [W]
+   Swim backwards: [S]
+   Swim leftwards: [A]
+   Swim rightwards: [D]
+   Swim upwards: [Space]
+   Swim downwards: [Shift]]=]
 
-tutorial.texts.viscosity = ""..
-"Minetest mods can introduce various liquids which differ in their properties.,"..
-"Probably the most important property is their viscosity. Here you have some,"..
-"pools which differ in their viscosity. Feel free to try them out."
+tutorial.texts.liquidtypes =
+[=[Liquids behave somewhat weirdly in Minetest. Actually, there are 2 kinds of liquids.
+If you watched the waterfall closely, you may have noticed that there is a slight difference
+between the water blocks that make the waterfall, and those up here in the basin.
 
-tutorial.texts.pointing1 = ""..
-"An important general concept in Minetest is pointing. As mentioned earlier\\,,"..
-"there is a crosshair in the center of the screen.,"..
+Minetest distinguishes between liquid source and flowing liquid.
 
-"You can point several things in Minetest:,"..
-","..
-"- Blocks,"..
-"- Dropped items,"..
-"- Other players,"..
-"- Many other things,"..
-","..
-"You can only point one thing at once\\, or nothing at all. You can tell when,"..
-"you point something if it is surrounded by a thin cuboid wireframe.,"..
-","..
-"To point something\\, three conditions have to be met:,"..
-"1. The thing in question must be pointable at all,"..
-"2. Your crosshair must be exactly over the thing in question,"..
-"3. You must be close enough to the thing,"..
-","..
-"When a thing is pointed\\, you can do different stuff with it\\; e.g. collecting it\\,,"..
-"punching it\\, building to it\\, etc. We come to all that later.,"..
-","..
-"Now collect that apple from the small tree in front of this sign\\, and the gold bar.,"..
-"To do that\\, you must point it and click with the left mouse button."
+A liquid source block is always a full cube.
+A flowing liquid block looks slightly different. Often, it is not a full cube, but has a more or less
+triangular shape. Also, flowing liquids usually have an unique "flowing" animation, but this may
+not be the case for all liuqids.
 
+Up in the basin, you see four rows of liquid sources, followed by one row of flowing
+liquids, followed by the waterfall itself. The waterfall itself is solely made of flowing liquids.
 
-tutorial.texts.pointing2 = ""..
-"The distance you need to point to things solely depends on the tool you carry.,"..
-"Most tools share a default value but some tools may have a longer or shorter distance.,"..
-","..
-"At the moment\\, your only \"tool\" is the hand. It was good enough to collect the apple,"..
-"from the small tree.,"..
-","..
-"Above this sign hang some apples\\, but you cannot reach them by normal means. At the,"..
-"wall in front of this sign lies a special example tool which you can use to retrieve the apple,"..
-"from afar.,"..
-","..
-"To take the tool\\, point on it and click the left mouse button. Then select it with the,"..
-"mouse wheel or the number keys. You will learn more about tools in a different section."
+Liquid sources generate flowing liquids around them. Liquid sources can also exist on their own.
+Flowing liquids are not able to exist on their own. They have to originate from a liquid source.
+If the liquid source is gone, or the way to one is blocked, the flowing liquid will slowly dry
+out.
 
-tutorial.texts.health = ""..
-"Unless you have damage disabled\\, all players start with 20 hit points (HP)\\, represented,"..
-"by ten hearts in the heads-up display. One HP is represented by half a heart in this,"..
-"tutorial\\, but the actual representation can vary from subgame to subgame.,"..
-","..
-"You can take damage for the following reasons (including\\, but not limited to):,"..
-"- Falling too deep,"..
-"- Standing in a block which hurts you,"..
-"- Attacks from other players,"..
-"- Staying too long in a liquid,"..
-","..
-"In this tutorial\\, you can regain health by eating a comestible. This is only an example\\,,"..
-"mods and subgames may come with other mechanisms to heal you.,"..
-","..
-"When you lose all your hit points\\, you die. Death is normally not really that bad in Minetest.,"..
-"When you die\\, you will usually lose all your possessions. You are able to put yourself,"..
-"into the world immediately again. This is called \"respawning\". Normally you appear at a,"..
-"more or less random location.,"..
-"In the tutorial you can die\\, too\\, but don't worry about that. You will,"..
-"respawn at a special location you can't normally reach and keep all your posessions.,"..
-"Subgames may introduce special events on a player's death."
+To the left of this sign is a special block. When used, it will block the liquid flow.
+Use that block, being close enough and looking at it, and watch the waterfall dry out.
 
-tutorial.texts.death = ""..
-"Oops! So it seems you just have died. Don't worry\\, you don't have lost any of your,"..
-"possessions and you have been revived. You are still in Tutorial World at a different,"..
-"location."..
-","..
-"You have arrived at the so-called respawn location of Tutorial World. You will,"..
-"always appear here after you died. This is called \"respawning\". In most worlds\\,,"..
-"however\\, you will respawn in a slightly randomized location.,"..
-","..
-"The tutorial uses a so-called fixed spawn point\\, so you respawn always at the same,"..
-"spot. This is unusual for singleplayer worlds\\, but in online play some servers,"..
-"use fixed spawn points\\, too.,"..
-","..
-"Under normal conditions you would have lost all or a part of your possessions or some,"..
-"other bad thing would have happened to you. But not here\\, this is a tutorial.,"..
-","..
-"To continue\\, just drop out at the end of that gangway. The drop is safe."
+   Use something: [Right mouse button]]=]
+
+tutorial.texts.viscosity =
+[[Minetest mods can introduce various liquids which differ in their properties.
+Probably the most important property is their viscosity. Here you have some
+pools which differ in their viscosity. Feel free to try them out.]]
+
+tutorial.texts.pointing1 =
+[[An important general concept in Minetest is pointing. As mentioned earlier,
+there is a crosshair in the center of the screen.
+
+You can point several things in Minetest:
+
+- Blocks
+- Dropped items
+- Other players
+- Many other things
+
+You can only point one thing at once, or nothing at all. You can tell when
+you point something if it is surrounded by a thin cuboid wireframe.
+
+To point something, three conditions have to be met:
+1. The thing in question must be pointable at all
+2. Your crosshair must be exactly over the thing in question
+3. You must be close enough to the thing
+
+When a thing is pointed, you can do different stuff with it; e.g. collecting it,
+punching it, building to it, etc. We come to all that later.
+
+Now collect that apple from the small tree in front of this sign, and the gold bar.
+To do that, you must point it and click with the left mouse button.]]
 
 
+tutorial.texts.pointing2 =
+[[The distance you need to point to things solely depends on the tool you carry.
+Most tools share a default value but some tools may have a longer or shorter distance.
+
+At the moment, your only "tool" is the hand. It was good enough to collect the apple
+from the small tree.
+
+Above this sign hang some apples, but you cannot reach them by normal means. At the
+wall in front of this sign lies a special example tool which you can use to retrieve the apple
+from afar.
+
+To take the tool, point to it and click the left mouse button. Then select it with the
+mouse wheel or the number keys. You will learn more about tools in a different section.]]
+
+tutorial.texts.health =
+[[Unless you have damage disabled, all players start with 20 hit points (HP), represented
+by ten hearts in the heads-up display. One HP is represented by half a heart in this
+tutorial, but the actual representation can vary from subgame to subgame.
+
+You can take damage for the following reasons (including, but not limited to):
+- Falling too deep
+- Standing in a block which hurts you
+- Attacks from other players
+- Staying too long in a liquid
+
+In this tutorial, you can regain health by eating a comestible. This is only an example,
+mods and subgames may come with other mechanisms to heal you.
+
+When you lose all your hit points, you die. Death is normally not really that bad in Minetest.
+When you die, you will usually lose all your possessions. You are able to put yourself
+into the world immediately again. This is called "respawning". Normally you appear at a
+more or less random location.
+In the tutorial you can die, too, but don't worry about that. You will
+respawn at a special location you can't normally reach and keep all your posessions.
+Subgames may introduce special events on a player's death.]]
+
+tutorial.texts.death =
+[[Oops! So it seems you just have died. Don't worry, you don't have lost any of your
+possessions and you have been revived. You are still in Tutorial World at a different
+location.
+
+You have arrived at the so-called respawn location of Tutorial World. You will
+always appear here after you died. This is called "respawning". In most worlds,
+however, you will respawn in a slightly randomized location.
+
+The tutorial uses a so-called fixed spawn point, so you respawn always at the same
+spot. This is unusual for singleplayer worlds, but in online play some servers,
+use fixed spawn points, too.
+
+Under normal conditions you would have lost all or a part of your possessions or some
+other bad thing would have happened to you. But not here, this is a tutorial.
+
+To continue, just drop out at the end of that gangway. The drop is safe.]]
 
 
-tutorial.texts.items = ""..
-"Throughout your journey\\, you will probably collect many items. Once you collected,"..
-"them\\, blocks are considered to be items\\, too.,"..
-","..
-"Items can be stored in your inventory and selected with the hotbar (see the other signs).,"..
-"You can wield any items\\; you can even punch with almost any item to hurt enemies.,"..
-"Usually\\, you will deal a minimal default damage with most items. Even if you do not hold,"..
-"an item at all.,"..
-"If you don\\'t want to have an item anymore\\, you can always throw it away. Likewise\\,,"..
-"you can collect items which lie around by pointing and leftclicking them.,"..
-","..
-"   Collect item: \\[Left mouse button\\],"..
-"   Drop carried item stack: \\[Q\\],"..
-"   Drop single item from carried item stack: \\[Shift\\] + \\[Q\\],"..
-","..
-"On the ledge at the right to this sign lies an item stack of 50 rocks so you have some items\\,,"..
-"to test out the inventory."
-
-tutorial.texts.tools = ""..
-"A tool is a special kind of item.,"..
-"Tools can be used for many things\\, such as:,"..
-"- Breaking blocks,"..
-"- Collecting liquids,"..
-"- Rotating blocks,"..
-"- Many others!,"..
-"The number of tools which are possible in Minetest are innumberable and are,"..
-"too many to cover in this tutorial.,"..
-"But at least we will look at a very common and important tool type: mining tools\\,."..
-"We will come to that in the mining section.,"..
-","..
-"Many tools wear off and get destroyed after you used them for a while. In an,"..
-"inventory the tool's \"health\" is indicated by a colored bar."..
-","..
-"Tools may be able to be repaired\\, see the sign about repairing."
-
-tutorial.texts.inventory = ""..
-"The inventory menu usually contains the player inventory. This allows you,"..
-"to carry along items throughout the world.,"..
-","..
-"Every inventory is made out of slots where you can store items in. You can store one,"..
-"entire stack of items per slot\\, the only condition is that the items are of the same,"..
-"type. In this tutorial all items except for tools stack up to 99 items\\, but this number,"..
-"can vary in actual subgames.,"..
-","..
-"Here are the controls which explain how to move around the items within the inventory:,"..
-","..
-"In the game:,"..
-"   Open inventory menu: \\[I\\]"..
-","..
-"When the inventory is opened and you don't hold any items:,"..
-"   Take item stack: \\[Left mouse button\\],"..
-"   Take 10 items from item stack: \\[Middle mouse button\\],"..
-"   Take half item stack: \\[Right mouse button\\],"..
-","..
-"When you took an item stack in the inventory:,"..
-"   Put item stack: \\[Left mouse button\\],"..
-"   Put 10 items from item stack: \\[Middle mouse button\\],"..
-"   Put single item from item stack: \\[Right mouse button\\],"..
-","..
-"You can also drop an item stack by holding it in the inventory\\, then clicking anywhere,"..
-"outside of the window."
-
-tutorial.texts.chest = ""..
-"This is a chest. You can view its contents by right-clicking it. In the menu you will see,"..
-"two inventories\\, on the upper part the chest inventory and on the lower part the player,"..
-"inventory. Exchanging items works exactly the same as in the inventory menu."
 
 
-tutorial.texts.build = ""..
-"Another important task in Minetest is building blocks.,"..
-"\"Building\" here refers to the task of placing one block in your possession onto,"..
-"another block in the world.,"..
-"Unlike mining\\, building a block happens instantanous. To build\\, select a block in your,"..
-"hotbar\\, point to any block in the world and press the right mouse button.,"..
-"Your block will be immediately placed on the pointed side.,"..
-"It is important that the block you want to build to is pointable. This means you cannot build,"..
-"next to or on liquids by normal means.,"..
-","..
-"   Build on ordinary block: \\[Right mouse button\\],"..
-","..
-"Try to get up to that little hole by using the wood blocks in the chest. There is another,"..
-"gold ingot waiting for you."
+tutorial.texts.items =
+[[Throughout your journey, you will probably collect many items. Once you collected
+them, blocks are considered to be items, too.
 
-tutorial.texts.mine = ""..
-"\"Mining\" is a method to remove a single block with a mining tool. It is a very important,"..
-"task in Minetest which you will use often.,"..
-","..
-"(It is recommended that you go to the crafting and items house first. It is right in front of,"..
-"this sign.),"..
-","..
-"To be able to mine a block\\, you need,"..
-","..
-"1. to have minable block\\, after all\\,,"..
-"2. to point on the block and,"..
-"3. to carry an appropriate tool.,"..
-","..
-"   Mine: \\[Left mouse button\\],"..
-","..
-"When you are ready\\, hold the left mouse button while pointing the block. Depending on,"..
-"the block type and the tool properties\\, this can take some time. Some tools are fast with,"..
-"some particular block types\\, some other tools may be slower to mine other block types.,"..
-"If you do not carry an appropriate tool\\, you are not able to mine the block at all.,"..
-"You can tell that you are actually mining when you see cracks or some other animation,"..
-"on the block in question.,"..
-","..
-"When done mining\\, blocks will often add one or more items to your inventory. This is called,"..
-"the \"drop\" of a block and depends on the block type. Now try to mine those large cubes in,"..
-"this area\\, using different tools. Note that all blocks here are just examples to show you,"..
-"different kinds of drops."
+Items can be stored in your inventory and selected with the hotbar (see the other signs).
+You can wield any items; you can even punch with almost any item to hurt enemies.
+Usually, you will deal a minimal default damage with most items. Even if you do not hold,
+an item at all.
+If you don't want to have an item anymore, you can always throw it away. Likewise,
+you can collect items which lie around by pointing and leftclicking them.
 
-tutorial.texts.mine_cobble = ""..
-"This is cobblestone. You can mine it with a pickaxe.,"..
-"This cobblestone will always drop itself\\, that means\\, cobblestone. Dropping itself is the,"..
-"usual dropping behaviour of a block\\, throughout many subgames."
+   Collect item: [Left mouse button]
+   Drop carried item stack: [Q]
+   Drop single item from carried item stack: [Shift] + [Q]
 
-tutorial.texts.mine_wood = ""..
-"These are wooden planks. In the tutorial\\, you can only mine those blocks with an axe.,"..
-"Wooden planks drop themselves.,"..
-","..
-"In Minetest\\, we use the term \"mining\" in a general sense\\, regardless of the material."
+On the ledge at the right to this sign lies an item stack of 50 rocks so you have some items,
+to test out the inventory.]]
 
-tutorial.texts.mine_conglomerate = ""..
-"This is a cube of conglomerate. You need a pickaxe to mine it.,"..
-"Conglomerate drops something based on probability. Conglomerate randomly drops between 1,"..
-"and 5 rocks\\, when mined."
+tutorial.texts.tools =
+[[A tool is a special kind of item.
+Tools can be used for many things, such as:
+- Breaking blocks
+- Collecting liquids
+- Rotating blocks
+- Many others!
+The number of tools which are possible in Minetest are innumberable and are
+too many to cover in this tutorial.
+But at least we will look at a very common and important tool type: mining tools,
+We will come to that in the mining section.
 
-tutorial.texts.mine_glass = ""..
-"This is some weak glass. You can break it with your bare hands. Or you can use your pickaxe\\,,"..
-"which is faster. Note that it looks slightly different than the other glass in this world.,"..
-"These glass blocks don't drop anything."
+Many tools wear off and get destroyed after you used them for a while. In an
+inventory the tool's "health" is indicated by a colored bar
 
-tutorial.texts.mine_stone = ""..
-"This is stone. You need a pickaxe to mine it. When mined\\, stone will drop cobblestone."
+Tools may be able to be repaired, see the sign about repairing.]]
 
-tutorial.texts.mine_immortal = ""..
-"There can always be some blocks which are not minable by any tool. In our tutorial\\, all,"..
-"those castle walls can't me mined\\, for example."
+tutorial.texts.inventory =
+[[The inventory menu usually contains the player inventory. This allows you
+to carry along items throughout the world.
 
-tutorial.texts.craft1 = ""..
-"Crafting is the task of taking several items and combining them to form a new item.,"..
-"Crafting is another important task in Minetest.,"..
-","..
-"To craft something\\, you need a few items and a so-called crafting grid.,"..
-","..
-"In this tutorial\\, you have a grid of size 3 times 3 in your inventory.,"..
-"Let's get right into crafting:,"..
-","..
-"1. Take 3 sheets of paper from the chest next to this sign.,"..
-"2. Open the inventory menu with \\[I\\].,"..
-"3. Place the paper in the crafting grid so that they form a 1×3 vertical line.,"..
-"4. A book should appear in the output slot. Click on it to take it\\,,"..
-"   then put it in your player inventory.,"..
-","..
-"This process consumes the paper.,"..
-"When you have the book in your inventory\\, go on with the next sign."
+Every inventory is made out of slots where you can store items in. You can store one
+entire stack of items per slot, the only condition is that the items are of the same
+type. In this tutorial all items except for tools stack up to 99 items, but this number
+can vary in actual subgames.
 
-tutorial.texts.craft2 = ""..
-"To craft the book you have used a so-called crafting recipe. You must know the crafting,"..
-"recipes as well so you can craft.,"..
-","..
-"The crafting recipe you used in particular is a so-called shaped recipe. This means the,"..
-"pattern you place in the crafting grid matters\\, but you can move the entire pattern,"..
-"freely.,"..
-","..
-"There is another kind of crafting recipe: Shapeless.,"..
-"Shapeless recipes only care about which items you place in the crafting grid\\, but not in,"..
-"which pattern. In the next chest you find some wheat. Let's make dough from it! For this,"..
-"you have to place at least 1 wheat in 4 different slots\\, but the other slots must be empty.,"..
-"What is special about this recipe is that you can place them anywhere in the grid.,"..
-","..
-"When you got your dough\\, go on with the next sign."
+Here are the controls which explain how to move around the items within the inventory:
 
-tutorial.texts.craft3 = ""..
-"Do you got your dough? Good.,"..
-","..
-"You may have noticed that crafting always consumes one item from each occupied slot,"..
-"of the crafting grid. This is true for all crafting recipes.,"..
-"You can speed crafting up a bit when you click with the middle mouse button on the,"..
-"item in the output slot. Doing so will attempt to do the same craft up to 10 times\\,,"..
-"instead of just once.,"..
-","..
-"Feel free to try it with the remaining wheat or just go on with the next sign."
+In the game:
+   Open inventory menu: [I]
 
-tutorial.texts.craft4 = ""..
-"Another important thing to know about crafting are so-called groups. Crafting recipes do,"..
-"not always require you to use the exactly same items every time.,"..
-"This tutorial has a special recipe for books. In the chest\\, you will find paper in 4,"..
-"different colors. You can also make a book by placing 3 paper sheets of any color,"..
-"in a vertical line.,"..
-"The paper color does not matter here\\, you can use only white paper\\, only orange paper,"..
-"or even mix it. What is important here are the occupied slots.,"..
-"This is possible because all 4 types of (example) paper belong to the same group and,"..
-"our book recipe accepts not only white paper\\, but any paper of that group.,"..
-","..
-"Feel free to experiment a bit around with this."
+When the inventory is opened and you don't hold any items:
+   Take item stack: [Left mouse button]
+   Take 10 items from item stack: [Middle mouse button]
+   Take half item stack: [Right mouse button]
 
-tutorial.texts.smelt = ""..
-"This is a furnace. Furnaces can be used to turn a smeltable item with help of a fuel,"..
-"to a new item. Many items can be furnace fuels\\, but not all. A few items are smeltable.,"..
-","..
-"In order to operate a furnace\\, you have to put the smeltable item into the 'Source' slot,"..
-"and the fuel into the 'Fuel' slot.,"..
-"As soon as the items have been placed\\, the furnace automatically starts to smelt the,"..
-"items. The furnace becomes active and consumes an item in the fuel slot. The flame,"..
-"goes on and will continue burning for a given time. The time depends on the fuel type.,"..
-"Some fuels burn very short\\, and other burn longer. In the furnace menu\\, the burn time,"..
-"is indicated by the flame symbol. As soon as the flame goes out\\, the furnace may,"..
-"continue burning if there is still fuel and smeltable material in the furnace\\,,"..
-"otherwise\\, the furnace becomes inactive again.,"..
-"The smeltable material has to be exposed to the flame for a given time as well. This,"..
-"time depends on the type of the material\\, too. Some material smelt faster than others.,"..
-"You can see the smelting progress of a single item on the progress arrow. If one item,"..
-"has been smelt\\, the result goes to one of the output slots\\, where you can take it.,"..
-","..
-"In the left chest you find some fuels and in the right chest you find some materials to,"..
-"smelt. Feel free to experiment with the furnace a bit. Smelt the gold lump to receive,"..
-"this station's gold bar."..
-","..
-"Again\\, this furnace is just an example\\; the exact operation may differ slightly from,"..
-"subgame to subgame."
+When you took an item stack in the inventory:
+   Put item stack: [Left mouse button]
+   Put 10 items from item stack: [Middle mouse button]
+   Put single item from item stack: [Right mouse button]
 
-tutorial.texts.repair = ""..
-"Some subgames may come with a special recipe which allows you to repair your tools.,"..
-"In those\\, repairing works always the same way:,"..
-"Place two more or less worn out tools of the same kind into the crafting crid and,"..
-"take the result. The result is a new tool which is slightly repaired by a fixed percentage.,"..
-","..
-"Of course\\, this tutorial comes with such a recipe. The chest next to this sign stores,"..
-"some damaged tools which you may try to repair now."
+You can also drop an item stack by holding it in the inventory, then clicking anywhere
+outside of the window.]]
+
+tutorial.texts.chest =
+[[This is a chest. You can view its contents by right-clicking it. In the menu you will see
+two inventories, on the upper part the chest inventory and on the lower part the player
+inventory. Exchanging items works exactly the same as in the inventory menu.]]
 
 
-tutorial.texts.use = ""..
-"You will often meet some blocks you can use. Something special happens when you,"..
-"right-click while pointing on them.,"..
-"In fact\\, you already used such blocks: All the signs you read are \"usable\" blocks.,"..
-","..
-"There is a strange device next to this sign. Use it and see what happens.,"..
-","..
-"   Use usable block: \\[Right mouse button\\]"
+tutorial.texts.build = 
+[[Another important task in Minetest is building blocks.
+Building" here refers to the task of placing one block in your possession onto
+another block in the world.
+Unlike mining, building a block happens instantanous. To build, select a block in your
+hotbar, point to any block in the world and press the right mouse button.
+Your block will be immediately placed on the pointed side.
+It is important that the block you want to build to is pointable. This means you cannot build
+next to or on liquids by normal means.
+
+   Build on ordinary block: [Right mouse button]
+
+Try to get up to that little hole by using the wood blocks in the chest. There is another
+gold ingot waiting for you.]]
+
+tutorial.texts.mine =
+[[Mining is a method to remove a single block with a mining tool. It is a very important
+task in Minetest which you will use often.
+
+(It is recommended that you go to the crafting and items house first. It is right in front of
+this sign.)
+
+To be able to mine a block, you need
+
+1. to have minable block, after all,
+2. to point on the block and
+3. to carry an appropriate tool.
+
+   Mine: [Left mouse button]
+
+When you are ready, hold the left mouse button while pointing the block. Depending on
+the block type and the tool properties, this can take some time. Some tools are fast with
+some particular block types, some other tools may be slower to mine other block types.
+If you do not carry an appropriate tool, you are not able to mine the block at all.
+You can tell that you are actually mining when you see cracks or some other animation
+on the block in question.
+
+When done mining, blocks will often add one or more items to your inventory. This is called
+the "drop" of a block and depends on the block type. Now try to mine those large cubes in
+this area, using different tools. Note that all blocks here are just examples to show you
+different kinds of drops.]]
+
+tutorial.texts.mine_cobble =
+[[This is cobblestone. You can mine it with a pickaxe.
+This cobblestone will always drop itself, that means, cobblestone. Dropping itself is the
+usual dropping behaviour of a block, throughout many subgames.]]
+
+tutorial.texts.mine_wood =
+[[These are wooden planks. In the tutorial, you can only mine those blocks with an axe.
+Wooden planks drop themselves.
+
+In Minetest, we use the term "mining" in a general sense, regardless of the material.]]
+
+tutorial.texts.mine_conglomerate =
+[[This is a cube of conglomerate. You need a pickaxe to mine it.
+Conglomerate drops something based on probability. Conglomerate randomly drops between 1
+and 5 rocks, when mined.]]
+
+tutorial.texts.mine_glass =
+[[This is some weak glass. You can break it with your bare hands. Or you can use your pickaxe,
+which is faster. Note that it looks slightly different than the other glass in this world.
+These glass blocks don't drop anything.]]
+
+tutorial.texts.mine_stone =
+[[This is stone. You need a pickaxe to mine it. When mined, stone will drop cobblestone.]]
+
+tutorial.texts.mine_immortal =
+[[There can always be some blocks which are not minable by any tool. In our tutorial, all
+those castle walls can't me mined, for example.]]
+
+tutorial.texts.craft1 =
+[[Crafting is the task of taking several items and combining them to form a new item.
+Crafting is another important task in Minetest.
+
+To craft something, you need a few items and a so-called crafting grid.
+
+In this tutorial, you have a grid of size 3 times 3 in your inventory.
+Let's get right into crafting:
+
+1. Take 3 sheets of paper from the chest next to this sign.
+2. Open the inventory menu with [I].
+3. Place the paper in the crafting grid so that they form a 1×3 vertical line.
+4. A book should appear in the output slot. Click on it to take it,
+   then put it in your player inventory.
+
+This process consumes the paper.
+When you have the book in your inventory, go on with the next sign.]]
+
+tutorial.texts.craft2 =
+[[To craft the book you have used a so-called crafting recipe. You must know the crafting
+recipes as well so you can craft.
+
+The crafting recipe you used in particular is a so-called shaped recipe. This means the
+pattern you place in the crafting grid matters, but you can move the entire pattern
+freely.
+
+There is another kind of crafting recipe: Shapeless.
+Shapeless recipes only care about which items you place in the crafting grid, but not in
+which pattern. In the next chest you find some wheat. Let's make dough from it! For this,
+you have to place at least 1 wheat in 4 different slots, but the other slots must be empty.
+What is special about this recipe is that you can place them anywhere in the grid.
+
+When you got your dough, go on with the next sign.]]
+
+tutorial.texts.craft3 =
+[[Do you got your dough? Good.
+
+You may have noticed that crafting always consumes one item from each occupied slot
+of the crafting grid. This is true for all crafting recipes.
+You can speed crafting up a bit when you click with the middle mouse button on the
+item in the output slot. Doing so will attempt to do the same craft up to 10 times,
+instead of just once.
+
+Feel free to try it with the remaining wheat or just go on with the next sign.]]
+
+tutorial.texts.craft4 =
+[[Another important thing to know about crafting are so-called groups. Crafting recipes do
+not always require you to use the exactly same items every time.
+This tutorial has a special recipe for books. In the chest, you will find paper in 4
+different colors. You can also make a book by placing 3 paper sheets of any color
+in a vertical line.
+The paper color does not matter here, you can use only white paper, only orange paper
+or even mix it. What is important here are the occupied slots.
+This is possible because all 4 types of (example) paper belong to the same group and
+our book recipe accepts not only white paper, but any paper of that group.
+
+Feel free to experiment a bit around with this.]]
+
+tutorial.texts.smelt =
+[[This is a furnace. Furnaces can be used to turn a smeltable item with help of a fuel
+to a new item. Many items can be furnace fuels, but not all. A few items are smeltable.
+
+In order to operate a furnace, you have to put the smeltable item into the 'Source' slot
+and the fuel into the 'Fuel' slot.
+As soon as the items have been placed, the furnace automatically starts to smelt the
+items. The furnace becomes active and consumes an item in the fuel slot. The flame
+goes on and will continue burning for a given time. The time depends on the fuel type.
+ome fuels burn very short, and other burn longer. In the furnace menu, the burn time
+is indicated by the flame symbol. As soon as the flame goes out, the furnace may
+continue burning if there is still fuel and smeltable material in the furnace,
+otherwise, the furnace becomes inactive again.
+The smeltable material has to be exposed to the flame for a given time as well. This
+time depends on the type of the material, too. Some material smelt faster than others.
+You can see the smelting progress of a single item on the progress arrow. If one item
+has been smelt, the result goes to one of the output slots, where you can take it.
+
+In the left chest you find some fuels and in the right chest you find some materials to
+smelt. Feel free to experiment with the furnace a bit. Smelt the gold lump to receive
+this station's gold bar.
+
+Again, this furnace is just an example; the exact operation may differ slightly from
+subgame to subgame.]]
+
+tutorial.texts.repair =
+[[Some subgames may come with a special recipe which allows you to repair your tools.
+In those, repairing works always the same way:
+Place two more or less worn out tools of the same kind into the crafting crid and
+take the result. The result is a new tool which is slightly repaired by a fixed percentage.
+
+Of course, this tutorial comes with such a recipe. The chest next to this sign stores
+some damaged tools which you may try to repair now.]]
 
 
-tutorial.texts.basic_end = ""..
-"If you think you have enough of this tutorial\\, you can leave at any time. There are,"..
-tostring(tutorial.gold).." gold ingots at the stations to be found\\, to help you keep track."..
-","..
-"You can find the gold ingots at the following stations:,"..
-"- Ladders,"..
-"- Sneaking,"..
-"- Swimming,"..
-"- Diving,"..
-"- Waterfall,"..
-"- Viscosity,"..
-"- Comestibles and Eating,"..
-"- Pointing,"..
-"- Crafting,"..
-"- Smelting,"..
-"- Mining,"..
-"- Building,"..
-"- Damage and Health,"..
-","..
-"If you got "..tostring(tutorial.gold).." gold ingots (in total)\\, you probably know now everything,"..
-"which can be learned from this tutorial. Collecting the gold ingots is optional and won't give you,"..
-"anything special."..
-","..
-"After you closed this dialog\\, you can press \\[Esc\\] to open the pause menu and return,"..
-"to the main menu or quit Minetest.,"..
-","..
-"In the next room there are some further signs with information\\, but it is entirely optional,"..
-"and not related to gameplay."
+tutorial.texts.use =
+[=[You will often meet some blocks you can use. Something special happens when you
+right-click while pointing on them.
+In fact, you already used such blocks: All the signs you read are "usable" blocks.
 
-tutorial.texts.fallout = ""..
-"You somehow managed to fall from the castle or got otherwise below it!,"..
-"How did you do that?,"..
-","..
-"Anyways\\, I have teleported you back to the starting location. Whatever you did\\, be more,"..
-"careful next time."
+There is a strange device next to this sign. Use it and see what happens.
 
-tutorial.texts.first_gold = ""..
-"You have collected your first gold ingot. Those will help you to keep track in this tutorial.,"..
-"There are "..tostring(tutorial.gold).." golden ingots in this tutorial.,"..
-","..
-"There is a gold ingot at every important station. If you collected all ingots\\, you are,"..
-"done with the tutorial\\, but collecting the gold ingots is not mandatory."
-
-tutorial.texts.last_gold = ""..
-"You have collected all the gold ingots in this tutorial.,"..
-","..
-"This means you have now travelled to each station. If you read and understood everything\\,,"..
-"you have learned everything which can be learned from this tutorial.,"..
-","..
-"If this is the case\\, you are finished with this tutorial and can leave now. But feel,"..
-"free to stay in this world to explore the area a bit further.,"..
-","..
-"You may also want to visit the Good-Bye room\\, which has a few more informational,"..
-"signs with supplemental information\\, but nothing of is is essential or gameplay-relevant.,"..
-","..
-"If you want to stay\\, you leave later by pressing \\[Esc\\] to open the pause menu and then,"..
-"return to the main menu or quit Minetest."
-
-tutorial.texts.first_diamond = ""..
-"Great\\, you have found and collected a hidden diamond! In Tutorial World\\, there are "..tostring(tutorial.diamonds).." hidden,"..
-"diamonds. Can you find them all? The first diamond may have been easy to collect\\, but the,"..
-"remaining "..tostring(tutorial.diamonds-1).." diamonds probably won't be that easy.,"..
-","..
-"There won't be any special event or bonus\\, however\\, if you manage to collect all,"..
-tostring(tutorial.diamonds).." diamonds\\, apart from feeling special\\, maybe. \\;-)"
-
-tutorial.texts.last_diamond = ""..
-"Congratulations!,"..
-"You have collected all the diamonds of Tutorial World!,"..
-","..
-"You can feel special now."
+   Use usable block: [Right mouse button]]=]
 
 
-tutorial.texts.controls = ""..
-"To recap\\, here is an overview over the most important default controls:,"..
-","..
-"   Move forwards: \\[W\\],"..
-"   Move left: \\[A\\],"..
-"   Move backwards: \\[S\\],"..
-"   Move right: \\[D\\],"..
-"   Jump: \\[Space\\],"..
-"   Sneak: \\[Shift\\],"..
-"   Move upwards (ladder/liquid): \\[Space\\],"..
-"   Move downwards (ladder/liquid): \\[Shift\\],"..
-","..
-"   Toggle camera mode: \\[F7\\],"..
-","..
-"   Select item in hotbar: \\[Mouse wheel\\],"..
-"   Select item in hotbar: \\[0\\] - \\[9\\],"..
-"   Inventory menu: \\[I\\],"..
-","..
-"   Collect pointed item: \\[Left mouse button\\],"..
-"   Drop item stack: \\[Q\\],"..
-"   Drop single item: \\[Shift\\] + \\[Q\\],"..
-","..
-"   Punch: \\[Left mouse button\\],"..
-"   Mine: \\[Left mouse button\\],"..
-"   Build/use: \\[Right mouse button\\],"..
-"   Build: \\[Shift\\] + \\[Right mouse button\\]"..
-","..
-"   Abort/open pause menu: \\[Esc\\],"..
-","..
-"You can review a shorter version of the controls in the pause menu."
+tutorial.texts.basic_end =
+[[If you think you have enough of this tutorial, you can leave at any time. There are
+14 gold ingots at the stations to be found, to help you keep track.
+
+"You can find the gold ingots at the following stations:
+- Ladders,"..
+- Sneaking,"..
+- Swimming,"..
+- Diving,"..
+- Waterfall,"..
+- Viscosity,"..
+- Comestibles and Eating,"..
+- Pointing,"..
+- Crafting,"..
+- Smelting,"..
+- Mining,"..
+- Building,"..
+- Damage and Health,"..
+
+If you got 14 gold ingots (in total), you probably know now everything
+which can be learned from this tutorial. Collecting the gold ingots is optional and won't give you
+anything special.
+
+After you closed this dialog, you can press [Esc] to open the pause menu and return
+to the main menu or quit Minetest.
+
+In the next room there are some further signs with information, but it is entirely optional
+and not related to gameplay.]]
+
+tutorial.texts.fallout =
+[[You somehow managed to fall from the castle or got otherwise below it!
+How did you do that?
+
+Anyways, you've got teleported back to the starting location. Whatever you did, be more
+careful next time.]]
+
+tutorial.texts.first_gold = 
+[[You have collected your first gold ingot. Those will help you to keep track in this tutorial.
+There are 14 gold ingots in this tutorial.
+
+There is a gold ingot at every important station. If you collected all ingots, you are
+done with the tutorial, but collecting the gold ingots is not mandatory.]]
+
+tutorial.texts.last_gold =
+[[You have collected all the gold ingots in this tutorial.
+
+This means you have now travelled to each station. If you read and understood everything,
+you have learned everything which can be learned from this tutorial.
+
+If this is the case, you are finished with this tutorial and can leave now. But feel
+free to stay in this world to explore the area a bit further.
+
+You may also want to visit the Good-Bye room, which has a few more informational
+signs with supplemental information, but nothing of is is essential or gameplay-relevant.
+
+If you want to stay, you leave later by pressing [Esc] to open the pause menu and then
+return to the main menu or quit Minetest.]]
+
+tutorial.texts.first_diamond =
+[[Great, you have found and collected a hidden diamond! In Tutorial World, there are 12 hidden
+diamonds. Can you find them all? The first diamond may have been easy to collect, but the
+remaining 11 diamonds probably won't be that easy.
+
+There won't be any special event or bonus, however, if you manage to collect all
+diamonds, apart from feeling special, maybe. ;-)]]
+
+tutorial.texts.last_diamond =
+[[Congratulations!
+You have collected all the diamonds of Tutorial World!
+
+You can feel special now.]]
 
 
-tutorial.texts.online = ""..
-"You may want to check out these online resources related to Minetest:,"..
-","..
-"Official homepage of Minetest: <http://minetest.net/>,"..
-"The main place to find the most recent version of Minetest.,"..
-","..
-"Community wiki: <http://wiki.minetest.net/>,"..
-"A community-based documentation website for Minetest. Anyone with an account can edit,"..
-"it! It also features a documentation of the default game\\, which was NOT covered by,"..
-"this tutorial.,"..
-","..
-"Webforums: <http://forums.minetest.net/>,"..
-"A web-based discussion platform where you can discuss everything related to Minetest.,"..
-"This is also a place where player-made mods and subgames are published and,"..
-"discussed. The discussions are mainly in English\\, but there is also space for,"..
-"discussion in other languages.,"..
-","..
-"Chat: <irc://irc.freenode.net#minetest>,"..
-"A generic Internet Relay Chat channel for everything related to Minetest where people can,"..
-"meet to discuss in real-time.,"..
-"If you do not understand IRC\\, see the Community Wiki for help."
+tutorial.texts.controls =
+[[To recap, here is an overview over the most important default controls:
+
+   Move forwards: [W]
+   Move left: [A]
+   Move backwards: [S]
+   Move right: [D]
+   Jump: [Space]
+   Sneak: [Shift]
+   Move upwards (ladder/liquid): [Space]
+   Move downwards (ladder/liquid): [Shift]
+
+   Toggle camera mode: [F7]
+
+   Select item in hotbar: [Mouse wheel]
+   Select item in hotbar: [0] - [9]
+   Inventory menu: [I]
+
+   Collect pointed item: [Left mouse button]
+   Drop item stack: [Q]
+   Drop single item: [Shift] + [Q]
+
+   Punch: [Left mouse button]
+   Mine: [Left mouse button]
+   Build/use: [Right mouse button]
+   Build: [Shift] + [Right mouse button]
+
+   Abort/open pause menu: [Esc]
+
+You can review a shorter version of the controls in the pause menu.]]
+
+
+tutorial.texts.online =
+[[You may want to check out these online resources related to Minetest:
+
+Official homepage of Minetest: <http://minetest.net/>
+The main place to find the most recent version of Minetest.
+
+Community wiki: <http://wiki.minetest.net/>
+A community-based documentation website for Minetest. Anyone with an account can edit
+it! It also features a documentation of the default game, which was NOT covered by
+this tutorial.
+
+Webforums: <http://forums.minetest.net/>
+A web-based discussion platform where you can discuss everything related to Minetest.
+This is also a place where player-made mods and subgames are published and
+discussed. The discussions are mainly in English, but there is also space for
+discussion in other languages.
+
+Chat: <irc://irc.freenode.net#minetest>
+A generic Internet Relay Chat channel for everything related to Minetest where people can
+meet to discuss in real-time.
+If you do not understand IRC, see the Community Wiki for help.]]
 
 
 tutorial.register_infosign("intro", "Introduction", tutorial.texts.intro)
@@ -973,7 +986,7 @@ function tutorial.show_default_dialog(name, caption, text)
 	"tablecolumns[text]"..
 	"tableoptions[background=#000000;highlight=#000000;border=false]"..
 	"table[0,0.25;12,5.2;text_table;"..
-	text..
+	tutorial.convert_newlines(F(text))..
 	"]"..
 	"button_exit[4.5,5.5;3,1;close;Close]"
 	minetest.show_formspec(name, "tutorial_dialog", formspec)
@@ -997,7 +1010,7 @@ minetest.register_on_joinplayer(function(player)
 		"tablecolumns[text]"..
 		"tableoptions[background=#000000;highlight=#000000;border=false]"..
 		"table[0,0.25;12,5.2;creative_text;"..
-		tutorial.texts.creative..
+		tutorial.convert_newlines(F(tutorial.texts.creative))..
 		"]"..
 		"button_exit[2.5,5.5;3,1;close;"..F("Continue anyways").."]"..
 		"button_exit[6.5,5.5;3,1;leave;"..F("Leave tutorial").."]"
@@ -1005,11 +1018,11 @@ minetest.register_on_joinplayer(function(player)
 	else
 		if(tutorial.state.first_join==true) then
 			formspec = "size[12,6]"..
-			"label[-0.15,-0.4;Introduction]"..
+			"label[-0.15,-0.4;"..F("Introduction").."]"..
 			"tablecolumns[text]"..
 			"tableoptions[background=#000000;highlight=#000000;border=false]"..
 			"table[0,0.25;12,5.2;intro_text;"..
-			tutorial.texts.intro..
+			tutorial.convert_newlines(F(tutorial.texts.intro))..
 			"]"..
 			"button_exit[4.5,5.5;3,1;close;"..F("Close").."]"
 		end
@@ -1071,7 +1084,7 @@ minetest.register_globalstep(function(dtime)
 						"tablecolumns[text]"..
 						"tableoptions[background=#000000;highlight=#000000;border=false]"..
 						"table[0,0.25;12,5.2;creative_text;"..
-						tutorial.texts.last_gold..
+						tutorial.convert_newlines(F(tutorial.texts.last_gold))..
 						"]"..
 						"button_exit[0.5,5.5;3,1;close;"..F("Continue").."]"..
 						"button_exit[4.5,5.5;3,1;leave;"..F("Leave tutorial").."]"..
