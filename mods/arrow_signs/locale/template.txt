@@ -1,0 +1,4 @@
+upwards-pointing sign
+downwards-pointing sign
+leftwards-pointing sign
+rightwards-pointing sign

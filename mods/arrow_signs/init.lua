@@ -54,7 +54,7 @@ end
 
 --Sign right
 minetest.register_node("arrow_signs:wall_right", {
-	description = "Sign right",
+	description = S("rightwards-pointing sign"),
 	drawtype = "signlike",
 	tiles = {"arrow_sign_right.png"},
 	inventory_image = "arrow_sign_right.png",
@@ -90,7 +90,7 @@ minetest.register_node("arrow_signs:wall_right", {
 
 -- sign left
 minetest.register_node("arrow_signs:wall_left", {
-	description = "Sign left",
+	description = S("leftwards-pointing sign"),
 	drawtype = "signlike",
 	tiles = {"arrow_sign_left.png"},
 	inventory_image = "arrow_sign_left.png",
@@ -125,7 +125,7 @@ minetest.register_node("arrow_signs:wall_left", {
 
 --Sign up
 minetest.register_node("arrow_signs:wall_up", {
-	description = "Sign up",
+	description = S("upwards-pointing sign"),
 	drawtype = "signlike",
 	tiles = {"arrow_sign_up.png"},
 	inventory_image = "arrow_sign_up.png",
@@ -160,7 +160,7 @@ minetest.register_node("arrow_signs:wall_up", {
 
 --Sign down
 minetest.register_node("arrow_signs:wall_down", {
-	description = "Sign down",
+	description = S("downwards-pointing sign"),
 	drawtype = "signlike",
 	tiles = {"arrow_sign_down.png"},
 	inventory_image = "arrow_sign_down.png",
