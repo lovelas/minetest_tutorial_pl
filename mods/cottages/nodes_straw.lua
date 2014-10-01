@@ -4,11 +4,19 @@
 --  * straw mat - for animals and very poor NPC; also basis for other straw things
 --  * straw bale - well, just a good source for building and decoration
 
+-- intllib support
+local S
+if (minetest.get_modpath("intllib")) then
+	dofile(minetest.get_modpath("intllib").."/intllib.lua")
+	S = intllib.Getter(minetest.get_current_modname())
+else
+  S = function ( s ) return s end
+end
 
 -- an even simpler from of bed - usually for animals 
 -- it is a nodebox and not wallmounted because that makes it easier to replace beds with straw mats
 minetest.register_node("cottages:straw_mat", {
-        description = "layer of straw",
+        description = S("straw layer"),
         drawtype = 'nodebox',
         tiles = { 'cottages_darkage_straw.png' }, -- done by VanessaE
         wield_image = 'cottages_darkage_straw.png',

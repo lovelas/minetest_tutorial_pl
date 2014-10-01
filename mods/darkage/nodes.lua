@@ -1,19 +1,28 @@
+-- intllib support
+local S
+if (minetest.get_modpath("intllib")) then
+	dofile(minetest.get_modpath("intllib").."/intllib.lua")
+	S = intllib.Getter(minetest.get_current_modname())
+else
+  S = function ( s ) return s end
+end
+
 minetest.register_node("darkage:basalt_cobble", {
-	description = "Basalt Cobble",
+	description = S("basalt cobble"),
 	tiles = {"darkage_basalt_cobble.png"},
 	groups = {immortal=1},
 	sounds = default.node_sound_stone_defaults()
 })
 
 minetest.register_node("darkage:basalt_brick", {
-	description = "Basalt Brick",
+	description = S("basalt brick"),
 	tiles = {"darkage_basalt_brick.png"},
 	groups = {immortal=1},
 	sounds = default.node_sound_stone_defaults()
 })
 
 minetest.register_node("darkage:stone_brick", {
-	description = "Stone Brick",
+	description = S("stone brick"),
 	tiles = {"darkage_stone_brick.png"},
 	groups = {immortal=1},
 	sounds = default.node_sound_stone_defaults()
@@ -21,14 +30,14 @@ minetest.register_node("darkage:stone_brick", {
 
 -- Other Blocks
 minetest.register_node("darkage:straw", {
-	description = "Straw",
+	description = S("straw"),
 	tiles = {"darkage_straw.png"},
 	groups = {immortal=1},
 	sounds = default.node_sound_leaves_defaults(),
 })
 
 minetest.register_node("darkage:lamp", {
-	description = "Lamp",
+	description = S("lamp"),
 	tiles = {"darkage_lamp.png"},
 	paramtype = "light",
 	light_source = 18,
@@ -37,7 +46,7 @@ minetest.register_node("darkage:lamp", {
 })
 
 minetest.register_node("darkage:marble_tile", {
-	description = "Marble Tile",
+	description = S("marble tile"),
 	tiles = {"darkage_marble_tile.png"},
 	groups = {immortal=1},
 	sounds = default.node_sound_stone_defaults()
@@ -45,7 +54,7 @@ minetest.register_node("darkage:marble_tile", {
 
 -- Glass / Glow Glass
 minetest.register_node("darkage:glass", {
-	description = "Medieval Glass",
+	description = S("medieval glass"),
 	drawtype = "glasslike",
 	tiles = {"darkage_glass.png"},
 	paramtype = "light",
@@ -56,7 +65,7 @@ minetest.register_node("darkage:glass", {
 
 -- Wood based deco items
 minetest.register_node("darkage:wood_bars", {
-	description = "Wooden Bars",
+	description = S("wooden bars"),
 	drawtype = "glasslike",
 	tiles = {"darkage_wood_bars.png"},
 	inventory_image = "darkage_wood_bars.png",
@@ -68,7 +77,7 @@ minetest.register_node("darkage:wood_bars", {
 })
 
 minetest.register_node("darkage:wood_grille", {
-	description = "Wooden Grille",
+	description = S("wooden grille"),
 	drawtype = "glasslike",
 	tiles = {"darkage_wood_grille.png"},
 	inventory_image = "darkage_wood_grille.png",
@@ -80,7 +89,7 @@ minetest.register_node("darkage:wood_grille", {
 })
 
 minetest.register_node("darkage:wood_frame", {
-	description = "Wooden Frame",
+	description = S("wooden frame"),
 	drawtype = "glasslike",
 	tiles = {"darkage_wood_frame.png"},
 	inventory_image = "darkage_wood_frame.png",
@@ -92,7 +101,7 @@ minetest.register_node("darkage:wood_frame", {
 })
 
 minetest.register_node("darkage:iron_bars", {
-	description = "Iron Bars",
+	description = S("iron bars"),
 	drawtype = "glasslike",
 	tiles = {"darkage_iron_bars.png"},
 	inventory_image = "darkage_iron_bars.png",
@@ -104,7 +113,7 @@ minetest.register_node("darkage:iron_bars", {
 })
 
 minetest.register_node("darkage:iron_grille", {
-	description = "Iron Grille",
+	description = S("iron grille"),
 	drawtype = "glasslike",
 	tiles = {"darkage_iron_grille.png"},
 	inventory_image = "darkage_iron_grille.png",

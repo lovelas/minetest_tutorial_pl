@@ -1,16 +1,22 @@
-
-
 ---------------------------------------------------------------------------------------
 -- roof parts
 ---------------------------------------------------------------------------------------
 -- a better roof than the normal stairs; can be replaced by stairs:stair_wood
 
+-- intllib support
+local S
+if (minetest.get_modpath("intllib")) then
+	dofile(minetest.get_modpath("intllib").."/intllib.lua")
+	S = intllib.Getter(minetest.get_current_modname())
+else
+  S = function ( s ) return s end
+end
 
 -- create the three basic roof parts plus receipes for them;
-cottages.register_roof = function( name, tiles, basic_material, homedecor_alternative )
+cottages.register_roof = function( name, tiles, basic_material, homedecor_alternative, desc1, desc2, desc3 )
 
    minetest.register_node("cottages:roof_"..name, {
-		description = "Roof "..name,
+		description = desc1,
 		drawtype = "nodebox",
 		--tiles = {"default_tree.png","default_wood.png","default_wood.png","default_wood.png","default_wood.png","default_tree.png"},
 		tiles = tiles,
@@ -37,7 +43,7 @@ cottages.register_roof = function( name, tiles, basic_material, homedecor_altern
 
    -- a better roof than the normal stairs; this one is for usage directly on top of walls (it has the form of a stair)
    minetest.register_node("cottages:roof_connector_"..name, {
-		description = "Roof connector "..name,
+		description = desc2,
 		drawtype = "nodebox",
                 -- top, bottom, side1, side2, inner, outer
 		--tiles = {"default_tree.png","default_wood.png","default_tree.png","default_tree.png","default_wood.png","default_tree.png"},
@@ -66,7 +72,7 @@ cottages.register_roof = function( name, tiles, basic_material, homedecor_altern
 
    -- this one is the slab version of the above roof
    minetest.register_node("cottages:roof_flat_"..name, {
-		description = "Roof (flat) "..name,
+		description = desc3,
 		drawtype = "nodebox",
                 -- top, bottom, side1, side2, inner, outer
 		--tiles = {"default_tree.png","default_wood.png","default_tree.png","default_tree.png","default_wood.png","default_tree.png"},
@@ -102,7 +108,7 @@ end -- of cottages.register_roof( name, tiles, basic_material )
 ---------------------------------------------------------------------------------------
 cottages.register_roof( 'black',
 		{"cottages_homedecor_shingles_asphalt.png","default_wood.png","default_wood.png","default_wood.png","default_wood.png","cottages_homedecor_shingles_asphalt.png"},
-		'homedecor:shingles_asphalt', 'default:coal_lump');
+		'homedecor:shingles_asphalt', 'default:coal_lump', S("black roof"), S("black roof connector"), S("black flat roof"));
 cottages.register_roof( 'red',
 		{"cottages_homedecor_shingles_terracotta.png","default_wood.png","default_wood.png","default_wood.png","default_wood.png","cottages_homedecor_shingles_terracotta.png"},
-		'homedecor:shingles_terracotta', 'default:clay_brick');
+		'homedecor:shingles_terracotta', 'default:clay_brick', S("red roof"), S("red roof connector"), S("red flat roof"));

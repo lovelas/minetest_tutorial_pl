@@ -1,5 +1,14 @@
+-- intllib support
+local S
+if (minetest.get_modpath("intllib")) then
+	dofile(minetest.get_modpath("intllib").."/intllib.lua")
+	S = intllib.Getter(minetest.get_current_modname())
+else
+  S = function ( s ) return s end
+end
+
 minetest.register_node("supplemental:sticky", {
-	description = "Sticky Stone Brick",
+	description = S("sticky stone brick"),
 	tiles = {"default_stone_brick.png^supplemental_splat.png",
 		"default_stone_brick.png", "default_stone_brick.png", "default_stone_brick.png",
 		"default_stone_brick.png", "default_stone_brick.png"},
@@ -8,7 +17,7 @@ minetest.register_node("supplemental:sticky", {
 })
 
 minetest.register_node("supplemental:conglomerate", {
-	description = "Conglomerate",
+	description = S("conglomerate"),
 	tiles = {"supplemental_conglomerate.png" },
 	groups = {cracky=3},
 	drop = { items = {
@@ -23,7 +32,7 @@ minetest.register_node("supplemental:conglomerate", {
 })
 
 minetest.register_node("supplemental:frame",{
-	description = "Picture Frame",
+	description = S("picture frame"),
 	drawtype = "signlike",
 	selection_box = { type = "wallmounted" },
 	walkable = false,
@@ -39,7 +48,7 @@ minetest.register_node("supplemental:frame",{
 })
 
 minetest.register_node("supplemental:spikes", {
-	description = "Small Spikes",
+	description = S("short spikes"),
 	tiles = {"supplemental_spikes_small.png"},
 	inventory_image = "supplemental_spikes_small.png",
 	wield_image = "supplemental_spikes_small.png",
@@ -60,7 +69,7 @@ minetest.register_node("supplemental:spikes", {
 })
 
 minetest.register_node("supplemental:spikes_large", {
-	description = "Large Spikes",
+	description = S("long spikes"),
 	tiles = {"supplemental_spikes_large.png"},
 	inventory_image = "supplemental_spikes_large.png",
 	wield_image = "supplemental_spikes_large.png",
@@ -73,17 +82,17 @@ minetest.register_node("supplemental:spikes_large", {
 })
 
 minetest.register_craftitem("supplemental:rock", {
-	description = "Rock",
+	description = S("piece of rock"),
 	inventory_image = "supplemental_rock.png",
 })
 
 minetest.register_craftitem("supplemental:wheat", {
-	description = "Wheat",
+	description = S("wheat"),
 	inventory_image = "supplemental_wheat.png",
 })
 
 minetest.register_craftitem("supplemental:flour", {
-	description = "Flour",
+	description = S("flour"),
 	inventory_image = "supplemental_flour.png",
 })
 -- Crafting example #2
@@ -95,22 +104,22 @@ minetest.register_craft({
 
 -- Items for crafting examples #1, #4 and #5
 minetest.register_craftitem("supplemental:paper_white", {
-	description = "White Paper",
+	description = S("white sheet of paper"),
 	inventory_image = "default_paper.png",
 	groups = { paper = 1 },
 })
 minetest.register_craftitem("supplemental:paper_orange", {
-	description = "Orange Paper",
+	description = S("orange sheet of paper"),
 	inventory_image = "supplemental_paper_orange.png",
 	groups = { paper = 1 },
 })
 minetest.register_craftitem("supplemental:paper_purple", {
-	description = "Purple Paper",
+	description = S("purple sheet of paper"),
 	inventory_image = "supplemental_paper_purple.png",
 	groups = { paper = 1 },
 })
 minetest.register_craftitem("supplemental:paper_green", {
-	description = "Green Paper",
+	description = S("green sheet of paper"),
 	inventory_image = "supplemental_paper_green.png",
 	groups = { paper = 1 },
 })
@@ -130,7 +139,7 @@ for v=0,7 do
 	local alpha = 120 + v*15
 
 	minetest.register_node("supplemental:liquid"..v, {
-		description = "Flowing Test Liquid "..v,
+		description = string.format(S("flowing test liquid %i"), v),
 		inventory_image = minetest.inventorycube("supplemental_testliquid"..v..".png"),
 		drawtype = "flowingliquid",
 		tiles = {"supplemental_testliquid"..v..".png"},
@@ -161,7 +170,7 @@ for v=0,7 do
 	})
 
 	minetest.register_node("supplemental:liquidsource"..v, {
-		description = "Test Liquid Source "..v,
+		description = string.format(S("Test Liquid Source %i"), v),
 		inventory_image = minetest.inventorycube("supplemental_testliquid"..v..".png"),
 		drawtype = "liquid",
 		tiles = {"supplemental_testliquid"..v..".png"},

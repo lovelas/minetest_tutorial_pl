@@ -12,10 +12,19 @@
 --  * washing place - put it over a water source and you can 'wash' yourshelf
 ---------------------------------------------------------------------------------------
 
+-- intllib support
+local S
+if (minetest.get_modpath("intllib")) then
+	dofile(minetest.get_modpath("intllib").."/intllib.lua")
+	S = intllib.Getter(minetest.get_current_modname())
+else
+  S = function ( s ) return s end
+end
+
 -- the basic version of a bed - a sleeping mat
 -- to facilitate upgrade path straw mat -> sleeping mat -> bed, this uses a nodebox
 minetest.register_node("cottages:sleeping_mat", {
-        description = "sleeping matg",
+        description = S("sleeping mat"),
         drawtype = 'nodebox',
         tiles = { 'cottages_sleepingmat.png' }, -- done by VanessaE
         wield_image = 'cottages_sleepingmat.png',
@@ -49,7 +58,7 @@ minetest.register_node("cottages:sleeping_mat", {
 -- furniture; possible replacement: 3dforniture:chair
 minetest.register_node("cottages:bench", {
 	drawtype = "nodebox",
-	description = "simple wooden bench",
+	description = S("simple wooden bench"),
 	tiles = {"cottages_minimal_wood.png", "cottages_minimal_wood.png",  "cottages_minimal_wood.png",  "cottages_minimal_wood.png",  "cottages_minimal_wood.png",  "cottages_minimal_wood.png"},
 	paramtype = "light",
 	paramtype2 = "facedir",
@@ -77,7 +86,7 @@ minetest.register_node("cottages:bench", {
 
 -- a simple table; possible replacement: 3dforniture:table
 minetest.register_node("cottages:table", {
-		description = "table",
+		description = S("table"),
 		drawtype = "nodebox",
                 -- top, bottom, side1, side2, inner, outer
 		tiles = {"cottages_minimal_wood.png"},

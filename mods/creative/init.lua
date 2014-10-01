@@ -1,5 +1,18 @@
 -- minetest/creative/init.lua
 
+-- intllib support
+local S
+if (minetest.get_modpath("intllib")) then
+	dofile(minetest.get_modpath("intllib").."/intllib.lua")
+	S = intllib.Getter(minetest.get_current_modname())
+	F = function( s )
+		return minetest.formspec_escape(S(s))
+	end
+else
+	S = function ( s ) return s end
+	F = function ( s ) return minetest.formspec_escape(s) end
+end
+
 creative_inventory = {}
 creative_inventory.creative_inventory_size = 0
 
@@ -86,7 +99,7 @@ creative_inventory.set_creative_formspec = function(player, start_i, pagenum)
 			"label[2.0,6.55;"..tostring(pagenum).."/"..tostring(pagemax).."]"..
 			"button[0.3,6.5;1.6,1;creative_prev;<<]"..
 			"button[2.7,6.5;1.6,1;creative_next;>>]"..
-			"label[5,1.5;Trash:]"..
+			"label[5,1.5;"..F("Trash:").."]"..
 			"list[detached:creative_trash;main;5,2;1,1;]"..
 			default.get_hotbar_bg(5,3.5)
 	)
