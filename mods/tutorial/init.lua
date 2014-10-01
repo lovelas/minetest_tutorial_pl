@@ -138,7 +138,7 @@ sometimes also called "subgame" or just "game". In this tutorial, we use the ter
 Don't worry, Minetest comes pre-installed with a rather simple default subgame, oddly,
 also called "Minetest"
 
-This tutorial teaches you the basics of Minetest (the engine)\\, things which are true for
+This tutorial teaches you the basics of Minetest (the engine), things which are true for
 all subgames. This tutorial does not teach you how to play a particular subgame, not
 even the default one.
 
@@ -146,8 +146,7 @@ Minetest as well as the default subgame are unfinished at the moment, so please 
 us when not everything works out perfectly.]]
 
 tutorial.texts.subgame =
-[[
-Now since you probably now the basics, you may want to actually play or build something.
+[[Now since you probably now the basics, you may want to actually play or build something.
 Minetest comes bundled with a default subgame, which you may try out now.
 Sadly, there is currently no tutorial for the default subgame.
 You may want to read the "Getting Started" section of the Community Wiki,
