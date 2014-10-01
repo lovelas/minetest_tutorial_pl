@@ -1,5 +1,14 @@
 -- mods/default/tools.lua
 
+-- intllib support
+local S, F
+if (minetest.get_modpath("intllib")) then
+	dofile(minetest.get_modpath("intllib").."/intllib.lua")
+	S = intllib.Getter(minetest.get_current_modname())
+else
+  S = function ( s ) return s end
+end
+
 -- The hand
 minetest.register_item(":", {
 	type = "none",
@@ -22,7 +31,7 @@ minetest.register_item(":", {
 --
 
 minetest.register_tool("default:pick_wood", {
-	description = "Wooden Pickaxe",
+	description = S("wooden pickaxe"),
 	inventory_image = "default_tool_woodpick.png",
 	tool_capabilities = {
 		full_punch_interval = 1.2,
@@ -34,7 +43,7 @@ minetest.register_tool("default:pick_wood", {
 	},
 })
 minetest.register_tool("default:pick_stone", {
-	description = "Stone Pickaxe",
+	description = S("stone pickaxe"),
 	inventory_image = "default_tool_stonepick.png",
 	tool_capabilities = {
 		full_punch_interval = 1.3,
@@ -46,7 +55,7 @@ minetest.register_tool("default:pick_stone", {
 	},
 })
 minetest.register_tool("default:pick_steel", {
-	description = "Steel Pickaxe",
+	description = S("steel pickaxe"),
 	inventory_image = "default_tool_steelpick.png",
 	tool_capabilities = {
 		full_punch_interval = 1.0,
@@ -63,7 +72,7 @@ minetest.register_tool("default:pick_steel", {
 --
 
 minetest.register_tool("default:shovel_wood", {
-	description = "Wooden Shovel",
+	description = S("wooden shovel"),
 	inventory_image = "default_tool_woodshovel.png",
 	wield_image = "default_tool_woodshovel.png^[transformR90",
 	tool_capabilities = {
@@ -77,7 +86,7 @@ minetest.register_tool("default:shovel_wood", {
 })
 
 minetest.register_tool("default:axe_steel", {
-	description = "Steel Axe",
+	description = S("steel axe"),
 	inventory_image = "default_tool_steelaxe.png",
 	tool_capabilities = {
 		full_punch_interval = 1.0,

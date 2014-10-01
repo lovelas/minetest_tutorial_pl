@@ -1,7 +1,20 @@
 -- mods/default/nodes.lua
 
+-- intllib support
+local S, F
+if (minetest.get_modpath("intllib")) then
+	dofile(minetest.get_modpath("intllib").."/intllib.lua")
+	S = intllib.Getter(minetest.get_current_modname())
+	F = function( s )
+		return minetest.formspec_escape(S(s))
+	end
+else
+  S = function ( s ) return s end
+  F = function ( s ) return minetest.formspec_escape(s) end
+end
+
 minetest.register_node("default:stone", {
-	description = "Stone",
+	description = S("stone"),
 	tiles = {"default_stone.png"},
 	is_ground_content = true,
 	groups = {cracky=3, stone=1},
@@ -11,7 +24,7 @@ minetest.register_node("default:stone", {
 })
 
 minetest.register_node("default:stone_with_coal", {
-	description = "Coal Ore",
+	description = S("coal ore"),
 	tiles = {"default_stone.png^default_mineral_coal.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
@@ -20,7 +33,7 @@ minetest.register_node("default:stone_with_coal", {
 })
 
 minetest.register_node("default:stone_with_iron", {
-	description = "Iron Ore",
+	description = S("iron ore"),
 	tiles = {"default_stone.png^default_mineral_iron.png"},
 	is_ground_content = true,
 	groups = {cracky=2},
@@ -29,7 +42,7 @@ minetest.register_node("default:stone_with_iron", {
 })
 
 minetest.register_node("default:stone_with_gold", {
-	description = "Gold Ore",
+	description = S("gold ore"),
 	tiles = {"default_stone.png^default_mineral_gold.png"},
 	is_ground_content = true,
 	groups = {cracky=2},
@@ -38,7 +51,7 @@ minetest.register_node("default:stone_with_gold", {
 })
 	
 minetest.register_node("default:stone_with_diamond", {
-	description = "Diamond Ore",
+	description = S("diamond ore"),
 	tiles = {"default_stone.png^default_mineral_diamond.png"},
 	is_ground_content = true,
 	groups = {cracky=1},
@@ -47,14 +60,14 @@ minetest.register_node("default:stone_with_diamond", {
 })
 
 minetest.register_node("default:stonebrick", {
-	description = "Stone Brick",
+	description = S("stone brick"),
 	tiles = {"default_stone_brick.png"},
 	groups = {cracky=2, stone=1},
 	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_node("default:dirt_with_grass", {
-	description = "Dirt with Grass",
+	description = S("dirt with grass"),
 	tiles = {"default_grass.png", "default_dirt.png", "default_dirt.png^default_grass_side.png"},
 	is_ground_content = true,
 	groups = {immortal=1},
@@ -65,7 +78,7 @@ minetest.register_node("default:dirt_with_grass", {
 })
 
 minetest.register_node("default:dirt", {
-	description = "Dirt",
+	description = S("dirt"),
 	tiles = {"default_dirt.png"},
 	is_ground_content = true,
 	groups = {immortal=1},
@@ -73,7 +86,7 @@ minetest.register_node("default:dirt", {
 })
 
 minetest.register_node("default:sand", {
-	description = "Sand",
+	description = S("sand"),
 	tiles = {"default_sand.png"},
 	is_ground_content = true,
 	groups = {crumbly=3, falling_node=1, sand=1},
@@ -81,7 +94,7 @@ minetest.register_node("default:sand", {
 })
 
 minetest.register_node("default:tree", {
-	description = "Tree",
+	description = S("tree trunk"),
 	tiles = {"default_tree_top.png", "default_tree_top.png", "default_tree.png"},
 	paramtype2 = "facedir",
 	is_ground_content = false,
@@ -91,7 +104,7 @@ minetest.register_node("default:tree", {
 })
 
 minetest.register_node("default:leaves", {
-	description = "Leaves",
+	description = S("leaves"),
 	drawtype = "allfaces_optional",
 	waving = 1,
 	visual_scale = 1.3,
@@ -118,7 +131,7 @@ minetest.register_node("default:leaves", {
 })
 
 minetest.register_node("default:ladder", {
-	description = "Ladder",
+	description = S("ladder"),
 	drawtype = "signlike",
 	tiles = {"default_ladder.png"},
 	inventory_image = "default_ladder.png",
@@ -130,9 +143,6 @@ minetest.register_node("default:ladder", {
 	is_ground_content = false,
 	selection_box = {
 		type = "wallmounted",
-		--wall_top = = <default>
-		--wall_bottom = = <default>
-		--wall_side = = <default>
 	},
 	groups = {choppy=2,flammable=2},
 	legacy_wallmounted = true,
@@ -140,14 +150,14 @@ minetest.register_node("default:ladder", {
 })
 
 minetest.register_node("default:wood", {
-	description = "Wooden Planks",
+	description = S("wooden planks"),
 	tiles = {"default_wood.png"},
 	groups = {choppy=2,flammable=3,wood=1},
 	sounds = default.node_sound_wood_defaults(),
 })
 
 minetest.register_node("default:water_flowing", {
-	description = "Flowing Water",
+	description = S("flowing water"),
 	inventory_image = minetest.inventorycube("default_water.png"),
 	drawtype = "flowingliquid",
 	tiles = {"default_water.png"},
@@ -182,7 +192,7 @@ minetest.register_node("default:water_flowing", {
 })
 
 minetest.register_node("default:water_source", {
-	description = "Water Source",
+	description = S("water source"),
 	inventory_image = minetest.inventorycube("default_water.png"),
 	drawtype = "liquid",
 	tiles = {
@@ -214,7 +224,7 @@ minetest.register_node("default:water_source", {
 })
 
 minetest.register_node("default:torch", {
-	description = "Torch",
+	description = S("torch"),
 	drawtype = "torchlike",
 	--tiles = {"default_torch_on_floor.png", "default_torch_on_ceiling.png", "default_torch.png"},
 	tiles = {
@@ -255,7 +265,7 @@ default.chest_formspec =
 	default.get_hotbar_bg(0,4.85)
 
 minetest.register_node("default:chest", {
-	description = "Chest",
+	description = S("storage chest"),
 	tiles = {"default_chest_top.png", "default_chest_top.png", "default_chest_side.png",
 		"default_chest_side.png", "default_chest_side.png", "default_chest_front.png"},
 	paramtype2 = "facedir",
@@ -266,7 +276,7 @@ minetest.register_node("default:chest", {
 	on_construct = function(pos)
 		local meta = minetest.get_meta(pos)
 		meta:set_string("formspec",default.chest_formspec)
-		meta:set_string("infotext", "Chest (Rightclick to open)")
+		meta:set_string("infotext", S("Chest (Rightclick to open)"))
 		local inv = meta:get_inventory()
 		inv:set_size("main", 8*4)
 	end,
@@ -295,20 +305,20 @@ function default.furnace_active(pos, percent, item_percent)
 	default.gui_bg..
 	default.gui_bg_img..
 	default.gui_slots..
-	"label[-0.1,-0.4;This furnace is active and constantly burning its fuel.]"..
-	"label[2.75,0;Source:]"..
+	"label[-0.1,-0.4;"..F("This furnace is active and constantly burning its fuel.").."]"..
+	"label[2.75,0;"..F("Source:").."]"..
 	"list[current_name;src;2.75,0.5;1,1;]"..
-	"label[2.75,2.4;Fuel:]"..
+	"label[2.75,2.4;"..F("Fuel:").."]"..
 	"list[current_name;fuel;2.75,2.9;1,1;]"..
-	"label[2.75,1.2;Flame:]"..
+	"label[2.75,1.2;"..F("Flame:").."]"..
 	"image[2.75,1.7;1,1;default_furnace_fire_bg.png^[lowpart:"..
 	(100-percent)..":default_furnace_fire_fg.png]"..
-	"label[3.75,1.2;Progress:]"..
+	"label[3.75,1.2;"..F("Progress:").."]"..
         "image[3.75,1.7;1,1;gui_furnace_arrow_bg.png^[lowpart:"..
         (item_percent*100)..":gui_furnace_arrow_fg.png^[transformR270]"..
-	"label[4.75,0.66;Output slots:]"..
+	"label[4.75,0.66;"..F("Output slots:").."]"..
 	"list[current_name;dst;4.75,1.16;2,2;]"..
-	"label[0,3.75;Player inventory:]"..
+	"label[0,3.75;"..F("Player inventory:").."]"..
 	"list[current_player;main;0,4.25;8,1;]"..
 	"list[current_player;main;0,5.5;8,3;8]"..
 	"label[0,8.2;"..default.gui_controls.."]"..
@@ -337,25 +347,25 @@ default.furnace_inactive_formspec =
 	default.gui_bg..
 	default.gui_bg_img..
 	default.gui_slots..
-	"label[-0.1,-0.4;This furnace is inactive. Read the instructions to learn how to activate it.]"..
-	"label[2.75,0;Source:]"..
+	"label[-0.1,-0.4;"..F("This furnace is inactive. Read the instructions to learn how to activate it.").."]"..
+	"label[2.75,0;"..F("Source:").."]"..
 	"list[current_name;src;2.75,0.5;1,1;]"..
-	"label[2.75,2.4;Fuel:]"..
+	"label[2.75,2.4;"..F("Fuel:").."]"..
 	"list[current_name;fuel;2.75,2.9;1,1;]"..
-	"label[2.75,1.2;Flame:]"..
+	"label[2.75,1.2;"..F("Flame:").."]"..
 	"image[2.75,1.7;1,1;default_furnace_fire_bg.png]"..
-	"label[3.75,1.2;Progress:]"..
+	"label[3.75,1.2;"..F("Progress:").."]"..
 	"image[3.75,1.7;1,1;gui_furnace_arrow_bg.png^[transformR270]"..
-	"label[4.75,0.66;Output slots:]"..
+	"label[4.75,0.66;"..F("Output slots:").."]"..
 	"list[current_name;dst;4.75,1.16;2,2;]"..
-	"label[0,3.75;Player inventory:]"..
+	"label[0,3.75;"..F("Player inventory:").."]"..
 	"list[current_player;main;0,4.25;8,1;]"..
 	"list[current_player;main;0,5.5;8,3;8]"..
 	"label[0,8.2;"..default.gui_controls.."]"..
 	default.get_hotbar_bg(0,4.25)
 
 minetest.register_node("default:furnace", {
-	description = "Furnace",
+	description = S("furnace"),
 	tiles = {"default_furnace_top.png", "default_furnace_bottom.png", "default_furnace_side.png",
 		"default_furnace_side.png", "default_furnace_side.png", "default_furnace_front.png"},
 	paramtype2 = "facedir",
@@ -366,7 +376,7 @@ minetest.register_node("default:furnace", {
 	on_construct = function(pos)
 		local meta = minetest.get_meta(pos)
 		meta:set_string("formspec", default.furnace_inactive_formspec)
-		meta:set_string("infotext", "Inactive furnace (Rightclick to examine)")
+		meta:set_string("infotext", S("Inactive furnace (Rightclick to examine)"))
 		local inv = meta:get_inventory()
 		inv:set_size("fuel", 1)
 		inv:set_size("src", 1)
@@ -393,7 +403,7 @@ minetest.register_node("default:furnace", {
 		if listname == "fuel" then
 			if minetest.get_craft_result({method="fuel",width=1,items={stack}}).time ~= 0 then
 				if inv:is_empty("src") then
-					meta:set_string("infotext","Empty furnace (Rightclick to examine)")
+					meta:set_string("infotext",S("Empty furnace (Rightclick to examine)"))
 				end
 				return stack:get_count()
 			else
@@ -415,7 +425,7 @@ minetest.register_node("default:furnace", {
 		if to_list == "fuel" then
 			if minetest.get_craft_result({method="fuel",width=1,items={stack}}).time ~= 0 then
 				if inv:is_empty("src") then
-					meta:set_string("infotext","Empty furnace (Rightclick to examine)")
+					meta:set_string("infotext",S("Empty furnace (Rightclick to examine)"))
 				end
 				return count
 			else
@@ -436,7 +446,7 @@ minetest.register_node("default:furnace", {
 })
 
 minetest.register_node("default:furnace_active", {
-	description = "Furnace",
+	description = S("furnace"),
 	tiles = {
 		"default_furnace_top.png",
 		"default_furnace_bottom.png",
@@ -464,7 +474,7 @@ minetest.register_node("default:furnace_active", {
 	on_construct = function(pos)
 		local meta = minetest.get_meta(pos)
 		meta:set_string("formspec", default.furnace_inactive_formspec)
-		meta:set_string("infotext", "Inactive furnace (Rightclick to examine)");
+		meta:set_string("infotext", S("Inactive furnace (Rightclick to examine)"));
 		local inv = meta:get_inventory()
 		inv:set_size("fuel", 1)
 		inv:set_size("src", 1)
@@ -491,7 +501,7 @@ minetest.register_node("default:furnace_active", {
 		if listname == "fuel" then
 			if minetest.get_craft_result({method="fuel",width=1,items={stack}}).time ~= 0 then
 				if inv:is_empty("src") then
-					meta:set_string("infotext","Empty furnace (Rightclick to examine)")
+					meta:set_string("infotext",S("Empty furnace (Rightclick to examine)"))
 				end
 				return stack:get_count()
 			else
@@ -513,7 +523,7 @@ minetest.register_node("default:furnace_active", {
 		if to_list == "fuel" then
 			if minetest.get_craft_result({method="fuel",width=1,items={stack}}).time ~= 0 then
 				if inv:is_empty("src") then
-					meta:set_string("infotext","Empty furnace (Rightclick to examine)")
+					meta:set_string("infotext",S("Empty furnace (Rightclick to examine)"))
 				end
 				return count
 			else
@@ -592,7 +602,7 @@ minetest.register_abm({
 		if meta:get_float("fuel_time") < meta:get_float("fuel_totaltime") then
 			local percent = math.floor(meta:get_float("fuel_time") /
 					meta:get_float("fuel_totaltime") * 100)
-			meta:set_string("infotext","Active furnace (Flame used: "..percent.."%) (Rightclick to examine)")
+			meta:set_string("infotext",string.format(S("Active furnace (Flame used: %d%%) (Rightclick to examine)"), percent))
 			swap_node(pos,"default:furnace_active")
 			meta:set_string("formspec",default.get_furnace_active_formspec(pos, percent))
 			return
@@ -635,7 +645,7 @@ minetest.register_abm({
 })
 
 minetest.register_node("default:cobble", {
-	description = "Cobblestone",
+	description = S("cobblestone"),
 	tiles = {"default_cobble.png"},
 	is_ground_content = true,
 	groups = {cracky=3, stone=2},
@@ -643,7 +653,7 @@ minetest.register_node("default:cobble", {
 })
 
 minetest.register_node("default:apple", {
-	description = "Apple",
+	description = S("apple"),
 	drawtype = "plantlike",
 	visual_scale = 1.0,
 	tiles = {"default_apple.png"},
