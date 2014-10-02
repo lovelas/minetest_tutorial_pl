@@ -4,10 +4,8 @@ tutorial = {}
 if (minetest.get_modpath("intllib")) then
 	dofile(minetest.get_modpath("intllib").."/intllib.lua")
 	S = intllib.Getter(minetest.get_current_modname())
-	F = minetest.formspec_escape(S(s))
 else
   S = function ( s ) return s end
-  F = function ( s ) return minetest.formspec_escape(s) end
 end
 
 -- Saves tutorial state into file
@@ -81,13 +79,13 @@ function tutorial.register_infosign(itemstringpart, caption, fulltext)
 			local meta = minetest.get_meta(pos)
 			local formspec = ""..
 			"size[12,6]"..
-			"label[-0.15,-0.4;"..F(caption).."]"..
+			"label[-0.15,-0.4;"..minetest.formspec_escape(S(caption)).."]"..
 			"tablecolumns[text]"..
 			"tableoptions[background=#000000;highlight=#000000;border=false]"..
 			"table[0,0.25;12,5.2;infosign_text;"..
-			tutorial.convert_newlines(F(fulltext))..
+			tutorial.convert_newlines(minetest.formspec_escape(S(fulltext)))..
 			"]"..
-			"button_exit[4.5,5.5;3,1;close;"..F("Close").."]"
+			"button_exit[4.5,5.5;3,1;close;"..minetest.formspec_escape(S("Close")).."]"
 			meta:set_string("formspec", formspec)
 			meta:set_string("infotext", string.format(S("%s (Right-click to read)"), caption))
 		end
@@ -986,7 +984,7 @@ function tutorial.show_default_dialog(name, caption, text)
 	"tablecolumns[text]"..
 	"tableoptions[background=#000000;highlight=#000000;border=false]"..
 	"table[0,0.25;12,5.2;text_table;"..
-	tutorial.convert_newlines(F(text))..
+	tutorial.convert_newlines(minetest.formspec_escape(S(text)))..
 	"]"..
 	"button_exit[4.5,5.5;3,1;close;Close]"
 	minetest.show_formspec(name, "tutorial_dialog", formspec)
@@ -996,35 +994,35 @@ minetest.register_on_joinplayer(function(player)
 	local formspec = nil
 	if(minetest.is_singleplayer() == false) then
 		formspec = "size[12,6]"..
-		"label[-0.15,-0.4;"..F("Warning: You're not playing in singleplayer mode").."]"..
+		"label[-0.15,-0.4;"..minetest.formspec_escape(S("Warning: You're not playing in singleplayer mode")).."]"..
 		"tablecolumns[text]"..
 		"tableoptions[background=#000000;highlight=#000000;border=false]"..
 		"table[0,0.25;12,5.2;creative_text;"..
-		tutorial.convert_newlines(F(tutorial.texts.notsingleplayer))..
+		tutorial.convert_newlines(minetest.formspec_escape(S(tutorial.texts.notsingleplayer)))..
 		"]"..
-		"button_exit[2.5,5.5;3,1;close;"..F("Continue anyways").."]"..
-		"button_exit[6.5,5.5;3,1;leave;"..F("Leave tutorial").."]"
+		"button_exit[2.5,5.5;3,1;close;"..minetest.formspec_escape(S("Continue anyways")).."]"..
+		"button_exit[6.5,5.5;3,1;leave;"..minetest.formspec_escape(S("Leave tutorial")).."]"
 	elseif(minetest.setting_getbool("creative_mode")) then
 		formspec = "size[12,6]"..
-		"label[-0.15,-0.4;"..(F("Warning: Creative mode is active")).."]"..
+		"label[-0.15,-0.4;"..(minetest.formspec_escape(S("Warning: Creative mode is active"))).."]"..
 		"tablecolumns[text]"..
 		"tableoptions[background=#000000;highlight=#000000;border=false]"..
 		"table[0,0.25;12,5.2;creative_text;"..
-		tutorial.convert_newlines(F(tutorial.texts.creative))..
+		tutorial.convert_newlines(minetest.formspec_escape(S(tutorial.texts.creative)))..
 		"]"..
-		"button_exit[2.5,5.5;3,1;close;"..F("Continue anyways").."]"..
-		"button_exit[6.5,5.5;3,1;leave;"..F("Leave tutorial").."]"
+		"button_exit[2.5,5.5;3,1;close;"..minetest.formspec_escape(S("Continue anyways")).."]"..
+		"button_exit[6.5,5.5;3,1;leave;"..minetest.formspec_escape(S("Leave tutorial")).."]"
 
 	else
 		if(tutorial.state.first_join==true) then
 			formspec = "size[12,6]"..
-			"label[-0.15,-0.4;"..F("Introduction").."]"..
+			"label[-0.15,-0.4;"..minetest.formspec_escape(S("Introduction")).."]"..
 			"tablecolumns[text]"..
 			"tableoptions[background=#000000;highlight=#000000;border=false]"..
 			"table[0,0.25;12,5.2;intro_text;"..
-			tutorial.convert_newlines(F(tutorial.texts.intro))..
+			tutorial.convert_newlines(minetest.formspec_escape(S(tutorial.texts.intro)))..
 			"]"..
-			"button_exit[4.5,5.5;3,1;close;"..F("Close").."]"
+			"button_exit[4.5,5.5;3,1;close;"..minetest.formspec_escape(S("Close")).."]"
 		end
 		tutorial.state.first_join = false
 		tutorial.save_state()
@@ -1080,15 +1078,15 @@ minetest.register_globalstep(function(dtime)
 					local gold_stack = ItemStack("default:gold_ingot "..tostring(tutorial.gold))
 					if(inv:contains_item("main", gold_stack)) then
 						local formspec = "size[12,6]"..
-						"label[-0.15,-0.4;"..F("You've finished the tutorial!").."]"..
+						"label[-0.15,-0.4;"..minetest.formspec_escape(S("You've finished the tutorial!")).."]"..
 						"tablecolumns[text]"..
 						"tableoptions[background=#000000;highlight=#000000;border=false]"..
 						"table[0,0.25;12,5.2;creative_text;"..
-						tutorial.convert_newlines(F(tutorial.texts.last_gold))..
+						tutorial.convert_newlines(minetest.formspec_escape(S(tutorial.texts.last_gold)))..
 						"]"..
-						"button_exit[0.5,5.5;3,1;close;"..F("Continue").."]"..
-						"button_exit[4.5,5.5;3,1;leave;"..F("Leave tutorial").."]"..
-						"button_exit[8.5,5.5;3,1;gotoend;"..F("Go to Good-Bye room").."]"
+						"button_exit[0.5,5.5;3,1;close;"..minetest.formspec_escape(S("Continue")).."]"..
+						"button_exit[4.5,5.5;3,1;leave;"..minetest.formspec_escape(S("Leave tutorial")).."]"..
+						"button_exit[8.5,5.5;3,1;gotoend;"..minetest.formspec_escape(S("Go to Good-Bye room")).."]"
 
 						minetest.show_formspec(name, "tutorial_last_gold", formspec)
 
