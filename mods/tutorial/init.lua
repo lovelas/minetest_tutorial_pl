@@ -1151,3 +1151,35 @@ minetest.register_on_newplayer(tutorial.disable_sneak_glitch)
 minetest.register_on_joinplayer(tutorial.disable_sneak_glitch)
 minetest.register_on_respawnplayer(tutorial.disable_sneak_glitch)
 ]]
+
+
+--[[
+Helper tools for sign text extracting
+must be called with /lua from luacmd
+An ugly, quick and dirty hack.
+TODO: Toss away intllib in favor of gettext as soon as possible
+]]
+
+function tutorial.convert_newlines_for_intllib(str)
+	local function convert(s)
+		return s:gsub("\n", function(slash, what)
+			return "\\n"
+		end)
+	end
+
+	return convert(str)
+end
+
+function tutorial.extract_texts()
+	local filepath = minetest.get_modpath("tutorial").."/locale/template_texts.txt"
+	local file = io.open(filepath, "w")
+	if(file) then
+		for k,v in pairs(tutorial.texts) do
+			file:write("# Tutorial text: "..k.."\n")
+			file:write(tutorial.convert_newlines_for_intllib(v).."\n\n")
+		end
+	else
+		minetest.log("error", "[tutorial] An attempt to write into "..filepath.." failed.")
+	end
+	io.close(file)
+end
