@@ -765,14 +765,14 @@ tutorial.texts.first_diamond =
 diamonds. Can you find them all? The first diamond may have been easy to collect, but the
 remaining 11 diamonds probably won't be that easy.
 
-There won't be any special event or bonus, however, if you manage to collect all
-diamonds, apart from feeling special, maybe. ;-)]]
+If you manage to find them all, you will be awarded a symbolic prize.]]
 
 tutorial.texts.last_diamond =
 [[Congratulations!
 You have collected all the diamonds of Tutorial World!
 
-You can feel special now.]]
+To recognize this achievement, you have been awarded with a diamond cup. It has been placed in
+the Good-Bye Room for you.]]
 
 
 tutorial.texts.controls =
@@ -972,6 +972,44 @@ minetest.register_node("tutorial:waterfall_off", {
 	end
 })
 
+
+--[[ Tutorial cups, awarded for achievements ]]
+tutorial.cupnodebox = {
+	type = "fixed",
+	fixed = {
+		{-0.3,-0.5,-0.3,0.3,-0.4,0.3}, -- stand
+		{-0.1,-0.4,-0.1,0.1,0,0.1}, -- handle
+		{-0.3,0,-0.3,0.3,0.1,0.3}, -- cup (lower part)
+		-- the 4 sides of the upper part
+		{-0.2,0.1,-0.3,0.2,0.5,-0.2},
+		{-0.2,0.1,0.2,0.2,0.5,0.3},
+		{-0.3,0.1,-0.3,-0.2,0.5,0.3},
+		{0.2,0.1,-0.3,0.3,0.5,0.3},
+	}
+}
+
+--[[ awarded for collecting all gold ingots ]]
+minetest.register_node("tutorial:cup_gold", {
+	description = S("golden cup"),
+	tiles = { "default_gold_block.png" },
+	paramtype = "light",
+	drawtype = "nodebox",
+	node_box = tutorial.cupnodebox,
+	groups = { immortal = 1 }
+})
+
+--[[ awarded for collecting all diamonds ]]
+minetest.register_node("tutorial:cup_diamond", {
+	description = S("diamond cup"),
+	tiles = { "default_diamond_block.png" },
+	paramtype = "light",
+	drawtype = "nodebox",
+	node_box = tutorial.cupnodebox,
+	groups = { immortal = 1 }
+})
+
+
+
 --[[ This function shows a simple dialog window with scrollable text
 	name: name of the player to show the formspec to
 	caption: Caption of the dialog window (not escaped)
@@ -1090,6 +1128,7 @@ minetest.register_globalstep(function(dtime)
 
 						minetest.show_formspec(name, "tutorial_last_gold", formspec)
 
+						minetest.set_node({x=19,y=2,z=72}, {name="tutorial:cup_gold"})
 						tutorial.state.last_gold = true
 						state_changed = true
 					end
@@ -1115,6 +1154,7 @@ minetest.register_globalstep(function(dtime)
 							S("You have collected all hidden diamonds!"),
 							tutorial.texts.last_diamond
 						)
+						minetest.set_node({x=19,y=2,z=74}, {name="tutorial:cup_diamond"})
 						tutorial.state.last_diamond = true
 						state_changed = true
 					end

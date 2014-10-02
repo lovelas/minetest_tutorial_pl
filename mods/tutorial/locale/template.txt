@@ -143,10 +143,10 @@ At the bottom of the screen you see 8 squares. This is called the 'hotbar'.\nThe
 Careful! These spikes hurt you when you stand inside, so don't walk into them.\nTry to walk around and get the gold ingot.\n\nThey damage you every second you stand in them.\n\nThis is one of the many ways you can get hurt in Minetest.
 
 # Tutorial text: last_diamond
-Congratulations!\nYou have collected all the diamonds of Tutorial World!\n\nYou can feel special now.
+Congratulations!\nYou have collected all the diamonds of Tutorial World!\n\nTo recognize this achievement, you have been awarded with a diamond cup. It has been placed in\nthe Good-Bye Room for you.
 
 # Tutorial text: first_diamond
-Great, you have found and collected a hidden diamond! In Tutorial World, there are 12 hidden\ndiamonds. Can you find them all? The first diamond may have been easy to collect, but the\nremaining 11 diamonds probably won't be that easy.\n\nThere won't be any special event or bonus, however, if you manage to collect all\ndiamonds, apart from feeling special, maybe. ;-)
+Great, you have found and collected a hidden diamond! In Tutorial World, there are 12 hidden\ndiamonds. Can you find them all? The first diamond may have been easy to collect, but the\nremaining 11 diamonds probably won't be that easy.\n\nIf you manage to find them all, you will be awarded a symbolic prize.
 
 # Tutorial text: dive
 To get to the other side, you have to dive here. Don't worry, the tunnel is not\nlong. But don't stay too long in the water, or else you take damage.\nAt the bottom of the pool lies a gold ingot. Try to get it!\n\n   Swim forwards: [W]\n   Swim backwards: [S]\n   Swim leftwards: [A]\n   Swim rightwards: [D]\n   Swim upwards: [Space]\n   Swim downwards: [Shift]
