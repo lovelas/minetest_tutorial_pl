@@ -102,7 +102,7 @@ You somehow managed to fall from the castle or got otherwise below it!\nHow did 
 These nasty blocks on the floor prevent you from jumping when you stand on them.
 
 # Tutorial text: blocks
-The world of Minetest is made entirely out of blocks, or cubes, to be precise.\nBlocks can be added or removed with the correct tools.\n\nIn this section, we'll show you a few special but common blocks which behave in unexpected,\nways.,\n\nOf course, subgames can come up with more special weird blocks.
+The world of Minetest is made entirely out of blocks, or voxels, to be precise.\nBlocks can be added or removed with the correct tools.\n\nIn this section, we'll show you a few special but common blocks which behave in unexpected,\nways.,\n\nOf course, subgames can come up with more special weird blocks.
 
 # Tutorial text: eat
 In this chest you find some comestibles. Comestibles are items which instantly\nheal you when eaten. This removes the item from your inventory.\nTo eat one, select the comestible in your hotbar, then click the left mouse button.\nUnlike other items, you cannot punch or attack while holding a comestible. To be able\nto attack, you have to select something else.\nOf course, this does not have to be the only way to heal you.\n\n   Eat comestible: [Left mouse button]\n\nDon't forget to take the gold ingot.

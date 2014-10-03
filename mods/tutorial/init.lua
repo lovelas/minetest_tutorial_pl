@@ -218,7 +218,7 @@ window first).
    Switch camera mode: [F7]]=]
 
 tutorial.texts.blocks =
-[[The world of Minetest is made entirely out of blocks, or cubes, to be precise.
+[[The world of Minetest is made entirely out of blocks, or voxels, to be precise.
 Blocks can be added or removed with the correct tools.
 
 In this section, we'll show you a few special but common blocks which behave in unexpected,
