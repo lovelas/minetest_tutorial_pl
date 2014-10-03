@@ -1,0 +1,59 @@
+# Items
+book = Buch
+coal lump = Kohleklumpen
+iron lump = Eisenklumpen
+gold lump = Goldklumpen
+diamond = Diamant
+steel ingot = Stahlbarren
+gold ingot = Goldbarren
+stone = Stein
+coal ore = Kohleerz
+iron ore = Eisenerz
+gold ore = Golderz
+diamond ore = Diamanterz
+stone brick = Steinziegel
+dirt with grass = Erde mit Gras
+dirt = Erde
+sand = Sand
+tree trunk = Baumstamm
+leaves = Blätter
+ladder = Leiter
+wooden planks = Holzplanken
+flowing water = fließendes Wasser
+water source = Wasserquelle
+torch = Fackel
+storage chest = Lagertruhe
+cobblestone = Kopfsteinpflaster
+apple = Apfel
+furnace = Ofen
+
+## Tools
+wooden pickaxe = Holzspitzhacke
+stone pickaxe = Steinspitzhacke
+steel pickaxe = Stahlspitzhacke
+wooden shovel = Holzschaufel
+steel axe = Stahlaxt
+
+
+# Infotexts
+Chest (Rightclick to open) = Truhe (Rechtsklicken zum Öffnen)
+Inactive furnace (Rightclick to examine) = Inaktiver Ofen (Rechtsklicken zum Untersuchen)
+Empty furnace (Rightclick to examine) = Leerer Ofen (Rechtsklicken zum Untersuchen)
+Active furnace (Flame used: %d%%) (Rightclick to examine) = Aktiver Ofen (Flamme: %d%%) (Rechtklicken zum Untersuchen)
+Furnace without fuel (Rightclick to examine) = Ofen ohne Brennstoff (Rechtsklicken zum Untersuchen)
+
+# Formspecs
+[left click]: take/drop stack;   [right click]: take half / drop 1;   [middle click]: take 10 / drop 10;   [Esc] or [I]: Close = [Linksklick]: Stapel nehmen/weglegen;   [Rechtsklick]: nimm Hälfte / 1 ablegen;   [Mittelklick]: 10 nehmen/ablegen
+Chest inventory: = Truheninventar:
+Player inventory: = Spielerinventar:
+This furnace is active and constantly burning its fuel. = Der Ofen ist aktiv und verbrennt beständig seinen Brennstoff.
+This furnace is inactive. Read the instructions to learn how to activate it. = Dieser Ofen ist inaktiv. Lesen Sie die Anweisungen, um zu erfahren, wie er aktiviert werden kann.
+
+
+
+## Furnace formspecs
+Fuel:
+Source:
+Flame:
+Progress:
+Output slots:
