@@ -49,8 +49,9 @@ Chest inventory:
 Player inventory:
 This furnace is active and constantly burning its fuel.
 This furnace is inactive. Read the instructions to learn how to activate it.
-
-
+Back to start
+Crafting grid:
+Output slot:
 
 ## Furnace formspecs
 Fuel:

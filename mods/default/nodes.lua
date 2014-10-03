@@ -251,7 +251,8 @@ minetest.register_node("default:torch", {
 	sounds = default.node_sound_defaults(),
 })
 
-default.chest_formspec = 
+function default.chest_formspec()
+	return
 	"size[8,9.1]"..
 	default.gui_bg..
 	default.gui_bg_img..
@@ -263,6 +264,7 @@ default.chest_formspec =
 	"list[current_player;main;0,6.08;8,3;8]"..
 	"label[0,8.8;"..default.gui_controls.."]"..
 	default.get_hotbar_bg(0,4.85)
+end
 
 minetest.register_node("default:chest", {
 	description = S("storage chest"),
@@ -275,7 +277,7 @@ minetest.register_node("default:chest", {
 	sounds = default.node_sound_wood_defaults(),
 	on_construct = function(pos)
 		local meta = minetest.get_meta(pos)
-		meta:set_string("formspec",default.chest_formspec)
+		meta:set_string("formspec", default.chest_formspec())
 		meta:set_string("infotext", S("Chest (Rightclick to open)"))
 		local inv = meta:get_inventory()
 		inv:set_size("main", 8*4)
@@ -553,6 +555,17 @@ local function swap_node(pos,name)
 end
 
 minetest.register_abm({
+	nodenames = {"default:chest"},
+	interval = 5,
+	chance = 1,
+	action = function(pos,node,active_object_count, active_object_count_wider)
+		local meta = minetest.get_meta(pos)
+		meta:set_string("formspec", default.chest_formspec())
+		meta:set_string("infotext", S("Chest (Rightclick to open)"))
+	end
+})
+
+minetest.register_abm({
 	nodenames = {"default:furnace","default:furnace_active"},
 	interval = 1.0,
 	chance = 1,
@@ -622,7 +635,7 @@ minetest.register_abm({
 		end
 
 		if not fuel or fuel.time <= 0 then
-			meta:set_string("infotext","Furnace without fuel (Rightclick to examine)")
+			meta:set_string("infotext",S("Furnace without fuel (Rightclick to examine)"))
 			swap_node(pos,"default:furnace")
 			meta:set_string("formspec", default.furnace_inactive_formspec)
 			return
@@ -630,7 +643,7 @@ minetest.register_abm({
 
 		if cooked.item:is_empty() then
 			if was_active then
-				meta:set_string("infotext","Empty furnace (Rightclick to examine)")
+				meta:set_string("infotext",S("Empty furnace (Rightclick to examine)"))
 				swap_node(pos,"default:furnace")
 				meta:set_string("formspec", default.furnace_inactive_formspec)
 			end

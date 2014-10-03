@@ -48,12 +48,14 @@ Chest inventory: = Truheninventar:
 Player inventory: = Spielerinventar:
 This furnace is active and constantly burning its fuel. = Der Ofen ist aktiv und verbrennt beständig seinen Brennstoff.
 This furnace is inactive. Read the instructions to learn how to activate it. = Dieser Ofen ist inaktiv. Lesen Sie die Anweisungen, um zu erfahren, wie er aktiviert werden kann.
-
+Back to start = Zurück zum Anfang
+Crafting grid: = Fertigungsgitter:
+Output slot: = Resultat:
 
 
 ## Furnace formspecs
-Fuel:
-Source:
-Flame:
-Progress:
-Output slots:
+Fuel: = Brennstoff:
+Source: = Quellmaterial:
+Flame: = Flamme:
+Progress: = Fortschritt:
+Output slots: = Ausgabeplätze:
