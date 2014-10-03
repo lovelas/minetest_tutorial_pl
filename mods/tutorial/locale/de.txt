@@ -69,9 +69,11 @@ diamond cup = Diamantpokal
 You have voluntarily exited the tutorial. = Sie haben die Einführung freiwillig verlassen.
 
 # Formspec buttons
-Continue anyways = Trotzdem weitermachen
+Continue = Fortfahren
+Continue anyways = Trotzdem fortfahren
 Close = Schließen
 Leave tutorial = Einführung verlassen
+Go to Good-Bye room = Zum Abschiedsraum
 
 # Items
 reinforced wall = verstärkte Wand

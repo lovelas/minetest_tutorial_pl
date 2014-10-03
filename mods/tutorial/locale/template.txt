@@ -69,9 +69,11 @@ diamond cup
 You have voluntarily exited the tutorial.
 
 # Formspec buttons
+Continue
 Continue anyways
 Close
 Leave tutorial
+Go to Good-Bye room
 
 # Items
 reinforced wall

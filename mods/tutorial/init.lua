@@ -1053,7 +1053,7 @@ function tutorial.show_default_dialog(name, caption, text)
 	"table[0,0.25;12,5.2;text_table;"..
 	tutorial.convert_newlines(minetest.formspec_escape(S(text)))..
 	"]"..
-	"button_exit[4.5,5.5;3,1;close;Close]"
+	"button_exit[4.5,5.5;3,1;close;"..S("Close").."]"
 	minetest.show_formspec(name, "tutorial_dialog", formspec)
 end
 
@@ -1178,11 +1178,17 @@ minetest.register_globalstep(function(dtime)
 				if(tutorial.state.last_diamond ~= true) then
 					local diamond_stack = ItemStack("default:diamond "..tostring(tutorial.diamonds))
 					if(inv:contains_item("main", diamond_stack)) then
-						tutorial.show_default_dialog(
-							name,
-							S("You have collected all hidden diamonds!"),
-							tutorial.texts.last_diamond
-						)
+						local formspec = "size[12,6]"..
+						"label[-0.15,-0.4;"..minetest.formspec_escape(S("You have collected all hidden diamonds!")).."]"..
+						"tablecolumns[text]"..
+						"tableoptions[background=#000000;highlight=#000000;border=false]"..
+						"table[0,0.25;12,5.2;last_diamond_text;"..
+						tutorial.convert_newlines(minetest.formspec_escape(S(tutorial.texts.last_diamond)))..
+						"]"..
+						"button_exit[2.5,5.5;3,1;close;"..minetest.formspec_escape(S("Continue")).."]"..
+						"button_exit[6.5,5.5;3,1;gotoend;"..minetest.formspec_escape(S("Go to Good-Bye room")).."]"
+						minetest.show_formspec(name, "tutorial_last_diamond", formspec)
+
 						minetest.set_node({x=19,y=2,z=74}, {name="tutorial:cup_diamond"})
 						tutorial.state.last_diamond = true
 						state_changed = true
