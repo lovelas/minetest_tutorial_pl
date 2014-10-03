@@ -49,6 +49,10 @@ if(read==false) then
 end
 
 function tutorial.convert_newlines(str)
+	if(type(str)~="string") then
+		return "NO STRING FOUND!!!"
+	end
+
 	local function convert(s)
 		return s:gsub("\n", function(slash, what)
 			return ","
@@ -71,11 +75,10 @@ function tutorial.register_infosign(itemstringpart, caption, fulltext)
 		is_ground_content = false,
 		walkable = false,
 		selection_box = { type = "wallmounted" },
-		groups = {immortal=1,attached_node=1},
+		groups = {immortal=1,attached_node=1,tutorial_sign=1},
 		legacy_wallmounted = true,
 		sounds = default.node_sound_defaults(),
 		on_construct = function(pos)
-			--local n = minetest.get_node(pos)
 			local meta = minetest.get_meta(pos)
 			local formspec = ""..
 			"size[12,6]"..
@@ -87,10 +90,35 @@ function tutorial.register_infosign(itemstringpart, caption, fulltext)
 			"]"..
 			"button_exit[4.5,5.5;3,1;close;"..minetest.formspec_escape(S("Close")).."]"
 			meta:set_string("formspec", formspec)
-			meta:set_string("infotext", string.format(S("%s (Right-click to read)"), caption))
+			meta:set_string("infotext", string.format(S("%s (Right-click to read)"), S(caption)))
+			meta:set_string("id", itemstringpart)
+			meta:set_string("caption", caption)
 		end
 	})
 end
+
+minetest.register_abm( {
+	nodenames = {"group:tutorial_sign"},
+	interval = 1,
+	chance = 1,
+	action = function(pos, node, active_object_count, active_object_count_wider)
+		local meta = minetest.get_meta(pos)
+		local id = meta:get_string("id")
+		local caption = meta:get_string("caption")
+		local formspec = ""..
+			"size[12,6]"..
+			"label[-0.15,-0.4;"..minetest.formspec_escape(S(caption)).."]"..
+			"tablecolumns[text]"..
+			"tableoptions[background=#000000;highlight=#000000;border=false]"..
+			"table[0,0.25;12,5.2;infosign_text;"..
+			tutorial.convert_newlines(minetest.formspec_escape(S(tutorial.texts[id])))..
+			"]"..
+			"button_exit[4.5,5.5;3,1;close;"..minetest.formspec_escape(S("Close")).."]"
+			meta:set_string("formspec", formspec)
+			meta:set_string("infotext", string.format(S("%s (Right-click to read)"), S(caption)))
+
+	end }
+)
 
 
 

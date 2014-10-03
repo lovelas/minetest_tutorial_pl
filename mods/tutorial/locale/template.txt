@@ -55,7 +55,7 @@ You found a hidden diamond!
 You have collected all hidden diamonds!
 
 # Sign infotext (%s is replaced with sign caption
-%s (Rightclick to read)
+%s (Right-click to read)
 
 # Kick message
 You have voluntarily exited the tutorial.
