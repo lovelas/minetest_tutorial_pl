@@ -387,7 +387,7 @@ Minetest distinguishes between liquid source and flowing liquid.
 A liquid source block is always a full cube.
 A flowing liquid block looks slightly different. Often, it is not a full cube, but has a more or less
 triangular shape. Also, flowing liquids usually have an unique "flowing" animation, but this may
-not be the case for all liuqids.
+not be the case for all liquids.
 
 Up in the basin, you see four rows of liquid sources, followed by one row of flowing
 liquids, followed by the waterfall itself. The waterfall itself is solely made of flowing liquids.
