@@ -4,7 +4,7 @@
 -- The API documentation in here was moved into doc/lua_api.txt
 
 -- intllib support
-local S, F
+local S
 if (minetest.get_modpath("intllib")) then
 	dofile(minetest.get_modpath("intllib").."/intllib.lua")
 	S = intllib.Getter(minetest.get_current_modname())

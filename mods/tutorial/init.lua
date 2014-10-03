@@ -1,6 +1,7 @@
 tutorial = {}
 
 -- intllib support
+local S
 if (minetest.get_modpath("intllib")) then
 	dofile(minetest.get_modpath("intllib").."/intllib.lua")
 	S = intllib.Getter(minetest.get_current_modname())
@@ -50,7 +51,7 @@ end
 
 function tutorial.convert_newlines(str)
 	if(type(str)~="string") then
-		return "NO STRING FOUND!!!"
+		return "ERROR: No string found!"
 	end
 
 	local function convert(s)

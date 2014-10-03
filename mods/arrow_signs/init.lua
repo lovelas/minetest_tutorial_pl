@@ -1,8 +1,15 @@
 --more_signs by addi
 --Code and Textures are under the CC by-sa 3.0 licence 	
 --see: http://creativecommons.org/licenses/by-sa/3.0/	
-	
-	
+
+-- intllib support
+local S
+if (minetest.get_modpath("intllib")) then
+	dofile(minetest.get_modpath("intllib").."/intllib.lua")
+	S = intllib.Getter(minetest.get_current_modname())
+else
+  S = function ( s ) return s end
+end
 	
 arrow_signs={}
 
@@ -18,7 +25,7 @@ arrow_signs={}
 				"\" to sign at "..minetest.pos_to_string(pos))
 		meta:set_string("text", fields.text)
 		text = arrow_signs:create_lines(fields.text)
-		meta:set_string("infotext", '"'..text..'"')
+		meta:set_string("infotext", text)
 		i=0
 		for wort in text:gfind("\n") do
 		i=i+1
@@ -68,7 +75,7 @@ minetest.register_node("arrow_signs:wall_right", {
 		--wall_bottom = <default>
 		--wall_side = <default>
 	},
-	groups = {immortal=1,attached_node=1},
+	groups = {immortal=1,attached_node=1,arrow_sign=1},
 	legacy_wallmounted = true,
 	sounds = default.node_sound_defaults(),
 	on_construct = function(pos)
@@ -104,7 +111,7 @@ minetest.register_node("arrow_signs:wall_left", {
 		--wall_bottom = <default>
 		--wall_side = <default>
 	},
-	groups = {immortal=1,attached_node=1},
+	groups = {immortal=1,attached_node=1,arrow_sign=1},
 	legacy_wallmounted = true,
 	sounds = default.node_sound_defaults(),
 	on_construct = function(pos)
@@ -139,7 +146,7 @@ minetest.register_node("arrow_signs:wall_up", {
 		--wall_bottom = <default>
 		--wall_side = <default>
 	},
-	groups = {immortal=1,attached_node=1},
+	groups = {immortal=1,attached_node=1,arrow_sign=1},
 	legacy_wallmounted = true,
 	sounds = default.node_sound_defaults(),
 	on_construct = function(pos)
@@ -174,7 +181,7 @@ minetest.register_node("arrow_signs:wall_down", {
 		--wall_bottom = <default>
 		--wall_side = <default>
 	},
-	groups = {immortal=1,attached_node=1},
+	groups = {immortal=1,attached_node=1,arrow_sign=1},
 	legacy_wallmounted = true,
 	sounds = default.node_sound_defaults(),
 	on_construct = function(pos)
@@ -191,4 +198,18 @@ minetest.register_node("arrow_signs:wall_down", {
 		meta:set_string("formspec", "")
 	end,
 })
+
+
+minetest.register_abm( {
+	nodenames = {"group:arrow_sign"},
+	interval = 5,
+	chance = 1,
+	action = function(pos, node, active_object_count, active_object_cound_wider)
+		local meta = minetest.get_meta(pos)
+		local original = meta:get_string("text")
+		if(original ~= "") then
+			meta:set_string("infotext", S(original))
+		end
+	end }
+)
 
