@@ -1,5 +1,7 @@
 sleeping mat
+straw layer
 simple wooden bench
+# “table” as in “furniture”
 table
 wagon wheel
 black roof

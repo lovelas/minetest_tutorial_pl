@@ -65,7 +65,7 @@ end
 
 function tutorial.register_infosign(itemstringpart, caption, fulltext)
 	minetest.register_node("tutorial:sign_"..itemstringpart, {
-		description = string.format(S("tutorial sign '%s'"), caption),
+		description = string.format(S("tutorial sign '%s'"), S(caption)),
 		drawtype = "signlike",
 		tiles = {"default_sign_wall.png"},
 		inventory_image = "default_sign_wall.png",

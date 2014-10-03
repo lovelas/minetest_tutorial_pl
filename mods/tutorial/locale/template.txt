@@ -19,10 +19,12 @@ Liquid sources and flowing liquids
 Pointing (1)
 Pointing (2)
 Health and Damage
+Blocks Which Hurt You
 Death and Respawning
 Items
 Tools
 Using the Inventory
+Using blocks
 Comment About Chests
 Building Some Blocks
 Mining blocks
@@ -35,7 +37,8 @@ Unminable blocks
 Special blocks
 Falling blocks
 Attached blocks
-Crafting basics
+Crafting Basics
+Crafting Faster
 Crafting using Shapeless Recipes
 Crafting Groups
 Furnace Operation Instructions
@@ -44,6 +47,7 @@ End of the Basic Tutorial
 Controls Overview
 Online Resources
 Subgames
+No-jumping blocks
 
 # Misc. formspec captions
 Warning: You're not playing in singleplayer mode
@@ -56,6 +60,10 @@ You have collected all hidden diamonds!
 
 # Sign infotext (%s is replaced with sign caption
 %s (Right-click to read)
+
+# Awards
+golden cup
+diamond cup
 
 # Kick message
 You have voluntarily exited the tutorial.

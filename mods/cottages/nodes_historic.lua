@@ -8,9 +8,18 @@
 -- * glass pane - an improvement compared to fence posts as windows :-)
 ---------------------------------------------------------------------------------------
 
+-- intllib support
+local S
+if (minetest.get_modpath("intllib")) then
+	dofile(minetest.get_modpath("intllib").."/intllib.lua")
+	S = intllib.Getter(minetest.get_current_modname())
+else
+  S = function ( s ) return s end
+end
+
 -- can be used to buid real stationary wagons or attached to walls as decoration
 minetest.register_node("cottages:wagon_wheel", {
-        description = "wagon wheel",
+        description = S("wagon wheel"),
         drawtype = "signlike",
         tiles = {"cottages_wagonwheel.png"}, -- done by VanessaE!
         inventory_image = "cottages_wagonwheel.png",
