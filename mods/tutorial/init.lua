@@ -733,25 +733,25 @@ There is a strange device next to this sign. Use it and see what happens.
 
 tutorial.texts.basic_end =
 [[If you think you have enough of this tutorial, you can leave at any time. There are
-14 gold ingots at the stations to be found, to help you keep track.
+13 gold ingots at the stations to be found, to help you keep track.
 
-"You can find the gold ingots at the following stations:
-- Ladders,"..
-- Sneaking,"..
-- Swimming,"..
-- Diving,"..
-- Waterfall,"..
-- Viscosity,"..
-- Comestibles and Eating,"..
-- Pointing,"..
-- Crafting,"..
-- Smelting,"..
-- Mining,"..
-- Building,"..
-- Damage and Health,"..
+You can find the gold ingots at the following stations:
+- Ladders
+- Sneaking
+- Swimming
+- Diving
+- Waterfall
+- Viscosity
+- Comestibles and Eating
+- Pointing
+- Crafting
+- Smelting
+- Mining
+- Building
+- Damage and Health
 
-If you got 14 gold ingots (in total), you probably know now everything
-which can be learned from this tutorial. Collecting the gold ingots is optional and won't give you
+If you've got 13 gold ingots (in total), you probably know now everything which can be
+learned from this tutorial. Collecting the gold ingots is optional and won't give you
 anything special.
 
 After you closed this dialog, you can press [Esc] to open the pause menu and return
