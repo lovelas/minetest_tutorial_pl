@@ -27,20 +27,8 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "cooking",
-	output = "default:copper_ingot",
-	recipe = "default:copper_lump",
-})
-
-minetest.register_craft({
-	type = "cooking",
 	output = "default:gold_ingot",
 	recipe = "default:gold_lump",
-})
-
-minetest.register_craft({
-	type = "cooking",
-	output = "default:clay_brick",
-	recipe = "default:clay_lump",
 })
 
 --
