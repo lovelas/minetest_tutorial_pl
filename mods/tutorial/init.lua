@@ -281,7 +281,7 @@ are at a ledge, you might fall!
    Sneak: [Shift]
 
 Keep in mind that the [Shift] key is used for a large number of other things in Minetest.
-Sneaking only works when you are not in a liquid stand on solid ground and are not at a
+Sneaking only works when you are not in a liquid, stand on solid ground and are not at a
 ladder.
 
 You may try out sneaking at this little blocky pyramid.]=]
@@ -397,7 +397,7 @@ Flowing liquids are not able to exist on their own. They have to originate from 
 If the liquid source is gone, or the way to one is blocked, the flowing liquid will slowly dry
 out.
 
-To the left of this sign is a special block. When used, it will block the liquid flow.
+To the right of this sign is a special block. When used, it will block the liquid flow.
 Use that block, being close enough and looking at it, and watch the waterfall dry out.
 
    Use something: [Right mouse button]]=]
@@ -479,7 +479,7 @@ always appear here after you died. This is called "respawning". In most worlds,
 however, you will respawn in a slightly randomized location.
 
 The tutorial uses a so-called fixed spawn point, so you respawn always at the same
-spot. This is unusual for singleplayer worlds, but in online play some servers,
+spot. This is unusual for singleplayer worlds, but in online play, some servers
 use fixed spawn points, too.
 
 Under normal conditions you would have lost all or a part of your possessions or some
@@ -505,7 +505,7 @@ you can collect items which lie around by pointing and leftclicking them.
    Drop carried item stack: [Q]
    Drop single item from carried item stack: [Shift] + [Q]
 
-On the ledge at the right to this sign lies an item stack of 50 rocks so you have some items,
+On the table at the right to this sign lies an item stack of 50 rocks so you have some items,
 to test out the inventory.]]
 
 tutorial.texts.tools =
@@ -515,7 +515,7 @@ Tools can be used for many things, such as:
 - Collecting liquids
 - Rotating blocks
 - Many others!
-The number of tools which are possible in Minetest are innumberable and are
+The number of tools which are possible in Minetest is innumberable and are
 too many to cover in this tutorial.
 But at least we will look at a very common and important tool type: mining tools,
 We will come to that in the mining section.
@@ -560,7 +560,7 @@ inventory. Exchanging items works exactly the same as in the inventory menu.]]
 
 tutorial.texts.build = 
 [[Another important task in Minetest is building blocks.
-Building" here refers to the task of placing one block in your possession onto
+"Building" here refers to the task of placing one block in your possession onto
 another block in the world.
 Unlike mining, building a block happens instantanous. To build, select a block in your
 hotbar, point to any block in the world and press the right mouse button.
@@ -695,7 +695,7 @@ and the fuel into the 'Fuel' slot.
 As soon as the items have been placed, the furnace automatically starts to smelt the
 items. The furnace becomes active and consumes an item in the fuel slot. The flame
 goes on and will continue burning for a given time. The time depends on the fuel type.
-ome fuels burn very short, and other burn longer. In the furnace menu, the burn time
+Some fuels burn very short, and other burn longer. In the furnace menu, the burn time
 is indicated by the flame symbol. As soon as the flame goes out, the furnace may
 continue burning if there is still fuel and smeltable material in the furnace,
 otherwise, the furnace becomes inactive again.
@@ -751,8 +751,7 @@ You can find the gold ingots at the following stations:
 - Damage and Health
 
 If you've got 13 gold ingots (in total), you probably know now everything which can be
-learned from this tutorial. Collecting the gold ingots is optional and won't give you
-anything special.
+learned from this tutorial. Collecting the gold ingots is optional.
 
 After you closed this dialog, you can press [Esc] to open the pause menu and return
 to the main menu or quit Minetest.
