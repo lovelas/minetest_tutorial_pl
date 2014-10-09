@@ -6,6 +6,7 @@ Small Abysses = Kleine Abgründe
 Jumping (1) = Springen (1)
 Jumping (2) = Springen (2)
 Sneaking = Schleichen
+Sneak-jumping = Schleichspringen
 Information about the following tutorial sections = Information über die folgenden Abschnitte
 Hotbar = Schnellzugriffsleiste
 Comestibles and Eating = Lebensmittel und Essen
@@ -109,6 +110,9 @@ In this chest you find some comestibles. Comestibles are items which instantly\n
 
 # Tutorial text: sneak
 Sneaking is a special move. As long as you sneak, you walk slower, but you are\nguaranteed to not accidentally fall off the edge of a block. This also allows you to\n"lean over" in a sense.\nTo sneak, keep the sneak key pressed. As soon as you release the sneak key,\nyou walk at normal speed again. Be careful not releasing the sneak key when you\nare at a ledge, you might fall!\n\n   Sneak: [Shift]\n\nKeep in mind that the [Shift] key is used for a large number of other things in Minetest.\nSneaking only works when you are not in a liquid, stand on solid ground and are not at a\nladder.\n\nYou may try out sneaking at this little blocky pyramid. = Schleichen ist eine besondere Fortbewegungsmöglichkeit. Solange Sie schleichen,\nwerden Sie langsamer gehen, aber Sie werden auch garantiert nicht aus Versehen\nvon der Kante eines Blocks stürzen. Dies ermöglicht es Ihnen auch, sich\nin gewisser Weise »hinvorzulehnen«.\nUm zu schleichen, halten die die Schleichtaste gedrückt. Sobald Sie sie\nloslassen, laufen Sie wieder mit normaler Geschwindigkeit. Seien Sie achtsam,\ndass Sie die Taste nicht loslassen, wenn sie über einem Abgrund stehen, Sie\nkönnten stürzen!\n\n   Schleichen: [Umschalttaste]\n   \nBedenken Sie, dass die Umschalttaste für viele verschiedene andere Sachen in\nMinetest verwendet wird. Das Schleichen funktioniert nur, wenn Sie sich nicht\nschwimmen, tauchen oder an einer Leiter sind. Sie können das Schleichen an\ndieser kleinen eckigen Pyramide ausprobieren.
+
+# Tutorial text: sneakjump
+You can jump slightly higher if you jump while holding the sneak key.\n\n   Sneak: [Shift]\n   Jump: [Space] = Sie können etwas höher springen, wenn Sie springen, während Sie die\nSchleichtaste gedrückt halten.\n\n   Schleichen: [Umschalt]\n   Springen: [Leertaste]
 
 # Tutorial text: jumpover
 Here is a slightly larger abyss. Luckily, you can also jump just far enough to\ncross a gap of this width. Don't worry, the abyss is not deep enough to hurt you\nwhen you fall down. There are stairs which lead back up here.\n\n   Jump: [Space] = Hier ist ein geringfügig größerer Abgrund. Glücklicherweise können Sie gerade so\nweit springen, um eine Lücke dieser Entfernung zu überspringen. Keine Sorge, der\nAbgrund ist nicht tief genug, um Sie zu verletzen, wenn sie stürzen. Es gibt\neine Treppe, die wieder zurückführt.\n\n  Springen: [Leertaste]

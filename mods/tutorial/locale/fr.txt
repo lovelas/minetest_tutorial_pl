@@ -6,6 +6,7 @@ Small Abysses = Petites crevasses
 Jumping (1) = Sauts (1)
 Jumping (2) = Sauts (2)
 Sneaking = Avancer prudemment
+Sneak-jumping
 Information about the following tutorial sections = Information sur les sections du tutoriel qui suivent
 Hotbar = Barre d'action
 Comestibles and Eating = Objets comestibles et nourriture
@@ -109,6 +110,9 @@ In this chest you find some comestibles. Comestibles are items which instantly\n
 
 # Tutorial text: sneak
 Sneaking is a special move. As long as you sneak, you walk slower, but you are\nguaranteed to not accidentally fall off the edge of a block. This also allows you to\n"lean over" in a sense.\nTo sneak, keep the sneak key pressed. As soon as you release the sneak key,\nyou walk at normal speed again. Be careful not releasing the sneak key when you\nare at a ledge, you might fall!\n\n   Sneak: [Shift]\n\nKeep in mind that the [Shift] key is used for a large number of other things in Minetest.\nSneaking only works when you are not in a liquid, stand on solid ground and are not at a\nladder.\n\nYou may try out sneaking at this little blocky pyramid.
+
+# Tutorial text: sneakjump
+You can jump slightly higher if you jump while holding the sneak key.\n\n   Sneak: [Shift]\n   Jump: [Space]
 
 # Tutorial text: jumpover
 Here is a slightly larger abyss. Luckily, you can also jump just far enough to\ncross a gap of this width. Don't worry, the abyss is not deep enough to hurt you\nwhen you fall down. There are stairs which lead back up here.\n\n   Jump: [Space]
