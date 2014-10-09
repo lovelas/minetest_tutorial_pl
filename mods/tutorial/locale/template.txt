@@ -86,6 +86,8 @@ day/night switch (night)
 waterfall switch (on)
 waterfall switch (off)
 tutorial sign '%s'
+# “ruler” as in “distance measuring device”
+ruler
 
 # Tutorial text: inventory
 The inventory menu usually contains the player inventory. This allows you\nto carry along items throughout the world.\n\nEvery inventory is made out of slots where you can store items in. You can store one\nentire stack of items per slot, the only condition is that the items are of the same\ntype. In this tutorial all items except for tools stack up to 99 items, but this number\ncan vary in actual subgames.\n\nHere are the controls which explain how to move around the items within the inventory:\n\nIn the game:\n   Open inventory menu: [I]\n\nWhen the inventory is opened and you don't hold any items:\n   Take item stack: [Left mouse button]\n   Take 10 items from item stack: [Middle mouse button]\n   Take half item stack: [Right mouse button]\n\nWhen you took an item stack in the inventory:\n   Put item stack: [Left mouse button]\n   Put 10 items from item stack: [Middle mouse button]\n   Put single item from item stack: [Right mouse button]\n\nYou can also drop an item stack by holding it in the inventory, then clicking anywhere\noutside of the window.
