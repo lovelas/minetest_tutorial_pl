@@ -1041,6 +1041,17 @@ tutorial.cupnodebox = {
 	}
 }
 
+tutorial.cupselbox = {
+	type = "fixed",
+	fixed = {
+		{-0.3,-0.5,-0.3,0.3,-0.4,0.3}, -- stand
+		{-0.1,-0.4,-0.1,0.1,0,0.1}, -- handle
+		{-0.3,0,-0.3,0.3,0.5,0.3}, -- upper part
+	}
+}
+
+
+
 --[[ awarded for collecting all gold ingots ]]
 minetest.register_node("tutorial:cup_gold", {
 	description = S("golden cup"),
@@ -1048,6 +1059,7 @@ minetest.register_node("tutorial:cup_gold", {
 	paramtype = "light",
 	drawtype = "nodebox",
 	node_box = tutorial.cupnodebox,
+	selection_box = tutorial.cupselbox,
 	groups = { immortal = 1 }
 })
 
@@ -1058,6 +1070,7 @@ minetest.register_node("tutorial:cup_diamond", {
 	paramtype = "light",
 	drawtype = "nodebox",
 	node_box = tutorial.cupnodebox,
+	selection_box = tutorial.cupselbox,
 	groups = { immortal = 1 }
 })
 
