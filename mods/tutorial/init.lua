@@ -122,7 +122,6 @@ minetest.register_abm( {
 )
 
 
-
 -- Number of gold ingots/lumps
 tutorial.gold = 13
 
@@ -1050,7 +1049,15 @@ tutorial.cupselbox = {
 	}
 }
 
+function tutorial.goldinfo(pos)
+	local meta = minetest.get_meta(pos)
+	meta:set_string("infotext", S("This golden cup has been awarded for finishing the tutorial."))
+end
 
+function tutorial.diamondinfo(pos)
+	local meta = minetest.get_meta(pos)
+	meta:set_string("infotext", S("This diamond cup has been awarded for collecting all hidden diamonds."))
+end
 
 --[[ awarded for collecting all gold ingots ]]
 minetest.register_node("tutorial:cup_gold", {
@@ -1060,7 +1067,8 @@ minetest.register_node("tutorial:cup_gold", {
 	drawtype = "nodebox",
 	node_box = tutorial.cupnodebox,
 	selection_box = tutorial.cupselbox,
-	groups = { immortal = 1 }
+	groups = { immortal = 1 },
+	on_construct = tutorial.goldinfo,
 })
 
 --[[ awarded for collecting all diamonds ]]
@@ -1071,10 +1079,25 @@ minetest.register_node("tutorial:cup_diamond", {
 	drawtype = "nodebox",
 	node_box = tutorial.cupnodebox,
 	selection_box = tutorial.cupselbox,
-	groups = { immortal = 1 }
+	groups = { immortal = 1 },
+	on_construct = tutorial.diamondinfo,
 })
 
+--[[
+minetest.register_abm({
+	nodenames = {"tutorial:cup_gold"},
+	interval = 5,
+	chance = 1,
+	action = tutorial.goldinfo,
+})
 
+minetest.register_abm({
+	nodenames = {"tutorial:cup_diamond"},
+	interval = 5,
+	chance = 1,
+	action = tutorial.diamondinfo,
+})
+]]
 
 --[[ This function shows a simple dialog window with scrollable text
 	name: name of the player to show the formspec to

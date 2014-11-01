@@ -65,6 +65,8 @@ You have collected all hidden diamonds! = Sie haben alle versteckten Diamanten g
 # Awards
 golden cup = Goldpokal
 diamond cup = Diamantpokal
+This golden cup has been awarded for finishing the tutorial. = Dieser Goldpokal wurde für das Beenden der Einführung vergeben.
+This diamond cup has been awarded for collecting all hidden diamonds. = Dieser Diamantpokal wurde für das Aufsammeln aller versteckten Diamanten vergeben.
 
 # Kick message
 You have voluntarily exited the tutorial. = Sie haben die Einführung freiwillig verlassen.

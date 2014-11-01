@@ -65,6 +65,8 @@ You have collected all hidden diamonds! = Kamu telah mengumpulkan semua berlian 
 # Awards
 golden cup = cangkir emas
 diamond cup = cangkir berlian
+This golden cup has been awarded for finishing the tutorial.
+This diamond cup has been awarded for collecting all hidden diamonds.
 
 # Kick message
 You have voluntarily exited the tutorial. = Kamu dengan sukarela keluar dari tutorial.

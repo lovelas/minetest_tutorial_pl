@@ -65,6 +65,8 @@ You have collected all hidden diamonds! = Vous avez trouvé tous les diamants ca
 # Awards
 golden cup = Coupe en or
 diamond cup = Coupe en diamant
+This golden cup has been awarded for finishing the tutorial.
+This diamond cup has been awarded for collecting all hidden diamonds.
 
 # Kick message
 You have voluntarily exited the tutorial. = Vous avez volontairement quitté le tutoriel.

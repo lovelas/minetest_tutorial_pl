@@ -65,6 +65,8 @@ You have collected all hidden diamonds!
 # Awards
 golden cup
 diamond cup
+This golden cup has been awarded for finishing the tutorial.
+This diamond cup has been awarded for collecting all hidden diamonds.
 
 # Kick message
 You have voluntarily exited the tutorial.
