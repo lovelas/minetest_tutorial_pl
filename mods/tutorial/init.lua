@@ -1271,10 +1271,14 @@ end)
 
 function tutorial.back_to_start(player)
 	player:setpos({x=42,y=0.5,z=28})
+	player:set_look_yaw(math.atan(1)*2)
+	player:set_look_pitch(0)
 end
 
 function tutorial.go_to_end(player)
-	player:setpos({x=23,y=0.5,z=74})
+	player:setpos({x=23,y=0.5,z=73})
+	player:set_look_yaw(math.atan(1)*2)
+	player:set_look_pitch(0)
 end
 
 --[[
