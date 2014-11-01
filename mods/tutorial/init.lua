@@ -1083,7 +1083,6 @@ minetest.register_node("tutorial:cup_diamond", {
 	on_construct = tutorial.diamondinfo,
 })
 
---[[
 minetest.register_abm({
 	nodenames = {"tutorial:cup_gold"},
 	interval = 5,
@@ -1097,7 +1096,6 @@ minetest.register_abm({
 	chance = 1,
 	action = tutorial.diamondinfo,
 })
-]]
 
 --[[ This function shows a simple dialog window with scrollable text
 	name: name of the player to show the formspec to
