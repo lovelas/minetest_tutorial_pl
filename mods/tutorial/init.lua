@@ -1271,20 +1271,6 @@ function tutorial.go_to_end(player)
 end
 
 --[[
-FIXME: This does not work in 0.4.10 thanks to a bug. Uncomment this as soon as
-set_physics_override gets fixed
-
-function tutorial.disable_sneak_glitch(player)
-	player:set_physics_override({sneak_glitch=false, sneak=false})
-end
-
-minetest.register_on_newplayer(tutorial.disable_sneak_glitch)
-minetest.register_on_joinplayer(tutorial.disable_sneak_glitch)
-minetest.register_on_respawnplayer(tutorial.disable_sneak_glitch)
-]]
-
-
---[[
 Helper tools for sign text extracting
 must be called with /lua from luacmd
 An ugly, quick and dirty hack.
