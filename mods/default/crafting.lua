@@ -1,12 +1,5 @@
 -- mods/default/crafting.lua
 
-minetest.register_craft({
-	output = 'default:paper',
-	recipe = {
-		{'default:papyrus', 'default:papyrus', 'default:papyrus'},
-	}
-})
-
 --
 -- Crafting (tool repair)
 --
@@ -57,12 +50,6 @@ minetest.register_craft({
 	type = "fuel",
 	recipe = "default:cactus",
 	burntime = 15,
-})
-
-minetest.register_craft({
-	type = "fuel",
-	recipe = "default:papyrus",
-	burntime = 1,
 })
 
 minetest.register_craft({
