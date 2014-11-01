@@ -28,6 +28,7 @@ Using the Inventory
 Using blocks
 Comment About Chests
 Building Some Blocks
+Building at Usable Blocks
 Mining blocks
 Mining example: Cobblestone
 Mining example: Stone
@@ -210,6 +211,9 @@ You can't reach this upper block by walking. But luckily, you are able to jump.\
 
 # Tutorial text: build
 Another important task in Minetest is building blocks.\nBuilding" here refers to the task of placing one block in your possession onto\nanother block in the world.\nUnlike mining, building a block happens instantanous. To build, select a block in your\nhotbar, point to any block in the world and press the right mouse button.\nYour block will be immediately placed on the pointed side.\nIt is important that the block you want to build to is pointable. This means you cannot build\nnext to or on liquids by normal means.\n\n   Build on ordinary block: [Right mouse button]\n\nTry to get up to that little hole by using the wood blocks in the chest. There is another\ngold ingot waiting for you.
+
+# Tutorial text: build_special
+You may have wondered how you can build on a block which you use, like a chest.\nFor this, you have to hold the sneak key and then use the build key.\n\n   Build on usable block: [Shift] + [Right mouse button]
 
 # Tutorial text: controls
 To recap, here is an overview over the most important default controls:\n\n   Move forwards: [W]\n   Move left: [A]\n   Move backwards: [S]\n   Move right: [D]\n   Jump: [Space]\n   Sneak: [Shift]\n   Move upwards (ladder/liquid): [Space]\n   Move downwards (ladder/liquid): [Shift]\n\n   Toggle camera mode: [F7]\n\n   Select item in hotbar: [Mouse wheel]\n   Select item in hotbar: [0] - [9]\n   Inventory menu: [I]\n\n   Collect pointed item: [Left mouse button]\n   Drop item stack: [Q]\n   Drop single item: [Shift] + [Q]\n\n   Punch: [Left mouse button]\n   Mine: [Left mouse button]\n   Build/use: [Right mouse button]\n   Build: [Shift] + [Right mouse button]\n\n   Abort/open pause menu: [Esc]\n\nYou can review a shorter version of the controls in the pause menu.

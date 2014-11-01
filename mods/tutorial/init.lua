@@ -578,6 +578,12 @@ next to or on liquids by normal means.
 Try to get up to that little hole by using the wood blocks in the chest. There is another
 gold ingot waiting for you.]]
 
+tutorial.texts.build_special =
+[=[You may have wondered how you can build on a block which you can use, like a chest.
+For this, you have to hold the sneak key and then use the build key.
+
+   Build on usable block: [Shift] + [Right mouse button]]=]
+
 tutorial.texts.mine =
 [[Mining is a method to remove a single block with a mining tool. It is a very important
 task in Minetest which you will use often.
@@ -891,6 +897,7 @@ tutorial.register_infosign("tools", "Tools", tutorial.texts.tools)
 tutorial.register_infosign("inventory", "Using the Inventory", tutorial.texts.inventory)
 tutorial.register_infosign("chest", "Comment About Chests", tutorial.texts.chest)
 tutorial.register_infosign("build", "Building Some Blocks", tutorial.texts.build)
+tutorial.register_infosign("build_special", "Building at Usable Blocks", tutorial.texts.build_special)
 tutorial.register_infosign("mine", "Mining blocks", tutorial.texts.mine)
 tutorial.register_infosign("mine_cobble", "Mining example: Cobblestone", tutorial.texts.mine_cobble)
 tutorial.register_infosign("mine_stone", "Mining example: Stone", tutorial.texts.mine_stone)
