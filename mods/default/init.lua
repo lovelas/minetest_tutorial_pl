@@ -42,7 +42,7 @@ default.gui_suvival_form = "size[8,8.5]"..
 			"label[0,3.75;"..minetest.formspec_escape(S("Player inventory:")).."]"..
 			"list[current_player;main;0,4.25;8,1;]"..
 			"list[current_player;main;0,5.5;8,3;8]"..
-			"label[0,8.2;"..default.gui_controls.."]"..
+			"label[0,8.4;"..default.gui_controls.."]"..
 			"label[2.75,-0.1;"..minetest.formspec_escape(S("Crafting grid:")).."]"..
 			"list[current_player;craft;2.75,0.5;3,3;]"..
 			"label[6.75,0.9;"..minetest.formspec_escape(S("Output slot:")).."]"..
