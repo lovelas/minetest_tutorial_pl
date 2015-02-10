@@ -1,4 +1,11 @@
--- This is inspired by the landrush mod by Bremaweb
+-- intllib support
+local S
+if (minetest.get_modpath("intllib")) then
+	dofile(minetest.get_modpath("intllib").."/intllib.lua")
+	S = intllib.Getter(minetest.get_current_modname())
+else
+  S = function ( s ) return s end
+end
 
 areas.hud = {}
 
@@ -8,8 +15,8 @@ minetest.register_globalstep(function(dtime)
 		local pos = vector.round(player:getpos())
 		local areaStrings = {}
 		for id, area in pairs(areas:getAreasAtPos(pos)) do
-			table.insert(areaStrings, ("You are now in: %s")
-					:format(area.name))
+			table.insert(areaStrings, (S("You are here: %s"))
+					:format(S(area.name)))
 		end
 		local areaString = table.concat(areaStrings, "\n")
 		local hud = areas.hud[name]
