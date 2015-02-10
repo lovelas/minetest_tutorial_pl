@@ -8,8 +8,8 @@ minetest.register_globalstep(function(dtime)
 		local pos = vector.round(player:getpos())
 		local areaStrings = {}
 		for id, area in pairs(areas:getAreasAtPos(pos)) do
-			table.insert(areaStrings, ("%s [%u]")
-					:format(area.name, id))
+			table.insert(areaStrings, ("You are now in: %s")
+					:format(area.name))
 		end
 		local areaString = table.concat(areaStrings, "\n")
 		local hud = areas.hud[name]
@@ -20,11 +20,11 @@ minetest.register_globalstep(function(dtime)
 				hud_elem_type = "text",
 				name = "Areas",
 				number = 0xFFFFFF,
-				position = {x=0.5, y=0.9},
-				offset = {x=0, y=0},
+				position = {x=1, y=0},
+				offset = {x=-12, y=6},
 				text = areaString,
 				scale = {x=200, y=60},
-				alignment = {x=0, y=0},
+				alignment = {x=-1, y=1},
 			})
 			hud.oldAreas = areaString
 			return
