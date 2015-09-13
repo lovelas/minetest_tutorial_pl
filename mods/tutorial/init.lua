@@ -129,7 +129,7 @@ tutorial.gold = 13
 tutorial.diamonds = 12
 
 
-	
+
 tutorial.texts = {}
 tutorial.texts.intro =
 [[Welcome! This tutorial will teach you the most crucial basics of Minetest.
@@ -239,7 +239,7 @@ the block it is attached to, it will drop as an item which you can collect.]]
 tutorial.texts.disable_jump =
 [[These nasty blocks on the floor prevent you from jumping when you stand on them.]]
 
-tutorial.texts.runover = 
+tutorial.texts.runover =
 [[This abyss behind this sign is so small that you can even walk over it,
 as long as you don't stop midway. But you can jump over it anyways, just to be,
 safe.]]
@@ -359,7 +359,7 @@ Movement in a liquid is slightly different than on solid ground:
 At the bottom of the pool lies a gold ingot. Try to get it!]]
 
 
-tutorial.texts.dive = 
+tutorial.texts.dive =
 [=[To get to the other side, you have to dive here. Don't worry, the tunnel is not
 long. But don't stay too long in the water, or else you take damage.
 At the bottom of the pool lies a gold ingot. Try to get it!
@@ -563,7 +563,7 @@ two inventories, on the upper part the chest inventory and on the lower part the
 inventory. Exchanging items works exactly the same as in the inventory menu.]]
 
 
-tutorial.texts.build = 
+tutorial.texts.build =
 [[Another important task in Minetest is building blocks.
 "Building" here refers to the task of placing one block in your possession onto
 another block in the world.
@@ -777,7 +777,7 @@ How did you do that?
 Anyways, you've got teleported back to the starting location. Whatever you did, be more
 careful next time.]]
 
-tutorial.texts.first_gold = 
+tutorial.texts.first_gold =
 [[You have collected your first gold ingot. Those will help you to keep track in this tutorial.
 There are 14 gold ingots in this tutorial.
 
@@ -1155,6 +1155,11 @@ minetest.register_on_joinplayer(function(player)
 			tutorial.convert_newlines(minetest.formspec_escape(S(tutorial.texts.intro)))..
 			"]"..
 			"button_exit[4.5,5.5;3,1;close;"..minetest.formspec_escape(S("Close")).."]"
+
+			if tutorial.first_spawn then
+				player:setpos(tutorial.first_spawn.pos)
+				player:set_look_yaw(tutorial.first_spawn.yaw)
+			end
 		end
 		tutorial.state.first_join = false
 		tutorial.save_state()
