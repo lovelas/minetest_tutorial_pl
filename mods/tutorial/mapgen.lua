@@ -126,14 +126,16 @@ tutorial.limits = {
 	{ x = 224, y = 48, z = 144 },
 }
 
--- size of the sectors to form divisions of the map automatically
+-- size of the sectors to form divisions of the map.
+-- This needs to be a multiple of 16, since it will also determine the
+-- chunksize
 tutorial.sector_size = 80
 
 -- perform the divisions using the given sector size within the limits provided
 for x = tutorial.limits[1].x, tutorial.limits[2].x, tutorial.sector_size do
 	for y = tutorial.limits[1].y, tutorial.limits[2].y, tutorial.sector_size do
 		for z = tutorial.limits[1].z, tutorial.limits[2].z, tutorial.sector_size do
-			table.insert(tutorial.map_sector, {x=x,y=y,z=z,l=tutorial.sector_size})
+			table.insert(tutorial.map_sector, {x=x,y=y,z=z,l=(tutorial.sector_size - 1)})
 		end
 	end
 end
@@ -166,7 +168,7 @@ function load_schematic()
 
 		-- Load the area above the schematic to guarantee we have blue sky above
 		-- and prevent lighting glitches
-		minetest.emerge_area(vector.add(sector, {x=0, y=sector.l, z=0}), vector.add(sector.maxp, {x=0,y=32,z=0}))
+		--minetest.emerge_area(vector.add(sector, {x=0, y=sector.l, z=0}), vector.add(sector.maxp, {x=0,y=32,z=0}))
 
 		local vmanip = VoxelManip(sector, sector.maxp)
 		if not load_region(sector, filename, vmanip, nil, nil, true) then
@@ -193,7 +195,7 @@ function save_region(minp, maxp, probability_list, filename, slice_prob_list)
 
 	local success = minetest.create_schematic(minp, maxp, probability_list, filename .. ".mts", slice_prob_list)
 	if not success then
-		minetest.log("error", "[tutorial] problem creating schematic: " .. filename)
+		minetest.log("error", "[tutorial] problem creating schematic on ".. minetest.pos_to_string(minp) .. ": " .. filename)
 		return false
 	end
 
@@ -292,14 +294,16 @@ function load_region(minp, filename, vmanip, rotation, replacements, force_place
 		success = minetest.place_schematic(minp, filename .. ".mts", tostring(rotation), replacements, force_placement)
 	end
 
-	if not success then
-		minetest.log("action", "[tutorial] problem placing schematic: " .. filename)
-		return false
+	if success == false then
+		minetest.log("action", "[tutorial] schematic partionally loaded on ".. minetest.pos_to_string(minp))
+	elseif not success then
+		minetest.log("error", "[tutorial] problem placing schematic on ".. minetest.pos_to_string(minp) .. ": " .. filename)
+		return nil
 	end
 
 	local f, err = io.open(filename..".meta", "rb")
 	if not f then
-		minetest.log("action", "[tutorial] schematic loaded: " .. filename)
+		minetest.log("action", "[tutorial] schematic loaded  on ".. minetest.pos_to_string(minp))
 		return true
 	end
 	local data = minetest.deserialize(minetest.decompress(f:read("*a")))
@@ -335,7 +339,7 @@ function load_region(minp, filename, vmanip, rotation, replacements, force_place
 			return false
 		end
 	end
-	minetest.log("action", "[tutorial] schematic + metadata loaded: " .. filename)
+	minetest.log("action", "[tutorial] schematic + metadata loaded  on ".. minetest.pos_to_string(minp))
 	return true
 end
 
@@ -414,6 +418,8 @@ minetest.register_on_generated(function(minp, maxp, seed)
 				local filename = tutorial.map_directory .. "sector_" .. k
 				local loaded = load_region(sector, filename, vm)
 				if loaded then
+					-- Load entities in the area as well, and mark it as loaded
+					load_entities_area(sector, sector.maxp)
 					tutorial.state.loaded[k] = true
 				end
 				state_changed = true
@@ -422,26 +428,21 @@ minetest.register_on_generated(function(minp, maxp, seed)
 	end
 
 	if(state_changed) then
-		vm:set_lighting({day=0,night=0})
-		vm:calc_lighting()
+		vm:calc_lighting(nil, nil, false)
+		vm:write_to_map()
+		tutorial.save_state()
+		-- Update the lgihting of the sector below as well
+		minp.y = minp.y - tutorial.sector_size
+		local vm = minetest.get_voxel_manip(minp, maxp)
+		vm:calc_lighting(nil, nil, false)
 		vm:write_to_map()
 		vm:update_map()
-		tutorial.save_state()
 	end
 end)
 
 minetest.register_on_mapgen_init(function(mgparams)
-	minetest.set_mapgen_params({mgname="singlenode", water_level = -31000 })
+	minetest.set_mapgen_params({mgname="singlenode", water_level=-31000, chunksize=(tutorial.sector_size/16)})
 end)
 
 -- coordinates for the first time the player spawns
 tutorial.first_spawn = { pos={x=42,y=0.5,z=28}, yaw=(math.pi * 0.5) }
-
-minetest.register_on_joinplayer(function(player)
- -- TODO remove this, just for debugging
-	local name = player:get_player_name()
-	local p = minetest.get_player_privs(name)
-	p['fly'] = true
-	p['fast'] = true
-	minetest.set_player_privs(name, p)
-end)
