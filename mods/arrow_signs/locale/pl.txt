@@ -1,0 +1,27 @@
+# Nodes
+upwards-pointing sign = kierunkowskaz w górę
+downwards-pointing sign = kierunkowskaz w dół
+leftwards-pointing sign = kierunkowskaz w lewo
+rightwards-pointing sign = kierunkowskaz w prawo
+
+# Captions
+Ladders section = Drabiny 
+Swimming and Diving sections = Pływanie i nurkowanie
+To the Diving section = Do sekcji nurkowanie
+Diving section = Nurkowanie
+Pointing section = Wskazywanie
+Mining section, Building section (prerequisites: Item and Tools section) = Kopanie, budowanie (Wymagania: sekcja przedmiotów i narzędzi) 
+Tutorial Mine (just for fun) = Samouczek kapania (tylko dla zabawy)
+Special Blocks section = Bloki specjalne
+To the Using section = Do sekcji użytkowanie
+To the Items, Tools, Crafting and Smelting house = Do sekcji przedmiotów, narzędzi, wytwarzania i wytapiania.
+The Items, Tools, Crafting and Smelting house = Przedmioty, narzędzia, wytwarzanie i wytapianie
+Waterfall section = Wodospady
+Swimming section, Ladders section = Pływanie, drabiny
+Sneaking section = Skradanie się
+Health and Damage section = Zdrowie i uszkodzenia 
+Viscosity section = Lepkość
+The Good-Bye Room = Pokój pożegnalny
+Exit = Wyjście
+Comestibles room = Spiżarnia
+Smelting room = Kuźnia
