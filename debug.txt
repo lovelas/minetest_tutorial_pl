@@ -1,0 +1,1313 @@
+
+
+-------------
+  Separator  
+-------------
+
+[OK] Mesecons
+Pipeworks loaded!
+09:05:01: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:38
+09:05:01: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:42
+2016-03-13 09:05:02: ACTION[main]:         .__               __                   __   
+2016-03-13 09:05:02: ACTION[main]:   _____ |__| ____   _____/  |_  ____   _______/  |_ 
+2016-03-13 09:05:02: ACTION[main]:  /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+2016-03-13 09:05:02: ACTION[main]: |  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+2016-03-13 09:05:02: ACTION[main]: |__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+2016-03-13 09:05:02: ACTION[main]:       \/        \/     \/          \/     \/        
+2016-03-13 09:05:02: ACTION[main]: World at [/home/daniel/.minetest/worlds/new4]
+2016-03-13 09:05:02: ACTION[main]: Server for gameid="minetest" listening on 0.0.0.0:63699.
+2016-03-13 09:05:55: ERROR[main]: generateImage(): Could not load image "turtle_turtle_inv.png" while building texture
+2016-03-13 09:05:55: ERROR[main]: generateImage(): Creating a dummy image for "turtle_turtle_inv.png"
+2016-03-13 09:05:57: ACTION[ServerThread]: singleplayer [127.0.0.1] joins game. 
+2016-03-13 09:05:57: ACTION[ServerThread]: singleplayer joins game. List of players: singleplayer
+2016-03-13 09:05:57: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 09:05:58: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 09:06:00: ACTION[ServerThread]: singleplayer digs simple_robots:robot_simple at (-129,4,66)
+2016-03-13 09:06:01: ACTION[ServerThread]: singleplayer places node simple_robots:robot_simple_off at (-129,4,66)
+2016-03-13 09:06:01: ACTION[ServerThread]: facedir: 3
+09:06:03: WARNING: Assignment to undeclared global "wpis" inside a function at ...minetest/games/minetest_game/mods/simple_robots/init.lua:267.
+Corrupted robot program @ -129,4,66 (not the fault of the robot's owner,this is save file corruption) missing command:
+
+
+-------------
+  Separator  
+-------------
+
+[OK] Mesecons
+Pipeworks loaded!
+09:08:21: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:38
+09:08:21: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:42
+2016-03-13 09:08:21: ACTION[main]:         .__               __                   __   
+2016-03-13 09:08:21: ACTION[main]:   _____ |__| ____   _____/  |_  ____   _______/  |_ 
+2016-03-13 09:08:21: ACTION[main]:  /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+2016-03-13 09:08:21: ACTION[main]: |  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+2016-03-13 09:08:21: ACTION[main]: |__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+2016-03-13 09:08:21: ACTION[main]:       \/        \/     \/          \/     \/        
+2016-03-13 09:08:21: ACTION[main]: World at [/home/daniel/.minetest/worlds/new4]
+2016-03-13 09:08:21: ACTION[main]: Server for gameid="minetest" listening on 0.0.0.0:57401.
+2016-03-13 09:09:14: ERROR[main]: generateImage(): Could not load image "turtle_turtle_inv.png" while building texture
+2016-03-13 09:09:14: ERROR[main]: generateImage(): Creating a dummy image for "turtle_turtle_inv.png"
+2016-03-13 09:09:16: ACTION[ServerThread]: singleplayer [127.0.0.1] joins game. 
+2016-03-13 09:09:16: ACTION[ServerThread]: singleplayer joins game. List of players: singleplayer
+2016-03-13 09:09:17: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 09:09:17: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 09:09:19: ACTION[ServerThread]: singleplayer digs simple_robots:robot_simple_off at (-129,4,66)
+2016-03-13 09:09:19: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-130,3,66)
+2016-03-13 09:09:23: ACTION[ServerThread]: singleplayer places node default:cobble at (-130,3,66)
+2016-03-13 09:09:26: ACTION[ServerThread]: singleplayer places node simple_robots:robot_simple_off at (-129,4,66)
+2016-03-13 09:09:26: ACTION[ServerThread]: facedir: 3
+09:09:30: WARNING: Assignment to undeclared global "wpis" inside a function at ...minetest/games/minetest_game/mods/simple_robots/init.lua:266.
+Corrupted robot program @ -129,4,66 (not the fault of the robot's owner,this is save file corruption) missing command:
+2016-03-13 09:10:32: ACTION[ServerThread]: singleplayer digs simple_robots:robot_simple_off at (-129,4,66)
+
+
+-------------
+  Separator  
+-------------
+
+09:51:53: WARNING: Undeclared global variable "miners_robots" accessed at ...inetest/games/minetest_game/mods/simple_robots/tiers.lua:17
+2016-03-13 09:51:53: ERROR[main]: ========== ERROR FROM LUA ===========
+2016-03-13 09:51:53: ERROR[main]: Failed to load and run script from 
+2016-03-13 09:51:53: ERROR[main]: /usr/share/games/minetest/games/minetest_game/mods/simple_robots/init.lua:
+2016-03-13 09:51:53: ERROR[main]: ...inetest/games/minetest_game/mods/simple_robots/tiers.lua:17: attempt to index global 'miners_robots' (a nil value)
+2016-03-13 09:51:53: ERROR[main]: stack traceback:
+2016-03-13 09:51:53: ERROR[main]: 	...inetest/games/minetest_game/mods/simple_robots/tiers.lua:17: in main chunk
+2016-03-13 09:51:53: ERROR[main]: 	[C]: in function 'dofile'
+2016-03-13 09:51:53: ERROR[main]: 	...minetest/games/minetest_game/mods/simple_robots/init.lua:610: in main chunk
+2016-03-13 09:51:53: ERROR[main]: ======= END OF ERROR FROM LUA ========
+2016-03-13 09:51:53: ERROR[main]: Server: Failed to load and run /usr/share/games/minetest/games/minetest_game/mods/simple_robots/init.lua
+2016-03-13 09:51:53: ERROR[main]: ModError: ModError: Failed to load and run /usr/share/games/minetest/games/minetest_game/mods/simple_robots/init.lua
+2016-03-13 09:51:53: ERROR[main]: Error from Lua:
+2016-03-13 09:51:53: ERROR[main]: ...inetest/games/minetest_game/mods/simple_robots/tiers.lua:17: attempt to index global 'miners_robots' (a nil value)
+2016-03-13 09:51:53: ERROR[main]: stack traceback:
+2016-03-13 09:51:53: ERROR[main]: 	...inetest/games/minetest_game/mods/simple_robots/tiers.lua:17: in main chunk
+2016-03-13 09:51:53: ERROR[main]: 	[C]: in function 'dofile'
+2016-03-13 09:51:53: ERROR[main]: 	...minetest/games/minetest_game/mods/simple_robots/init.lua:610: in main chunk
+2016-03-13 09:51:53: ERROR[main]: Sprawdź plik debug.txt by uzyskać więcej informacji.
+
+
+-------------
+  Separator  
+-------------
+
+2016-03-13 09:57:22: ERROR[main]: ========== ERROR FROM LUA ===========
+2016-03-13 09:57:22: ERROR[main]: Failed to load and run script from 
+2016-03-13 09:57:22: ERROR[main]: /usr/share/games/minetest/games/minetest_game/mods/simple_robots/init.lua:
+2016-03-13 09:57:22: ERROR[main]: /usr/share/games/minetest/builtin/game/register.lua:60: Name miners_robots:robot_simple does not follow naming conventions: "modname:" or ":" prefix required
+2016-03-13 09:57:22: ERROR[main]: stack traceback:
+2016-03-13 09:57:22: ERROR[main]: 	[C]: in function 'error'
+2016-03-13 09:57:22: ERROR[main]: 	/usr/share/games/minetest/builtin/game/register.lua:60: in function 'check_modname_prefix'
+2016-03-13 09:57:22: ERROR[main]: 	/usr/share/games/minetest/builtin/game/register.lua:98: in function 'register_item'
+2016-03-13 09:57:22: ERROR[main]: 	/usr/share/games/minetest/builtin/game/register.lua:165: in function 'register_node'
+2016-03-13 09:57:22: ERROR[main]: 	...minetest/games/minetest_game/mods/simple_robots/init.lua:472: in function 'register_robot_type'
+2016-03-13 09:57:22: ERROR[main]: 	...inetest/games/minetest_game/mods/simple_robots/tiers.lua:17: in main chunk
+2016-03-13 09:57:22: ERROR[main]: 	[C]: in function 'dofile'
+2016-03-13 09:57:22: ERROR[main]: 	...minetest/games/minetest_game/mods/simple_robots/init.lua:610: in main chunk
+2016-03-13 09:57:22: ERROR[main]: ======= END OF ERROR FROM LUA ========
+2016-03-13 09:57:22: ERROR[main]: Server: Failed to load and run /usr/share/games/minetest/games/minetest_game/mods/simple_robots/init.lua
+2016-03-13 09:57:22: ERROR[main]: ModError: ModError: Failed to load and run /usr/share/games/minetest/games/minetest_game/mods/simple_robots/init.lua
+2016-03-13 09:57:22: ERROR[main]: Error from Lua:
+2016-03-13 09:57:22: ERROR[main]: /usr/share/games/minetest/builtin/game/register.lua:60: Name miners_robots:robot_simple does not follow naming conventions: "modname:" or ":" prefix required
+2016-03-13 09:57:22: ERROR[main]: stack traceback:
+2016-03-13 09:57:22: ERROR[main]: 	[C]: in function 'error'
+2016-03-13 09:57:22: ERROR[main]: 	/usr/share/games/minetest/builtin/game/register.lua:60: in function 'check_modname_prefix'
+2016-03-13 09:57:22: ERROR[main]: 	/usr/share/games/minetest/builtin/game/register.lua:98: in function 'register_item'
+2016-03-13 09:57:22: ERROR[main]: 	/usr/share/games/minetest/builtin/game/register.lua:165: in function 'register_node'
+2016-03-13 09:57:22: ERROR[main]: 	...minetest/games/minetest_game/mods/simple_robots/init.lua:472: in function 'register_robot_type'
+2016-03-13 09:57:22: ERROR[main]: 	...inetest/games/minetest_game/mods/simple_robots/tiers.lua:17: in main chunk
+2016-03-13 09:57:22: ERROR[main]: 	[C]: in function 'dofile'
+2016-03-13 09:57:22: ERROR[main]: 	...minetest/games/minetest_game/mods/simple_robots/init.lua:610: in main chunk
+2016-03-13 09:57:22: ERROR[main]: Sprawdź plik debug.txt by uzyskać więcej informacji.
+
+
+-------------
+  Separator  
+-------------
+
+[OK] Mesecons
+Pipeworks loaded!
+10:00:03: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:38
+10:00:03: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:42
+2016-03-13 10:00:04: ACTION[main]:         .__               __                   __   
+2016-03-13 10:00:04: ACTION[main]:   _____ |__| ____   _____/  |_  ____   _______/  |_ 
+2016-03-13 10:00:04: ACTION[main]:  /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+2016-03-13 10:00:04: ACTION[main]: |  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+2016-03-13 10:00:04: ACTION[main]: |__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+2016-03-13 10:00:04: ACTION[main]:       \/        \/     \/          \/     \/        
+2016-03-13 10:00:04: ACTION[main]: World at [/home/daniel/.minetest/worlds/new4]
+2016-03-13 10:00:04: ACTION[main]: Server for gameid="minetest" listening on 0.0.0.0:60769.
+2016-03-13 10:01:05: ERROR[main]: generateImage(): Could not load image "turtle_turtle_inv.png" while building texture
+2016-03-13 10:01:05: ERROR[main]: generateImage(): Creating a dummy image for "turtle_turtle_inv.png"
+2016-03-13 10:01:07: ACTION[ServerThread]: singleplayer [127.0.0.1] joins game. 
+2016-03-13 10:01:07: ACTION[ServerThread]: singleplayer joins game. List of players: singleplayer
+2016-03-13 10:01:07: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 10:01:07: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 10:01:10: ACTION[ServerThread]: singleplayer places node simple_robots:robot_simple_off at (-130,4,66)
+2016-03-13 10:01:10: ACTION[ServerThread]: facedir: 3
+2016-03-13 10:01:17: ACTION[ServerThread]: singleplayer sets time to 6000
+2016-03-13 10:01:48: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-128,4,64)
+
+
+-------------
+  Separator  
+-------------
+
+[OK] Mesecons
+Pipeworks loaded!
+10:26:32: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:38
+10:26:32: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:42
+2016-03-13 10:26:34: ACTION[main]:         .__               __                   __   
+2016-03-13 10:26:34: ACTION[main]:   _____ |__| ____   _____/  |_  ____   _______/  |_ 
+2016-03-13 10:26:34: ACTION[main]:  /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+2016-03-13 10:26:34: ACTION[main]: |  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+2016-03-13 10:26:34: ACTION[main]: |__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+2016-03-13 10:26:34: ACTION[main]:       \/        \/     \/          \/     \/        
+2016-03-13 10:26:34: ACTION[main]: World at [/home/daniel/.minetest/worlds/new4]
+2016-03-13 10:26:34: ACTION[main]: Server for gameid="minetest" listening on 0.0.0.0:52966.
+2016-03-13 10:27:28: ERROR[main]: generateImage(): Could not load image "turtle_turtle_inv.png" while building texture
+2016-03-13 10:27:28: ERROR[main]: generateImage(): Creating a dummy image for "turtle_turtle_inv.png"
+2016-03-13 10:27:30: ACTION[ServerThread]: singleplayer [127.0.0.1] joins game. 
+2016-03-13 10:27:30: ACTION[ServerThread]: singleplayer joins game. List of players: singleplayer
+2016-03-13 10:27:31: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 10:27:31: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 10:28:05: ACTION[ServerThread]: singleplayer digs simple_robots:robot_simple_off at (-130,4,66)
+2016-03-13 10:28:39: ACTION[ServerThread]: singleplayer punches object 9: LuaEntitySAO at (-135.339,0.51,65.9824)
+2016-03-13 10:28:39: ACTION[ServerThread]: LuaEntitySAO at (-135.339,0.51,65.9824) punched by player singleplayer, damage 13 hp, health now 2 hp
+2016-03-13 10:28:44: ACTION[ServerThread]: singleplayer punches object 10: LuaEntitySAO at (-134,1.51,66.11)
+2016-03-13 10:28:44: ACTION[ServerThread]: LuaEntitySAO at (-134,1.51,66.11) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:28:44: ACTION[ServerThread]: singleplayer punches object 10: LuaEntitySAO at (-133.995,1.80146,66.1)
+2016-03-13 10:28:44: ACTION[ServerThread]: LuaEntitySAO at (-133.995,1.80146,66.1) punched by player singleplayer, damage 7 hp, health now 0 hp
+2016-03-13 10:28:48: ACTION[ServerThread]: singleplayer punches object 11: LuaEntitySAO at (-132.466,2.51,65.547)
+2016-03-13 10:28:48: ACTION[ServerThread]: LuaEntitySAO at (-132.466,2.51,65.547) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:28:48: ACTION[ServerThread]: singleplayer punches object 11: LuaEntitySAO at (-132.23,2.8305,65.7675)
+2016-03-13 10:28:48: ACTION[ServerThread]: LuaEntitySAO at (-132.23,2.8305,65.7675) punched by player singleplayer, damage 8 hp, health now 0 hp
+2016-03-13 10:28:48: ACTION[ServerThread]: singleplayer punches object 12: LuaEntitySAO at (-132.23,2.98629,65.7675)
+2016-03-13 10:28:52: ACTION[ServerThread]: singleplayer punches object 13: LuaEntitySAO at (-131.524,3.51,65.0409)
+2016-03-13 10:28:52: ACTION[ServerThread]: LuaEntitySAO at (-131.524,3.51,65.0409) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:28:53: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-131,3,65)
+2016-03-13 10:28:53: ACTION[ServerThread]: singleplayer punches object 13: LuaEntitySAO at (-130.938,2.51,64.9819)
+2016-03-13 10:28:53: ACTION[ServerThread]: LuaEntitySAO at (-130.938,2.51,64.9819) punched by player singleplayer, damage 13 hp, health now 0 hp
+2016-03-13 10:29:05: ACTION[ServerThread]: singleplayer punches object 15: LuaEntitySAO at (-131.946,2.51,66.562)
+2016-03-13 10:29:05: ACTION[ServerThread]: LuaEntitySAO at (-131.946,2.51,66.562) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:29:05: ACTION[ServerThread]: singleplayer punches object 15: LuaEntitySAO at (-131.947,2.87744,66.6861)
+2016-03-13 10:29:05: ACTION[ServerThread]: LuaEntitySAO at (-131.947,2.87744,66.6861) punched by player singleplayer, damage 8 hp, health now 0 hp
+2016-03-13 10:29:10: ACTION[ServerThread]: singleplayer punches object 17: LuaEntitySAO at (-132.219,2.51,66.475)
+2016-03-13 10:29:10: ACTION[ServerThread]: LuaEntitySAO at (-132.219,2.51,66.475) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:29:10: ACTION[ServerThread]: singleplayer punches object 17: LuaEntitySAO at (-132.189,3.02806,66.3799)
+2016-03-13 10:29:10: ACTION[ServerThread]: LuaEntitySAO at (-132.189,3.02806,66.3799) punched by player singleplayer, damage 6 hp, health now 1 hp
+2016-03-13 10:29:11: ACTION[ServerThread]: singleplayer punches object 17: LuaEntitySAO at (-132.157,2.51,66.2777)
+2016-03-13 10:29:11: ACTION[ServerThread]: LuaEntitySAO at (-132.157,2.51,66.2777) punched by player singleplayer, damage 6 hp, health now 0 hp
+2016-03-13 10:29:15: ACTION[ServerThread]: singleplayer punches object 19: LuaEntitySAO at (-132.078,2.51,65.4056)
+2016-03-13 10:29:15: ACTION[ServerThread]: LuaEntitySAO at (-132.078,2.51,65.4056) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:29:15: ACTION[ServerThread]: singleplayer punches object 19: LuaEntitySAO at (-132.063,3.00686,65.3175)
+2016-03-13 10:29:15: ACTION[ServerThread]: LuaEntitySAO at (-132.063,3.00686,65.3175) punched by player singleplayer, damage 5 hp, health now 2 hp
+2016-03-13 10:29:15: ACTION[ServerThread]: singleplayer punches object 19: LuaEntitySAO at (-132.045,2.51466,65.2087)
+2016-03-13 10:29:15: ACTION[ServerThread]: LuaEntitySAO at (-132.045,2.51466,65.2087) punched by player singleplayer, damage 6 hp, health now 0 hp
+2016-03-13 10:29:23: ACTION[ServerThread]: singleplayer right-clicks object 21: LuaEntitySAO at (-123.134,3.51,63.8751)
+2016-03-13 10:29:23: ACTION[ServerThread]: singleplayer right-clicks object 21: LuaEntitySAO at (-123.209,3.51,63.8047)
+2016-03-13 10:29:24: ACTION[ServerThread]: singleplayer right-clicks object 21: LuaEntitySAO at (-123.447,3.51,63.5822)
+2016-03-13 10:29:24: ACTION[ServerThread]: singleplayer punches object 21: LuaEntitySAO at (-123.949,3.51,63.1132)
+2016-03-13 10:29:24: ACTION[ServerThread]: LuaEntitySAO at (-123.949,3.51,63.1132) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:29:25: ACTION[ServerThread]: singleplayer punches object 21: LuaEntitySAO at (-123.842,3.99954,63.1)
+2016-03-13 10:29:25: ACTION[ServerThread]: LuaEntitySAO at (-123.842,3.99954,63.1) punched by player singleplayer, damage 6 hp, health now 1 hp
+2016-03-13 10:29:25: ACTION[ServerThread]: singleplayer punches object 21: LuaEntitySAO at (-123.75,3.51,63.1)
+2016-03-13 10:29:25: ACTION[ServerThread]: LuaEntitySAO at (-123.75,3.51,63.1) punched by player singleplayer, damage 5 hp, health now 0 hp
+2016-03-13 10:29:27: ACTION[ServerThread]: singleplayer punches object 23: LuaEntitySAO at (-123.365,3.51,63.6587)
+2016-03-13 10:29:27: ACTION[ServerThread]: LuaEntitySAO at (-123.365,3.51,63.6587) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:29:27: ACTION[ServerThread]: singleplayer punches object 23: LuaEntitySAO at (-123.172,3.81076,63.8326)
+2016-03-13 10:29:27: ACTION[ServerThread]: LuaEntitySAO at (-123.172,3.81076,63.8326) punched by player singleplayer, damage 9 hp, health now 0 hp
+2016-03-13 10:29:32: ACTION[ServerThread]: singleplayer punches object 26: LuaEntitySAO at (-124.5,4.51,61.9818)
+2016-03-13 10:29:32: ACTION[ServerThread]: LuaEntitySAO at (-124.5,4.51,61.9818) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:29:33: ACTION[ServerThread]: singleplayer punches object 25: LuaEntitySAO at (-125.1,3.51,62.9)
+2016-03-13 10:29:33: ACTION[ServerThread]: LuaEntitySAO at (-125.1,3.51,62.9) punched by player singleplayer, damage 6 hp, health now 14 hp
+2016-03-13 10:29:33: ACTION[ServerThread]: singleplayer punches object 25: LuaEntitySAO at (-125.1,3.51,62.9)
+2016-03-13 10:29:33: ACTION[ServerThread]: LuaEntitySAO at (-125.1,3.51,62.9) punched by player singleplayer, damage 5 hp, health now 9 hp
+2016-03-13 10:29:33: ACTION[ServerThread]: singleplayer punches object 25: LuaEntitySAO at (-125.1,3.51,62.9)
+2016-03-13 10:29:33: ACTION[ServerThread]: LuaEntitySAO at (-125.1,3.51,62.9) punched by player singleplayer, damage 11 hp, health now 0 hp
+2016-03-13 10:29:34: ACTION[ServerThread]: singleplayer punches object 26: LuaEntitySAO at (-124.5,4.51,61.9668)
+2016-03-13 10:29:34: ACTION[ServerThread]: LuaEntitySAO at (-124.5,4.51,61.9668) punched by player singleplayer, damage 9 hp, health now 0 hp
+2016-03-13 10:29:44: ACTION[ServerThread]: singleplayer punches object 28: LuaEntitySAO at (-107,13.51,42)
+2016-03-13 10:29:44: ACTION[ServerThread]: LuaEntitySAO at (-107,13.51,42) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:29:44: ACTION[ServerThread]: singleplayer punches object 28: LuaEntitySAO at (-106.812,13.51,41.8021)
+2016-03-13 10:29:44: ACTION[ServerThread]: LuaEntitySAO at (-106.812,13.51,41.8021) punched by player singleplayer, damage 7 hp, health now 0 hp
+2016-03-13 10:29:44: ACTION[ServerThread]: singleplayer punches object 29: LuaEntitySAO at (-106.812,13.6669,41.8021)
+2016-03-13 10:29:47: ACTION[ServerThread]: singleplayer places node simple_robots:robot_simple_off at (-109,14,43)
+2016-03-13 10:29:47: ACTION[ServerThread]: facedir: 2
+2016-03-13 10:29:53: ACTION[ServerThread]: singleplayer digs simple_robots:robot_simple_off at (-109,14,43)
+2016-03-13 10:29:59: ACTION[ServerThread]: singleplayer places node pyramids:spawner_mummy at (-109,14,42)
+2016-03-13 10:30:00: ACTION[ServerThread]: singleplayer right-clicks object 30: LuaEntitySAO at (-110.054,13.51,45.302)
+2016-03-13 10:30:02: ACTION[ServerThread]: singleplayer punches object 32: LuaEntitySAO at (-108.879,13.51,44.487)
+2016-03-13 10:30:02: ACTION[ServerThread]: LuaEntitySAO at (-108.879,13.51,44.487) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:30:03: ACTION[ServerThread]: singleplayer punches object 32: LuaEntitySAO at (-108.965,13.51,44.479)
+2016-03-13 10:30:03: ACTION[ServerThread]: LuaEntitySAO at (-108.965,13.51,44.479) punched by player singleplayer, damage 13 hp, health now 0 hp
+2016-03-13 10:30:05: ACTION[ServerThread]: singleplayer punches object 30: LuaEntitySAO at (-109.38,13.51,44.487)
+2016-03-13 10:30:05: ACTION[ServerThread]: LuaEntitySAO at (-109.38,13.51,44.487) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:30:06: ACTION[ServerThread]: singleplayer punches object 30: LuaEntitySAO at (-109.036,13.51,44.487)
+2016-03-13 10:30:06: ACTION[ServerThread]: LuaEntitySAO at (-109.036,13.51,44.487) punched by player singleplayer, damage 13 hp, health now 0 hp
+2016-03-13 10:30:09: ACTION[ServerThread]: singleplayer digs pyramids:spawner_mummy at (-109,14,42)
+2016-03-13 10:30:09: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-109,13,41)
+2016-03-13 10:30:33: ACTION[ServerThread]: singleplayer takes "pyramids:deco_stone3" from creative inventory
+2016-03-13 10:30:40: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-108,14,43)
+2016-03-13 10:30:41: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-109,14,43)
+2016-03-13 10:30:43: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-110,14,43)
+2016-03-13 10:30:44: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-111,14,43)
+2016-03-13 10:30:45: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-112,14,43)
+2016-03-13 10:30:48: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-113,14,43)
+2016-03-13 10:30:49: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-113,14,44)
+2016-03-13 10:30:50: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-113,14,45)
+2016-03-13 10:30:51: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-113,14,46)
+2016-03-13 10:30:52: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-113,14,47)
+2016-03-13 10:30:54: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-113,14,48)
+2016-03-13 10:30:55: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-112,14,48)
+2016-03-13 10:30:56: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-111,14,48)
+2016-03-13 10:30:57: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-110,14,48)
+2016-03-13 10:30:58: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-109,14,48)
+2016-03-13 10:31:06: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-108,14,48)
+2016-03-13 10:31:07: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-108,14,47)
+2016-03-13 10:31:08: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-108,14,46)
+2016-03-13 10:31:09: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-108,14,44)
+2016-03-13 10:31:11: ACTION[ServerThread]: singleplayer digs pyramids:deco_stone3 at (-108,14,46)
+2016-03-13 10:31:49: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-108,15,44)
+2016-03-13 10:31:51: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-108,15,43)
+2016-03-13 10:31:52: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-109,15,43)
+2016-03-13 10:31:53: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-110,15,43)
+2016-03-13 10:31:55: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-111,15,43)
+2016-03-13 10:31:56: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-113,15,44)
+2016-03-13 10:31:57: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-113,15,43)
+2016-03-13 10:31:58: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-112,15,43)
+2016-03-13 10:32:01: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-113,15,48)
+2016-03-13 10:32:01: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-113,15,46)
+2016-03-13 10:32:03: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-113,15,47)
+2016-03-13 10:32:05: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-113,15,45)
+2016-03-13 10:32:07: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-109,14,47)
+2016-03-13 10:32:08: ACTION[ServerThread]: singleplayer digs pyramids:deco_stone3 at (-109,14,47)
+2016-03-13 10:32:10: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-108,15,47)
+2016-03-13 10:32:11: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-108,15,48)
+2016-03-13 10:32:12: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-109,15,48)
+2016-03-13 10:32:13: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-110,15,48)
+2016-03-13 10:32:14: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-111,15,48)
+2016-03-13 10:32:15: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-112,15,48)
+2016-03-13 10:32:17: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-109,16,43)
+2016-03-13 10:32:18: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-109,16,44)
+2016-03-13 10:32:19: ACTION[ServerThread]: singleplayer digs pyramids:deco_stone3 at (-109,16,43)
+2016-03-13 10:32:20: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-110,16,44)
+2016-03-13 10:32:23: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-111,16,44)
+2016-03-13 10:32:24: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-112,16,44)
+2016-03-13 10:32:25: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-112,16,45)
+2016-03-13 10:32:27: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-112,16,46)
+2016-03-13 10:32:32: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-112,16,47)
+2016-03-13 10:32:36: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-111,16,47)
+2016-03-13 10:32:37: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-110,16,47)
+2016-03-13 10:32:38: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-109,16,47)
+2016-03-13 10:32:42: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-112,17,45)
+2016-03-13 10:32:44: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-111,17,45)
+2016-03-13 10:32:47: ACTION[ServerThread]: singleplayer digs pyramids:deco_stone3 at (-112,17,45)
+2016-03-13 10:32:48: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-110,17,45)
+2016-03-13 10:33:19: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-110,17,46)
+2016-03-13 10:33:21: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-111,17,46)
+2016-03-13 10:33:26: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-109,16,45)
+2016-03-13 10:33:28: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone3 at (-109,16,46)
+2016-03-13 10:34:41: ACTION[ServerThread]: singleplayer takes "digilines_inventory:chest" from creative inventory
+2016-03-13 10:34:47: ACTION[ServerThread]: singleplayer places node digilines_inventory:chest at (-112,14,44)
+2016-03-13 10:34:47: ACTION[ServerThread]: facedir: 2
+2016-03-13 10:34:50: ACTION[ServerThread]: singleplayer places node digilines_inventory:chest at (-111,14,44)
+2016-03-13 10:34:50: ACTION[ServerThread]: facedir: 2
+2016-03-13 10:34:51: ACTION[ServerThread]: singleplayer digs digilines_inventory:chest at (-111,14,44)
+2016-03-13 10:34:55: ACTION[ServerThread]: singleplayer digs digilines_inventory:chest at (-112,14,44)
+2016-03-13 10:34:57: ACTION[ServerThread]: singleplayer places node digilines_inventory:chest at (-109,14,44)
+2016-03-13 10:34:57: ACTION[ServerThread]: facedir: 2
+2016-03-13 10:34:59: ACTION[ServerThread]: singleplayer places node digilines_inventory:chest at (-109,14,47)
+2016-03-13 10:34:59: ACTION[ServerThread]: facedir: 1
+2016-03-13 10:35:00: ACTION[ServerThread]: singleplayer digs digilines_inventory:chest at (-109,14,47)
+2016-03-13 10:35:03: ACTION[ServerThread]: singleplayer places node digilines_inventory:chest at (-109,14,47)
+2016-03-13 10:35:03: ACTION[ServerThread]: facedir: 0
+2016-03-13 10:35:23: ACTION[ServerThread]: singleplayer puts stuff into chest at (-109,14,47)
+2016-03-13 10:35:29: ACTION[ServerThread]: singleplayer puts stuff into chest at (-109,14,47)
+2016-03-13 10:35:33: ACTION[ServerThread]: singleplayer puts stuff into chest at (-109,14,47)
+2016-03-13 10:35:37: ACTION[ServerThread]: singleplayer puts stuff into chest at (-109,14,47)
+2016-03-13 10:36:01: ACTION[ServerThread]: singleplayer puts stuff into chest at (-109,14,47)
+2016-03-13 10:36:04: ACTION[ServerThread]: singleplayer puts stuff into chest at (-109,14,47)
+2016-03-13 10:36:09: ACTION[ServerThread]: singleplayer puts stuff into chest at (-109,14,47)
+2016-03-13 10:36:12: ACTION[ServerThread]: singleplayer puts stuff into chest at (-109,14,47)
+2016-03-13 10:36:16: ACTION[ServerThread]: singleplayer puts stuff into chest at (-109,14,47)
+2016-03-13 10:36:19: ACTION[ServerThread]: singleplayer puts stuff into chest at (-109,14,47)
+2016-03-13 10:36:21: ACTION[ServerThread]: singleplayer puts stuff into chest at (-109,14,47)
+2016-03-13 10:36:24: ACTION[ServerThread]: singleplayer puts stuff into chest at (-109,14,47)
+2016-03-13 10:36:27: ACTION[ServerThread]: singleplayer puts stuff into chest at (-109,14,47)
+2016-03-13 10:37:58: ACTION[ServerThread]: singleplayer takes "mesecons_hydroturbine:hydro_turbine_off" from creative inventory
+2016-03-13 10:38:03: ACTION[ServerThread]: singleplayer places node mesecons_hydroturbine:hydro_turbine_off at (-112,11,30)
+2016-03-13 10:38:12: ACTION[ServerThread]: singleplayer sets time to 6000
+2016-03-13 10:38:15: ACTION[ServerThread]: singleplayer places node mesecons_hydroturbine:hydro_turbine_off at (-112,12,30)
+2016-03-13 10:38:20: ACTION[ServerThread]: singleplayer digs mesecons_hydroturbine:hydro_turbine_off at (-112,12,30)
+2016-03-13 10:38:20: ACTION[ServerThread]: singleplayer digs mesecons_hydroturbine:hydro_turbine_off at (-112,11,30)
+2016-03-13 10:40:01: ACTION[ServerThread]: singleplayer takes "pyramids:spawn_egg" from creative inventory
+2016-03-13 10:40:07: ACTION[ServerThread]: singleplayer takes "pyramids:spawner_mummy" from creative inventory
+2016-03-13 10:40:15: ACTION[ServerThread]: singleplayer right-clicks object 72: LuaEntitySAO at (-127.754,3.51,67.9631)
+2016-03-13 10:40:32: ACTION[ServerThread]: singleplayer punches object 74: LuaEntitySAO at (-130,5.51,70)
+2016-03-13 10:40:32: ACTION[ServerThread]: LuaEntitySAO at (-130,5.51,70) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:40:33: ACTION[ServerThread]: singleplayer punches object 74: LuaEntitySAO at (-130.293,5.51,70.1)
+2016-03-13 10:40:33: ACTION[ServerThread]: LuaEntitySAO at (-130.293,5.51,70.1) punched by player singleplayer, damage 13 hp, health now 0 hp
+2016-03-13 10:40:35: ACTION[ServerThread]: singleplayer punches object 75: LuaEntitySAO at (-128,5.51,70)
+2016-03-13 10:40:35: ACTION[ServerThread]: LuaEntitySAO at (-128,5.51,70) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:40:39: ACTION[ServerThread]: singleplayer punches object 75: LuaEntitySAO at (-128.094,5.51,70.1)
+2016-03-13 10:40:39: ACTION[ServerThread]: LuaEntitySAO at (-128.094,5.51,70.1) punched by player singleplayer, damage 13 hp, health now 0 hp
+2016-03-13 10:40:53: ACTION[ServerThread]: singleplayer punches object 76: LuaEntitySAO at (-117.821,1.384,67.9465)
+2016-03-13 10:40:53: ACTION[ServerThread]: LuaEntitySAO at (-117.821,1.384,67.9465) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:41:02: ACTION[ServerThread]: singleplayer punches object 72: LuaEntitySAO at (-119.005,1.44854,68.9859)
+2016-03-13 10:41:02: ACTION[ServerThread]: LuaEntitySAO at (-119.005,1.44854,68.9859) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:41:02: ACTION[ServerThread]: singleplayer punches object 72: LuaEntitySAO at (-118.99,1.95316,68.9925)
+2016-03-13 10:41:02: ACTION[ServerThread]: LuaEntitySAO at (-118.99,1.95316,68.9925) punched by player singleplayer, damage 5 hp, health now 2 hp
+2016-03-13 10:41:04: ACTION[ServerThread]: singleplayer punches object 72: LuaEntitySAO at (-118.313,-3.49,69.2188)
+2016-03-13 10:41:04: ACTION[ServerThread]: LuaEntitySAO at (-118.313,-3.49,69.2188) punched by player singleplayer, damage 13 hp, health now 0 hp
+2016-03-13 10:41:09: ACTION[ServerThread]: singleplayer punches object 76: LuaEntitySAO at (-116.9,-2.49,67.9)
+2016-03-13 10:41:09: ACTION[ServerThread]: LuaEntitySAO at (-116.9,-2.49,67.9) punched by player singleplayer, damage 13 hp, health now 0 hp
+2016-03-13 10:41:12: ACTION[ServerThread]: singleplayer punches object 73: LuaEntitySAO at (-125.1,1.51,67.1)
+2016-03-13 10:41:12: ACTION[ServerThread]: LuaEntitySAO at (-125.1,1.51,67.1) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:41:12: ACTION[ServerThread]: singleplayer punches object 73: LuaEntitySAO at (-125.1,2.03094,67.0182)
+2016-03-13 10:41:12: ACTION[ServerThread]: LuaEntitySAO at (-125.1,2.03094,67.0182) punched by player singleplayer, damage 6 hp, health now 1 hp
+2016-03-13 10:41:14: ACTION[ServerThread]: singleplayer punches object 73: LuaEntitySAO at (-124.461,1.51,65.9)
+2016-03-13 10:41:14: ACTION[ServerThread]: LuaEntitySAO at (-124.461,1.51,65.9) punched by player singleplayer, damage 13 hp, health now 0 hp
+2016-03-13 10:41:16: ACTION[ServerThread]: singleplayer punches object 71: LuaEntitySAO at (-124.436,1.51,66.2052)
+2016-03-13 10:41:16: ACTION[ServerThread]: LuaEntitySAO at (-124.436,1.51,66.2052) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:41:16: ACTION[ServerThread]: singleplayer punches object 71: LuaEntitySAO at (-124.557,1.93754,66.0955)
+2016-03-13 10:41:16: ACTION[ServerThread]: LuaEntitySAO at (-124.557,1.93754,66.0955) punched by player singleplayer, damage 5 hp, health now 2 hp
+2016-03-13 10:41:18: ACTION[ServerThread]: singleplayer punches object 71: LuaEntitySAO at (-124.468,1.51,66.7299)
+2016-03-13 10:41:18: ACTION[ServerThread]: LuaEntitySAO at (-124.468,1.51,66.7299) punched by player singleplayer, damage 13 hp, health now 0 hp
+2016-03-13 10:43:06: ACTION[ServerThread]: singleplayer takes "stairs:stair_straw" from creative inventory
+2016-03-13 10:43:17: ACTION[ServerThread]: singleplayer takes "vessels:shelf" from creative inventory
+2016-03-13 10:44:16: ACTION[ServerThread]: singleplayer takes "default:obsidian" from creative inventory
+2016-03-13 10:44:57: ACTION[ServerThread]: singleplayer takes "fire:basic_flame" from creative inventory
+2016-03-13 10:45:02: ACTION[ServerThread]: singleplayer takes "farming:straw" from creative inventory
+2016-03-13 10:45:13: ACTION[ServerThread]: singleplayer places node vessels:shelf at (-120,15,119)
+2016-03-13 10:45:20: ACTION[ServerThread]: singleplayer digs vessels:shelf at (-120,15,119)
+2016-03-13 10:45:24: ACTION[ServerThread]: singleplayer places node farming:straw at (-120,15,119)
+2016-03-13 10:45:26: ACTION[ServerThread]: singleplayer places node farming:straw at (-119,15,119)
+2016-03-13 10:45:29: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,15,119)
+2016-03-13 10:45:29: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,15,118)
+2016-03-13 10:45:31: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,15,117)
+2016-03-13 10:45:32: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,15,116)
+2016-03-13 10:45:33: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,15,115)
+2016-03-13 10:45:34: ACTION[ServerThread]: singleplayer places node farming:straw at (-119,15,115)
+2016-03-13 10:45:35: ACTION[ServerThread]: singleplayer places node farming:straw at (-120,15,115)
+2016-03-13 10:45:38: ACTION[ServerThread]: singleplayer places node farming:straw at (-119,16,119)
+2016-03-13 10:45:40: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,16,118)
+2016-03-13 10:45:41: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,16,117)
+2016-03-13 10:45:43: ACTION[ServerThread]: singleplayer places node farming:straw at (-119,15,116)
+2016-03-13 10:45:44: ACTION[ServerThread]: singleplayer digs farming:straw at (-119,15,116)
+2016-03-13 10:45:47: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,16,116)
+2016-03-13 10:45:48: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,16,115)
+2016-03-13 10:45:49: ACTION[ServerThread]: singleplayer digs farming:straw at (-118,16,115)
+2016-03-13 10:45:50: ACTION[ServerThread]: singleplayer places node farming:straw at (-119,16,115)
+2016-03-13 10:45:52: ACTION[ServerThread]: singleplayer places node farming:straw at (-119,17,119)
+2016-03-13 10:45:54: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,17,118)
+2016-03-13 10:45:56: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,17,117)
+2016-03-13 10:45:58: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,17,116)
+2016-03-13 10:46:20: ACTION[ServerThread]: singleplayer places node farming:straw at (-119,17,115)
+2016-03-13 10:46:31: ACTION[ServerThread]: singleplayer places node farming:straw at (-119,18,119)
+2016-03-13 10:46:32: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,18,118)
+2016-03-13 10:46:34: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,18,117)
+2016-03-13 10:46:42: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,18,116)
+2016-03-13 10:46:44: ACTION[ServerThread]: singleplayer places node farming:straw at (-119,18,115)
+2016-03-13 10:46:50: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-120,18,119)
+2016-03-13 10:46:52: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-120,18,118)
+2016-03-13 10:46:53: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-120,18,117)
+2016-03-13 10:46:55: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-120,18,115)
+2016-03-13 10:46:57: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-120,18,116)
+2016-03-13 10:47:05: ACTION[ServerThread]: singleplayer places node farming:straw at (-119,18,118)
+2016-03-13 10:47:06: ACTION[ServerThread]: singleplayer places node farming:straw at (-119,18,117)
+2016-03-13 10:47:07: ACTION[ServerThread]: singleplayer places node farming:straw at (-119,18,116)
+2016-03-13 10:47:10: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-119,19,116)
+2016-03-13 10:47:12: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-119,19,119)
+2016-03-13 10:47:13: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-119,19,115)
+2016-03-13 10:47:16: ACTION[ServerThread]: singleplayer digs stairs:stair_straw at (-119,19,119)
+2016-03-13 10:47:19: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-119,19,119)
+2016-03-13 10:47:21: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-119,19,117)
+2016-03-13 10:47:27: ACTION[ServerThread]: singleplayer digs stairs:stair_straw at (-119,19,117)
+2016-03-13 10:47:28: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-119,19,118)
+2016-03-13 10:47:28: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-119,19,117)
+2016-03-13 10:47:36: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,19,118)
+2016-03-13 10:47:37: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,19,117)
+2016-03-13 10:47:39: ACTION[ServerThread]: singleplayer places node farming:straw at (-118,19,116)
+2016-03-13 10:47:46: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-118,20,116)
+2016-03-13 10:47:49: ACTION[ServerThread]: singleplayer digs stairs:stair_straw at (-118,20,116)
+2016-03-13 10:47:52: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-118,20,117)
+2016-03-13 10:47:53: ACTION[ServerThread]: singleplayer digs stairs:stair_straw at (-118,20,117)
+2016-03-13 10:47:58: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-118,20,117)
+2016-03-13 10:47:59: ACTION[ServerThread]: singleplayer digs stairs:stair_straw at (-118,20,117)
+2016-03-13 10:48:05: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-118,20,118)
+2016-03-13 10:48:06: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-118,20,117)
+2016-03-13 10:48:08: ACTION[ServerThread]: singleplayer places node stairs:stair_straw at (-118,20,116)
+2016-03-13 10:48:34: ACTION[ServerThread]: singleplayer punches object 110: LuaEntitySAO at (-121.802,14.701,118.441)
+2016-03-13 10:49:17: ACTION[ServerThread]: singleplayer takes "beds:fancy_bed_bottom" from creative inventory
+2016-03-13 10:49:22: ACTION[ServerThread]: singleplayer places node beds:fancy_bed_bottom at (-125,15,118)
+2016-03-13 10:49:22: ACTION[ServerThread]: facedir: 3
+2016-03-13 10:49:31: ACTION[ServerThread]: singleplayer digs beds:fancy_bed_bottom at (-125,15,118)
+2016-03-13 10:49:40: ACTION[ServerThread]: singleplayer places node beds:fancy_bed_bottom at (-119,15,117)
+2016-03-13 10:49:40: ACTION[ServerThread]: facedir: 1
+2016-03-13 10:49:46: ACTION[ServerThread]: singleplayer places node beds:fancy_bed_bottom at (-119,15,117)
+2016-03-13 10:49:46: ACTION[ServerThread]: facedir: 0
+2016-03-13 10:50:00: ACTION[ServerThread]: singleplayer places node default:obsidian at (-122,15,117)
+2016-03-13 10:50:02: ACTION[ServerThread]: singleplayer places node default:obsidian at (-122,15,118)
+2016-03-13 10:50:03: ACTION[ServerThread]: singleplayer places node default:obsidian at (-122,15,116)
+2016-03-13 10:50:04: ACTION[ServerThread]: singleplayer places node default:obsidian at (-122,15,115)
+2016-03-13 10:50:09: ACTION[ServerThread]: singleplayer places node default:obsidian at (-122,16,115)
+2016-03-13 10:50:11: ACTION[ServerThread]: singleplayer places node default:obsidian at (-122,16,118)
+2016-03-13 10:50:16: ACTION[ServerThread]: singleplayer places node default:obsidian at (-122,17,118)
+2016-03-13 10:50:17: ACTION[ServerThread]: singleplayer places node default:obsidian at (-122,18,118)
+2016-03-13 10:50:18: ACTION[ServerThread]: singleplayer places node default:obsidian at (-122,19,118)
+2016-03-13 10:50:21: ACTION[ServerThread]: singleplayer places node default:obsidian at (-122,17,115)
+2016-03-13 10:50:22: ACTION[ServerThread]: singleplayer places node default:obsidian at (-122,18,115)
+2016-03-13 10:50:22: ACTION[ServerThread]: singleplayer places node default:obsidian at (-122,19,115)
+2016-03-13 10:50:25: ACTION[ServerThread]: singleplayer places node default:obsidian at (-122,19,117)
+2016-03-13 10:50:26: ACTION[ServerThread]: singleplayer places node default:obsidian at (-122,19,116)
+2016-03-13 10:50:36: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-122,16,116)
+2016-03-13 10:50:38: ACTION[ServerThread]: singleplayer digs fire:basic_flame at (-122,16,116)
+2016-03-13 10:50:38: ACTION[ServerThread]: singleplayer digs farming:straw at (-118,16,117)
+2016-03-13 10:50:41: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-122,16,117)
+2016-03-13 10:50:42: ACTION[ServerThread]: singleplayer digs fire:basic_flame at (-122,16,117)
+2016-03-13 10:50:45: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-123,17,118)
+2016-03-13 10:50:46: ACTION[ServerThread]: singleplayer digs fire:basic_flame at (-123,17,118)
+2016-03-13 10:50:48: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-122,16,117)
+2016-03-13 10:50:49: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-123,15,116)
+2016-03-13 10:50:50: ACTION[ServerThread]: singleplayer digs fire:basic_flame at (-123,15,116)
+2016-03-13 10:50:52: ACTION[ServerThread]: singleplayer digs fire:basic_flame at (-122,16,117)
+2016-03-13 10:50:54: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-126,14,113)
+2016-03-13 10:50:57: ACTION[ServerThread]: singleplayer digs fire:basic_flame at (-126,14,113)
+2016-03-13 10:51:02: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-128,13,116)
+2016-03-13 10:51:03: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-128,13,117)
+2016-03-13 10:51:07: ACTION[ServerThread]: singleplayer places node default:obsidian at (-128,13,116)
+2016-03-13 10:51:08: ACTION[ServerThread]: singleplayer places node default:obsidian at (-128,13,117)
+2016-03-13 10:51:12: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-128,14,116)
+2016-03-13 10:51:13: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-128,14,117)
+2016-03-13 10:51:16: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-128,14,116)
+2016-03-13 10:51:38: ACTION[ServerThread]: singleplayer takes "default:fence_wood" from creative inventory
+2016-03-13 10:51:43: ACTION[ServerThread]: singleplayer places node default:fence_wood at (-128,14,115)
+2016-03-13 10:51:45: ACTION[ServerThread]: singleplayer places node default:fence_wood at (-128,15,115)
+2016-03-13 10:51:47: ACTION[ServerThread]: singleplayer places node default:fence_wood at (-128,14,118)
+2016-03-13 10:51:48: ACTION[ServerThread]: singleplayer places node default:fence_wood at (-128,15,118)
+2016-03-13 10:51:57: ACTION[ServerThread]: singleplayer digs default:obsidian at (-122,15,118)
+2016-03-13 10:51:59: ACTION[ServerThread]: singleplayer digs default:obsidian at (-122,15,117)
+2016-03-13 10:52:00: ACTION[ServerThread]: singleplayer digs default:obsidian at (-122,15,116)
+2016-03-13 10:52:02: ACTION[ServerThread]: singleplayer digs default:obsidian at (-122,15,115)
+2016-03-13 10:52:04: ACTION[ServerThread]: singleplayer digs default:obsidian at (-122,16,115)
+2016-03-13 10:52:05: ACTION[ServerThread]: singleplayer digs default:obsidian at (-122,17,115)
+2016-03-13 10:52:08: ACTION[ServerThread]: singleplayer digs default:obsidian at (-122,18,115)
+2016-03-13 10:52:09: ACTION[ServerThread]: singleplayer digs default:obsidian at (-122,19,115)
+2016-03-13 10:52:11: ACTION[ServerThread]: singleplayer digs default:obsidian at (-122,19,116)
+2016-03-13 10:52:12: ACTION[ServerThread]: singleplayer digs default:obsidian at (-122,19,117)
+2016-03-13 10:52:14: ACTION[ServerThread]: singleplayer digs default:obsidian at (-122,18,118)
+2016-03-13 10:52:15: ACTION[ServerThread]: singleplayer digs default:obsidian at (-122,19,118)
+2016-03-13 10:52:17: ACTION[ServerThread]: singleplayer digs default:obsidian at (-122,16,118)
+2016-03-13 10:52:19: ACTION[ServerThread]: singleplayer digs default:obsidian at (-122,17,118)
+2016-03-13 10:52:21: ACTION[ServerThread]: singleplayer digs fire:basic_flame at (-128,16,115)
+2016-03-13 10:52:27: ACTION[ServerThread]: singleplayer places node default:fence_wood at (-128,15,116)
+2016-03-13 10:52:29: ACTION[ServerThread]: singleplayer places node default:fence_wood at (-128,15,117)
+2016-03-13 10:52:50: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-128,14,116)
+2016-03-13 10:52:51: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-128,14,117)
+2016-03-13 10:53:03: ACTION[ServerThread]: singleplayer takes "farming:bread" from creative inventory
+2016-03-13 10:53:20: ACTION[ServerThread]: singleplayer punches object 111: LuaEntitySAO at (-127.155,13.701,116.354)
+2016-03-13 10:53:24: ACTION[ServerThread]: singleplayer uses farming:bread, pointing at [node under=-128,15,115 above=-127,15,115]
+2016-03-13 10:53:25: ACTION[ServerThread]: singleplayer digs fire:basic_flame at (-128,16,115)
+2016-03-13 10:53:27: ACTION[ServerThread]: singleplayer digs fire:basic_flame at (-128,14,116)
+2016-03-13 10:53:28: ACTION[ServerThread]: singleplayer digs fire:basic_flame at (-129,14,115)
+2016-03-13 10:53:33: ACTION[ServerThread]: singleplayer digs default:obsidian at (-128,13,116)
+2016-03-13 10:53:35: ACTION[ServerThread]: singleplayer digs default:obsidian at (-128,13,117)
+2016-03-13 10:53:36: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-129,13,117)
+2016-03-13 10:53:36: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,12,117)
+2016-03-13 10:53:37: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-129,13,116)
+2016-03-13 10:53:42: ACTION[ServerThread]: singleplayer places node default:obsidian at (-129,13,116)
+2016-03-13 10:53:43: ACTION[ServerThread]: singleplayer places node default:obsidian at (-128,13,116)
+2016-03-13 10:53:44: ACTION[ServerThread]: singleplayer places node default:obsidian at (-129,13,117)
+2016-03-13 10:53:45: ACTION[ServerThread]: singleplayer places node default:obsidian at (-128,13,117)
+2016-03-13 10:54:49: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-130,13,116)
+2016-03-13 10:54:51: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-130,13,117)
+2016-03-13 10:54:54: ACTION[ServerThread]: singleplayer places node default:obsidian at (-130,13,116)
+2016-03-13 10:54:55: ACTION[ServerThread]: singleplayer places node default:obsidian at (-130,13,117)
+2016-03-13 10:54:56: ACTION[ServerThread]: singleplayer places node default:obsidian at (-130,14,116)
+2016-03-13 10:54:57: ACTION[ServerThread]: singleplayer places node default:obsidian at (-130,14,117)
+2016-03-13 10:54:58: ACTION[ServerThread]: singleplayer places node default:obsidian at (-128,14,116)
+2016-03-13 10:55:02: ACTION[ServerThread]: singleplayer digs default:obsidian at (-128,14,116)
+2016-03-13 10:55:14: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-129,14,116)
+2016-03-13 10:55:15: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-129,14,117)
+2016-03-13 10:55:19: ACTION[ServerThread]: singleplayer places node default:obsidian at (-128,14,116)
+2016-03-13 10:55:24: ACTION[ServerThread]: singleplayer punches object 112: LuaEntitySAO at (-127.014,13.51,116.873)
+2016-03-13 10:55:24: ACTION[ServerThread]: LuaEntitySAO at (-127.014,13.51,116.873) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:55:26: ACTION[ServerThread]: singleplayer punches object 112: LuaEntitySAO at (-126.768,13.51,116.986)
+2016-03-13 10:55:26: ACTION[ServerThread]: LuaEntitySAO at (-126.768,13.51,116.986) punched by player singleplayer, damage 13 hp, health now 0 hp
+2016-03-13 10:55:29: ACTION[ServerThread]: singleplayer punches object 114: LuaEntitySAO at (-126.889,13.51,116.554)
+2016-03-13 10:55:29: ACTION[ServerThread]: LuaEntitySAO at (-126.889,13.51,116.554) punched by player singleplayer, damage 13 hp, health now 7 hp
+2016-03-13 10:55:32: ACTION[ServerThread]: singleplayer punches object 114: LuaEntitySAO at (-126.889,13.51,116.259)
+2016-03-13 10:55:32: ACTION[ServerThread]: LuaEntitySAO at (-126.889,13.51,116.259) punched by player singleplayer, damage 13 hp, health now 0 hp
+2016-03-13 10:55:41: ACTION[ServerThread]: singleplayer places node default:obsidian at (-128,14,117)
+2016-03-13 10:55:44: ACTION[ServerThread]: singleplayer digs default:fence_wood at (-128,15,116)
+2016-03-13 10:55:46: ACTION[ServerThread]: singleplayer digs default:fence_wood at (-128,15,117)
+2016-03-13 10:55:52: ACTION[ServerThread]: singleplayer digs default:fence_wood at (-128,15,118)
+2016-03-13 10:55:54: ACTION[ServerThread]: singleplayer digs fire:basic_flame at (-128,15,118)
+2016-03-13 10:55:54: ACTION[ServerThread]: singleplayer digs default:fence_wood at (-128,14,118)
+2016-03-13 10:55:56: ACTION[ServerThread]: singleplayer digs default:fence_wood at (-128,15,115)
+2016-03-13 10:55:58: ACTION[ServerThread]: singleplayer digs default:fence_wood at (-128,14,115)
+2016-03-13 10:55:59: ACTION[ServerThread]: singleplayer places node default:obsidian at (-129,14,115)
+2016-03-13 10:56:06: ACTION[ServerThread]: singleplayer places node default:obsidian at (-129,14,118)
+2016-03-13 10:56:09: ACTION[ServerThread]: singleplayer digs fire:basic_flame at (-129,14,116)
+2016-03-13 10:56:12: ACTION[ServerThread]: singleplayer digs default:obsidian at (-129,13,116)
+2016-03-13 10:56:14: ACTION[ServerThread]: singleplayer digs default:obsidian at (-129,13,117)
+2016-03-13 10:56:27: ACTION[ServerThread]: singleplayer takes "mesecons_random:ghoststone" from creative inventory
+2016-03-13 10:56:33: ACTION[ServerThread]: singleplayer places node mesecons_random:ghoststone at (-129,13,116)
+2016-03-13 10:56:34: ACTION[ServerThread]: singleplayer digs mesecons_random:ghoststone at (-129,13,116)
+2016-03-13 10:56:35: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,12,116)
+2016-03-13 10:56:40: ACTION[ServerThread]: singleplayer takes "mesecons_random:removestone" from creative inventory
+2016-03-13 10:56:50: ACTION[ServerThread]: singleplayer places node mesecons_random:ghoststone at (-129,12,116)
+2016-03-13 10:56:51: ACTION[ServerThread]: singleplayer places node mesecons_random:ghoststone at (-129,12,117)
+2016-03-13 10:56:52: ACTION[ServerThread]: singleplayer places node mesecons_random:ghoststone at (-129,13,117)
+2016-03-13 10:56:53: ACTION[ServerThread]: singleplayer places node mesecons_random:ghoststone at (-129,13,116)
+2016-03-13 10:56:56: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-129,14,116)
+2016-03-13 10:56:57: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-129,14,117)
+2016-03-13 10:57:41: ACTION[ServerThread]: singleplayer takes "farming:bread" from creative inventory
+2016-03-13 10:57:58: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-129,14,116)
+2016-03-13 10:58:01: ACTION[ServerThread]: singleplayer places node fire:basic_flame at (-129,14,117)
+2016-03-13 10:58:18: ACTION[ServerThread]: singleplayer digs fire:basic_flame at (-129,14,117)
+2016-03-13 10:58:26: ACTION[ServerThread]: singleplayer punches object 116: LuaEntitySAO at (-129.044,13.701,116.853)
+2016-03-13 10:58:52: ACTION[ServerThread]: singleplayer uses farming:bread, pointing at [node under=-129,13,117 above=-129,14,117]
+2016-03-13 10:58:53: ACTION[ServerThread]: singleplayer digs mesecons_random:ghoststone at (-129,13,117)
+2016-03-13 10:58:53: ACTION[ServerThread]: singleplayer digs mesecons_random:ghoststone at (-129,12,117)
+2016-03-13 10:58:53: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,11,117)
+2016-03-13 10:58:54: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,10,117)
+2016-03-13 10:58:54: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,9,117)
+2016-03-13 10:58:54: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,8,117)
+2016-03-13 10:58:56: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,7,117)
+2016-03-13 10:58:57: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,6,117)
+2016-03-13 10:58:57: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,5,117)
+2016-03-13 10:58:57: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,4,117)
+2016-03-13 10:58:57: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,3,117)
+2016-03-13 10:58:58: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,2,117)
+2016-03-13 10:58:58: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,1,117)
+2016-03-13 10:58:58: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,0,117)
+2016-03-13 10:58:59: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-1,117)
+2016-03-13 10:58:59: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-2,117)
+2016-03-13 10:58:59: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-3,117)
+2016-03-13 10:59:00: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-4,117)
+2016-03-13 10:59:00: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-5,117)
+2016-03-13 10:59:00: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-6,117)
+2016-03-13 10:59:01: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-7,117)
+2016-03-13 10:59:01: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-8,117)
+2016-03-13 10:59:01: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-9,117)
+2016-03-13 10:59:01: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-10,117)
+2016-03-13 10:59:02: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-11,117)
+2016-03-13 10:59:02: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-12,117)
+2016-03-13 10:59:02: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-13,117)
+2016-03-13 10:59:03: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-14,117)
+2016-03-13 10:59:03: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-15,117)
+2016-03-13 10:59:03: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-16,117)
+2016-03-13 10:59:04: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-17,117)
+2016-03-13 10:59:04: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-18,117)
+2016-03-13 10:59:04: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-19,117)
+2016-03-13 10:59:05: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-20,117)
+2016-03-13 10:59:05: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-21,117)
+2016-03-13 10:59:05: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-22,117)
+2016-03-13 10:59:06: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-23,117)
+2016-03-13 10:59:06: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-24,117)
+2016-03-13 10:59:06: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-25,117)
+2016-03-13 10:59:06: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-26,117)
+2016-03-13 10:59:07: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-27,117)
+2016-03-13 10:59:07: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-28,117)
+2016-03-13 10:59:07: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-29,117)
+2016-03-13 10:59:08: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-30,117)
+2016-03-13 10:59:08: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-31,117)
+2016-03-13 10:59:08: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-32,117)
+2016-03-13 10:59:09: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-33,117)
+2016-03-13 10:59:09: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-34,117)
+2016-03-13 10:59:09: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-35,117)
+2016-03-13 10:59:10: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-36,117)
+2016-03-13 10:59:10: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-37,117)
+2016-03-13 10:59:10: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-38,117)
+2016-03-13 10:59:11: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-39,117)
+2016-03-13 10:59:11: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-40,117)
+2016-03-13 10:59:11: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-41,117)
+2016-03-13 10:59:11: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-42,117)
+2016-03-13 10:59:12: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-43,117)
+2016-03-13 10:59:12: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-44,117)
+2016-03-13 10:59:12: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-45,117)
+2016-03-13 10:59:13: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-46,117)
+2016-03-13 10:59:13: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-47,117)
+2016-03-13 10:59:14: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-48,117)
+2016-03-13 10:59:14: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-49,117)
+2016-03-13 10:59:14: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-50,117)
+2016-03-13 10:59:14: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-51,117)
+2016-03-13 10:59:15: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-52,117)
+2016-03-13 10:59:15: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-53,117)
+2016-03-13 10:59:15: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-54,117)
+2016-03-13 10:59:16: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-55,117)
+2016-03-13 10:59:16: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-56,117)
+2016-03-13 10:59:17: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-57,117)
+2016-03-13 10:59:17: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-58,117)
+2016-03-13 10:59:17: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-59,117)
+2016-03-13 10:59:17: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-60,117)
+2016-03-13 10:59:17: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-61,117)
+2016-03-13 10:59:20: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-62,117)
+2016-03-13 10:59:20: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-63,117)
+2016-03-13 10:59:20: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-64,117)
+2016-03-13 10:59:20: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-65,117)
+2016-03-13 10:59:20: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-66,117)
+2016-03-13 10:59:20: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-67,117)
+2016-03-13 10:59:20: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-68,117)
+2016-03-13 10:59:20: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-69,117)
+2016-03-13 10:59:20: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-70,117)
+2016-03-13 10:59:21: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-71,117)
+2016-03-13 10:59:21: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-72,117)
+2016-03-13 10:59:21: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-73,117)
+2016-03-13 10:59:21: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-74,117)
+2016-03-13 10:59:22: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-75,117)
+2016-03-13 10:59:22: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-76,117)
+2016-03-13 10:59:22: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-77,117)
+2016-03-13 10:59:26: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-78,117)
+2016-03-13 10:59:26: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-79,117)
+2016-03-13 10:59:26: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-80,117)
+2016-03-13 10:59:26: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-81,117)
+2016-03-13 10:59:26: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-82,117)
+2016-03-13 10:59:26: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-83,117)
+2016-03-13 10:59:26: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-84,117)
+2016-03-13 10:59:26: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-85,117)
+2016-03-13 10:59:26: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-86,117)
+2016-03-13 10:59:26: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-87,117)
+2016-03-13 10:59:26: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-88,117)
+2016-03-13 10:59:26: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-89,117)
+2016-03-13 10:59:27: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-90,117)
+2016-03-13 10:59:27: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-91,117)
+2016-03-13 10:59:27: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-92,117)
+2016-03-13 10:59:27: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-93,117)
+2016-03-13 10:59:30: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-94,117)
+2016-03-13 10:59:31: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-95,117)
+2016-03-13 10:59:31: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-96,117)
+2016-03-13 10:59:31: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-97,117)
+2016-03-13 10:59:31: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-98,117)
+2016-03-13 10:59:31: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-99,117)
+2016-03-13 10:59:31: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-100,117)
+2016-03-13 10:59:31: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-101,117)
+2016-03-13 10:59:31: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-102,117)
+2016-03-13 10:59:31: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-103,117)
+2016-03-13 10:59:31: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-104,117)
+2016-03-13 10:59:31: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-105,117)
+2016-03-13 10:59:32: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-106,117)
+2016-03-13 10:59:32: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-107,117)
+2016-03-13 10:59:32: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-108,117)
+2016-03-13 10:59:36: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-108,118)
+2016-03-13 10:59:36: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-107,118)
+2016-03-13 10:59:37: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-107,119)
+2016-03-13 10:59:37: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-107,120)
+2016-03-13 10:59:38: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-107,121)
+2016-03-13 10:59:38: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-107,122)
+2016-03-13 10:59:38: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-107,123)
+2016-03-13 10:59:39: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-107,124)
+2016-03-13 10:59:40: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-130,-107,124)
+2016-03-13 10:59:40: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-108,124)
+2016-03-13 10:59:41: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-108,125)
+2016-03-13 10:59:41: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-108,126)
+2016-03-13 10:59:41: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-108,127)
+2016-03-13 10:59:43: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-107,125)
+2016-03-13 10:59:43: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-107,126)
+2016-03-13 10:59:46: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-108,120)
+2016-03-13 10:59:47: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-108,121)
+2016-03-13 10:59:47: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-108,122)
+2016-03-13 10:59:47: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-108,123)
+2016-03-13 10:59:47: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-108,119)
+2016-03-13 10:59:48: ACTION[ServerThread]: singleplayer digs default:desert_stone at (-129,-109,121)
+
+
+-------------
+  Separator  
+-------------
+
+2016-03-13 11:01:34: ERROR[main]: generateImage(): Could not load image "handle_schematics_support.png" while building texture
+2016-03-13 11:01:34: ERROR[main]: generateImage(): Creating a dummy image for "handle_schematics_support.png"
+2016-03-13 11:01:34: ERROR[main]: generateImage(): Could not load image "handle_schematics_support.png" while building texture
+2016-03-13 11:01:34: ERROR[main]: generateImage(): Creating a dummy image for "handle_schematics_support.png"
+2016-03-13 11:01:35: ERROR[main]: generateImage(): Could not load image "default_grass_footsteps.png" while building texture
+2016-03-13 11:01:35: ERROR[main]: generateImage(): Creating a dummy image for "default_grass_footsteps.png"
+2016-03-13 11:01:35: ERROR[main]: generateImage(): Could not load image "default_grass_footsteps.png" while building texture
+2016-03-13 11:01:35: ERROR[main]: generateImage(): Creating a dummy image for "default_grass_footsteps.png"
+
+
+-------------
+  Separator  
+-------------
+
+[OK] Mesecons
+Pipeworks loaded!
+11:05:48: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:38
+11:05:48: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:42
+2016-03-13 11:05:49: ACTION[main]:         .__               __                   __   
+2016-03-13 11:05:49: ACTION[main]:   _____ |__| ____   _____/  |_  ____   _______/  |_ 
+2016-03-13 11:05:49: ACTION[main]:  /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+2016-03-13 11:05:49: ACTION[main]: |  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+2016-03-13 11:05:49: ACTION[main]: |__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+2016-03-13 11:05:49: ACTION[main]:       \/        \/     \/          \/     \/        
+2016-03-13 11:05:49: ACTION[main]: World at [/home/daniel/.minetest/worlds/new4]
+2016-03-13 11:05:49: ACTION[main]: Server for gameid="minetest" listening on 0.0.0.0:50628.
+2016-03-13 11:06:43: ERROR[main]: generateImage(): Could not load image "turtle_turtle_inv.png" while building texture
+2016-03-13 11:06:43: ERROR[main]: generateImage(): Creating a dummy image for "turtle_turtle_inv.png"
+2016-03-13 11:06:45: ACTION[ServerThread]: singleplayer [127.0.0.1] joins game. 
+2016-03-13 11:06:45: ACTION[ServerThread]: singleplayer joins game. List of players: singleplayer
+2016-03-13 11:06:45: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 11:06:45: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 11:07:06: ACTION[ServerThread]: singleplayer sets time to 6000
+2016-03-13 11:07:28: ACTION[ServerThread]: singleplayer takes "pyramids:deco_stone1" from creative inventory
+2016-03-13 11:07:38: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone1 at (-178,43,119)
+2016-03-13 11:07:44: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone2 at (-179,43,119)
+2016-03-13 11:07:51: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone2 at (-178,43,118)
+2016-03-13 11:07:58: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone2 at (-179,43,118)
+2016-03-13 11:08:00: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone2 at (-179,43,117)
+2016-03-13 11:08:03: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone2 at (-178,43,117)
+2016-03-13 11:08:08: ACTION[ServerThread]: singleplayer places node pyramids:deco_stone2 at (-178,44,117)
+2016-03-13 11:08:36: ACTION[ServerThread]: singleplayer takes "pyramids:deco_stone2" from creative inventory
+2016-03-13 11:08:51: ACTION[ServerThread]: singleplayer takes "pyramids:trap" from creative inventory
+2016-03-13 11:09:08: ACTION[ServerThread]: singleplayer takes "wool:pink" from creative inventory
+2016-03-13 11:09:53: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-176,41,120)
+2016-03-13 11:09:55: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-177,42,120)
+2016-03-13 11:09:55: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-176,41,121)
+2016-03-13 11:09:56: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-176,41,122)
+2016-03-13 11:09:57: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-176,41,122)
+2016-03-13 11:10:28: ACTION[ServerThread]: singleplayer places node wool:pink at (-179,44,116)
+2016-03-13 11:10:31: ACTION[ServerThread]: singleplayer places node wool:pink at (-178,43,116)
+2016-03-13 11:10:32: ACTION[ServerThread]: singleplayer places node wool:pink at (-178,44,116)
+2016-03-13 11:10:35: ACTION[ServerThread]: singleplayer places node wool:pink at (-178,45,117)
+2016-03-13 11:10:38: ACTION[ServerThread]: singleplayer places node wool:pink at (-180,44,117)
+2016-03-13 11:10:41: ACTION[ServerThread]: singleplayer places node wool:pink at (-180,44,118)
+2016-03-13 11:10:49: ACTION[ServerThread]: singleplayer places node wool:pink at (-181,44,120)
+2016-03-13 11:10:51: ACTION[ServerThread]: singleplayer places node wool:pink at (-180,44,120)
+2016-03-13 11:11:07: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-180,43,120)
+2016-03-13 11:11:08: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-180,43,121)
+2016-03-13 11:11:10: ACTION[ServerThread]: singleplayer places node wool:pink at (-180,43,121)
+2016-03-13 11:11:13: ACTION[ServerThread]: singleplayer places node wool:pink at (-179,43,121)
+2016-03-13 11:11:21: ACTION[ServerThread]: singleplayer places node wool:pink at (-178,43,122)
+2016-03-13 11:11:23: ACTION[ServerThread]: singleplayer places node wool:pink at (-179,44,119)
+2016-03-13 11:11:24: ACTION[ServerThread]: singleplayer places node wool:pink at (-178,44,119)
+2016-03-13 11:11:26: ACTION[ServerThread]: singleplayer places node wool:pink at (-179,44,117)
+2016-03-13 11:11:28: ACTION[ServerThread]: singleplayer places node wool:pink at (-179,44,118)
+2016-03-13 11:11:38: ACTION[ServerThread]: singleplayer digs default:desert_sand at (-182,43,119)
+2016-03-13 11:11:40: ACTION[ServerThread]: singleplayer places node wool:pink at (-182,44,119)
+2016-03-13 11:11:41: ACTION[ServerThread]: singleplayer places node wool:pink at (-182,45,119)
+2016-03-13 11:11:42: ACTION[ServerThread]: singleplayer places node wool:pink at (-182,44,118)
+2016-03-13 11:11:45: ACTION[ServerThread]: singleplayer places node wool:pink at (-180,45,114)
+2016-03-13 11:12:00: ACTION[ServerThread]: singleplayer places node wool:pink at (-181,44,116)
+2016-03-13 11:12:03: ACTION[ServerThread]: singleplayer places node wool:pink at (-180,44,116)
+2016-03-13 11:12:09: ACTION[ServerThread]: singleplayer places node wool:pink at (-180,44,115)
+2016-03-13 11:12:10: ACTION[ServerThread]: singleplayer places node wool:pink at (-181,44,115)
+2016-03-13 11:12:12: ACTION[ServerThread]: singleplayer places node wool:pink at (-179,44,115)
+2016-03-13 11:12:14: ACTION[ServerThread]: singleplayer places node wool:pink at (-178,44,115)
+2016-03-13 11:12:16: ACTION[ServerThread]: singleplayer places node wool:pink at (-178,44,114)
+2016-03-13 11:12:18: ACTION[ServerThread]: singleplayer places node wool:pink at (-179,45,114)
+2016-03-13 11:12:19: ACTION[ServerThread]: singleplayer places node wool:pink at (-178,45,114)
+2016-03-13 11:12:22: ACTION[ServerThread]: singleplayer places node wool:pink at (-179,46,114)
+2016-03-13 11:12:23: ACTION[ServerThread]: singleplayer places node wool:pink at (-178,46,114)
+2016-03-13 11:12:25: ACTION[ServerThread]: singleplayer places node wool:pink at (-181,45,114)
+2016-03-13 11:12:29: ACTION[ServerThread]: singleplayer places node wool:pink at (-180,46,114)
+2016-03-13 11:12:39: ACTION[ServerThread]: singleplayer places node wool:pink at (-181,46,114)
+2016-03-13 11:12:46: ACTION[ServerThread]: singleplayer places node wool:pink at (-181,44,118)
+2016-03-13 11:12:50: ACTION[ServerThread]: singleplayer places node wool:pink at (-182,45,118)
+2016-03-13 11:12:54: ACTION[ServerThread]: singleplayer places node wool:pink at (-182,44,117)
+2016-03-13 11:12:57: ACTION[ServerThread]: singleplayer places node wool:pink at (-181,44,117)
+2016-03-13 11:13:01: ACTION[ServerThread]: singleplayer places node wool:pink at (-180,44,119)
+2016-03-13 11:13:06: ACTION[ServerThread]: singleplayer places node wool:pink at (-181,44,119)
+2016-03-13 11:13:13: ACTION[ServerThread]: singleplayer digs wool:pink at (-179,43,121)
+2016-03-13 11:13:57: ACTION[ServerThread]: singleplayer digs wool:pink at (-178,45,117)
+2016-03-13 11:13:59: ACTION[ServerThread]: singleplayer places node farming:straw at (-178,45,117)
+
+
+-------------
+  Separator  
+-------------
+
+2016-03-13 12:24:43: ERROR[main]: ========== ERROR FROM LUA ===========
+2016-03-13 12:24:43: ERROR[main]: Failed to load and run script from 
+2016-03-13 12:24:43: ERROR[main]: /usr/share/games/minetest/games/minetest_game/mods/simple_robots/init.lua:
+2016-03-13 12:24:43: ERROR[main]: /usr/share/games/minetest/builtin/game/register.lua:60: Name miners_robots:fakeplayer does not follow naming conventions: "modname:" or ":" prefix required
+2016-03-13 12:24:43: ERROR[main]: stack traceback:
+2016-03-13 12:24:43: ERROR[main]: 	[C]: in function 'error'
+2016-03-13 12:24:43: ERROR[main]: 	/usr/share/games/minetest/builtin/game/register.lua:60: in function 'check_modname_prefix'
+2016-03-13 12:24:43: ERROR[main]: 	/usr/share/games/minetest/builtin/game/register.lua:83: in function 'register_entity'
+2016-03-13 12:24:43: ERROR[main]: 	...minetest/games/minetest_game/mods/simple_robots/init.lua:126: in main chunk
+2016-03-13 12:24:43: ERROR[main]: ======= END OF ERROR FROM LUA ========
+2016-03-13 12:24:43: ERROR[main]: Server: Failed to load and run /usr/share/games/minetest/games/minetest_game/mods/simple_robots/init.lua
+2016-03-13 12:24:43: ERROR[main]: ModError: ModError: Failed to load and run /usr/share/games/minetest/games/minetest_game/mods/simple_robots/init.lua
+2016-03-13 12:24:43: ERROR[main]: Error from Lua:
+2016-03-13 12:24:43: ERROR[main]: /usr/share/games/minetest/builtin/game/register.lua:60: Name miners_robots:fakeplayer does not follow naming conventions: "modname:" or ":" prefix required
+2016-03-13 12:24:43: ERROR[main]: stack traceback:
+2016-03-13 12:24:43: ERROR[main]: 	[C]: in function 'error'
+2016-03-13 12:24:43: ERROR[main]: 	/usr/share/games/minetest/builtin/game/register.lua:60: in function 'check_modname_prefix'
+2016-03-13 12:24:43: ERROR[main]: 	/usr/share/games/minetest/builtin/game/register.lua:83: in function 'register_entity'
+2016-03-13 12:24:43: ERROR[main]: 	...minetest/games/minetest_game/mods/simple_robots/init.lua:126: in main chunk
+2016-03-13 12:24:43: ERROR[main]: Sprawdź plik debug.txt by uzyskać więcej informacji.
+
+
+-------------
+  Separator  
+-------------
+
+[OK] Mesecons
+Pipeworks loaded!
+12:26:12: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:38
+12:26:12: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:42
+2016-03-13 12:26:15: ACTION[main]:         .__               __                   __   
+2016-03-13 12:26:15: ACTION[main]:   _____ |__| ____   _____/  |_  ____   _______/  |_ 
+2016-03-13 12:26:15: ACTION[main]:  /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+2016-03-13 12:26:15: ACTION[main]: |  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+2016-03-13 12:26:15: ACTION[main]: |__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+2016-03-13 12:26:15: ACTION[main]:       \/        \/     \/          \/     \/        
+2016-03-13 12:26:15: ACTION[main]: World at [/home/daniel/.minetest/worlds/new4]
+2016-03-13 12:26:15: ACTION[main]: Server for gameid="minetest" listening on 0.0.0.0:60046.
+2016-03-13 12:27:10: ERROR[main]: generateImage(): Could not load image "turtle_turtle_inv.png" while building texture
+2016-03-13 12:27:10: ERROR[main]: generateImage(): Creating a dummy image for "turtle_turtle_inv.png"
+2016-03-13 12:27:12: ACTION[ServerThread]: singleplayer [127.0.0.1] joins game. 
+2016-03-13 12:27:12: ACTION[ServerThread]: singleplayer joins game. List of players: singleplayer
+2016-03-13 12:27:13: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 12:27:13: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 12:27:45: ACTION[ServerThread]: singleplayer takes "miners_robots:robot_simple_off" from creative inventory
+2016-03-13 12:27:51: ACTION[ServerThread]: singleplayer places node miners_robots:robot_simple_off at (-201,37,114)
+2016-03-13 12:27:51: ACTION[ServerThread]: facedir: 0
+2016-03-13 12:27:52: ACTION[ServerThread]: singleplayer places node miners_robots:robot_simple_off at (-201,37,113)
+2016-03-13 12:27:52: ACTION[ServerThread]: facedir: 0
+2016-03-13 12:27:54: ACTION[ServerThread]: singleplayer digs miners_robots:robot_simple_off at (-201,37,113)
+12:27:59: WARNING: Assignment to undeclared global "wpis" inside a function at ...minetest/games/minetest_game/mods/miners_robots/init.lua:266.
+Corrupted robot program @ -201,37,114 (not the fault of the robot's owner,this is save file corruption) missing command:
+
+
+-------------
+  Separator  
+-------------
+
+[OK] Mesecons
+Pipeworks loaded!
+12:29:29: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:38
+12:29:29: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:42
+2016-03-13 12:29:30: ACTION[main]:         .__               __                   __   
+2016-03-13 12:29:30: ACTION[main]:   _____ |__| ____   _____/  |_  ____   _______/  |_ 
+2016-03-13 12:29:30: ACTION[main]:  /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+2016-03-13 12:29:30: ACTION[main]: |  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+2016-03-13 12:29:30: ACTION[main]: |__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+2016-03-13 12:29:30: ACTION[main]:       \/        \/     \/          \/     \/        
+2016-03-13 12:29:30: ACTION[main]: World at [/home/daniel/.minetest/worlds/new4]
+2016-03-13 12:29:30: ACTION[main]: Server for gameid="minetest" listening on 0.0.0.0:62955.
+2016-03-13 12:30:23: ERROR[main]: generateImage(): Could not load image "turtle_turtle_inv.png" while building texture
+2016-03-13 12:30:23: ERROR[main]: generateImage(): Creating a dummy image for "turtle_turtle_inv.png"
+2016-03-13 12:30:25: ACTION[ServerThread]: singleplayer [127.0.0.1] joins game. 
+2016-03-13 12:30:25: ACTION[ServerThread]: singleplayer joins game. List of players: singleplayer
+2016-03-13 12:30:25: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 12:30:26: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 12:30:31: ACTION[ServerThread]: singleplayer digs miners_robots:robot_simple_off at (-201,37,114)
+2016-03-13 12:30:32: ACTION[ServerThread]: singleplayer places node miners_robots:robot_simple_off at (-201,37,114)
+2016-03-13 12:30:32: ACTION[ServerThread]: facedir: 0
+2016-03-13 12:30:33: ACTION[ServerThread]: singleplayer digs miners_robots:robot_simple_off at (-201,37,114)
+2016-03-13 12:31:15: ACTION[ServerThread]: singleplayer places node miners_robots:robot_simple_off at (-201,37,114)
+2016-03-13 12:31:15: ACTION[ServerThread]: facedir: 0
+2016-03-13 12:32:16: ACTION[ServerThread]: singleplayer digs miners_robots:robot_simple_off at (-201,38,117)
+2016-03-13 12:32:18: ACTION[ServerThread]: singleplayer places node miners_robots:robot_simple_off at (-201,37,113)
+2016-03-13 12:32:18: ACTION[ServerThread]: facedir: 1
+2016-03-13 12:33:27: ACTION[ServerThread]: singleplayer sets time to 6000
+
+
+-------------
+  Separator  
+-------------
+
+[OK] Mesecons
+Pipeworks loaded!
+12:38:11: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:38
+12:38:11: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:42
+2016-03-13 12:38:12: ACTION[main]:         .__               __                   __   
+2016-03-13 12:38:12: ACTION[main]:   _____ |__| ____   _____/  |_  ____   _______/  |_ 
+2016-03-13 12:38:12: ACTION[main]:  /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+2016-03-13 12:38:12: ACTION[main]: |  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+2016-03-13 12:38:12: ACTION[main]: |__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+2016-03-13 12:38:12: ACTION[main]:       \/        \/     \/          \/     \/        
+2016-03-13 12:38:12: ACTION[main]: World at [/home/daniel/.minetest/worlds/new4]
+2016-03-13 12:38:12: ACTION[main]: Server for gameid="minetest" listening on 0.0.0.0:52677.
+2016-03-13 12:39:05: ERROR[main]: generateImage(): Could not load image "turtle_turtle_inv.png" while building texture
+2016-03-13 12:39:05: ERROR[main]: generateImage(): Creating a dummy image for "turtle_turtle_inv.png"
+2016-03-13 12:39:07: ACTION[ServerThread]: singleplayer [127.0.0.1] joins game. 
+2016-03-13 12:39:07: ACTION[ServerThread]: singleplayer joins game. List of players: singleplayer
+2016-03-13 12:39:07: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 12:39:07: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 12:39:11: ACTION[ServerThread]: singleplayer digs miners_robots:robot_simple_off at (-200,37,113)
+2016-03-13 12:39:13: ACTION[ServerThread]: singleplayer places node miners_robots:robot_simple_off at (-201,37,113)
+2016-03-13 12:39:13: ACTION[ServerThread]: facedir: 1
+
+
+-------------
+  Separator  
+-------------
+
+[OK] Mesecons
+Pipeworks loaded!
+12:39:51: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:38
+12:39:51: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:42
+2016-03-13 12:39:52: ACTION[main]:         .__               __                   __   
+2016-03-13 12:39:52: ACTION[main]:   _____ |__| ____   _____/  |_  ____   _______/  |_ 
+2016-03-13 12:39:52: ACTION[main]:  /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+2016-03-13 12:39:52: ACTION[main]: |  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+2016-03-13 12:39:52: ACTION[main]: |__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+2016-03-13 12:39:52: ACTION[main]:       \/        \/     \/          \/     \/        
+2016-03-13 12:39:52: ACTION[main]: World at [/home/daniel/.minetest/worlds/new4]
+2016-03-13 12:39:52: ACTION[main]: Server for gameid="minetest" listening on 0.0.0.0:56946.
+2016-03-13 12:40:47: ERROR[main]: generateImage(): Could not load image "turtle_turtle_inv.png" while building texture
+2016-03-13 12:40:47: ERROR[main]: generateImage(): Creating a dummy image for "turtle_turtle_inv.png"
+2016-03-13 12:40:49: ACTION[ServerThread]: singleplayer [127.0.0.1] joins game. 
+2016-03-13 12:40:49: ACTION[ServerThread]: singleplayer joins game. List of players: singleplayer
+2016-03-13 12:40:50: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 12:40:50: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 12:44:35: ACTION[ServerThread]: singleplayer digs miners_robots:robot_simple_off at (-201,37,113)
+2016-03-13 12:44:37: ACTION[ServerThread]: singleplayer places node miners_robots:robot_simple_off at (-200,37,114)
+2016-03-13 12:44:37: ACTION[ServerThread]: facedir: 1
+2016-03-13 12:44:38: ACTION[ServerThread]: singleplayer places node miners_robots:robot_simple_off at (-201,37,114)
+2016-03-13 12:44:38: ACTION[ServerThread]: facedir: 0
+2016-03-13 12:44:39: ACTION[ServerThread]: singleplayer digs miners_robots:robot_simple_off at (-201,37,114)
+12:45:52: WARNING: Assignment to undeclared global "wpis" inside a function at ...minetest/games/minetest_game/mods/miners_robots/init.lua:266.
+Corrupted robot program @ -200,37,114 (not the fault of the robot's owner,this is save file corruption) missing command:
+Corrupted robot program @ -200,37,114 (not the fault of the robot's owner,this is save file corruption) missing command:
+2016-03-13 12:46:06: ACTION[ServerThread]: singleplayer digs miners_robots:robot_simple_off at (-200,37,114)
+2016-03-13 12:46:07: ACTION[ServerThread]: singleplayer places node miners_robots:robot_simple_off at (-201,37,113)
+2016-03-13 12:46:07: ACTION[ServerThread]: facedir: 1
+Corrupted robot program @ -201,37,113 (not the fault of the robot's owner,this is save file corruption) missing command:
+Corrupted robot program @ -201,37,113 (not the fault of the robot's owner,this is save file corruption) missing command:
+2016-03-13 13:03:22: ACTION[ServerThread]: singleplayer digs miners_robots:robot_simple_off at (-201,37,113)
+
+
+-------------
+  Separator  
+-------------
+
+[OK] Mesecons
+Pipeworks loaded!
+13:04:57: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:38
+13:04:57: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:42
+2016-03-13 13:04:58: ACTION[main]:         .__               __                   __   
+2016-03-13 13:04:58: ACTION[main]:   _____ |__| ____   _____/  |_  ____   _______/  |_ 
+2016-03-13 13:04:58: ACTION[main]:  /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+2016-03-13 13:04:58: ACTION[main]: |  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+2016-03-13 13:04:58: ACTION[main]: |__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+2016-03-13 13:04:58: ACTION[main]:       \/        \/     \/          \/     \/        
+2016-03-13 13:04:58: ACTION[main]: World at [/home/daniel/.minetest/worlds/new4]
+2016-03-13 13:04:58: ACTION[main]: Server for gameid="minetest" listening on 0.0.0.0:58122.
+2016-03-13 13:05:51: ERROR[main]: generateImage(): Could not load image "turtle_turtle_inv.png" while building texture
+2016-03-13 13:05:51: ERROR[main]: generateImage(): Creating a dummy image for "turtle_turtle_inv.png"
+2016-03-13 13:05:53: ACTION[ServerThread]: singleplayer [127.0.0.1] joins game. 
+2016-03-13 13:05:53: ACTION[ServerThread]: singleplayer joins game. List of players: singleplayer
+2016-03-13 13:05:54: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 13:05:54: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 13:05:57: ACTION[ServerThread]: singleplayer places node miners_robots:robot_simple_off at (-201,37,113)
+2016-03-13 13:05:57: ACTION[ServerThread]: facedir: 1
+13:05:59: WARNING: Assignment to undeclared global "wpis" inside a function at ...minetest/games/minetest_game/mods/miners_robots/init.lua:266.
+Corrupted robot program @ -201,37,113 (not the fault of the robot's owner,this is save file corruption) missing command:
+2016-03-13 13:06:51: ACTION[ServerThread]: singleplayer digs miners_robots:robot_simple_off at (-201,37,113)
+
+
+-------------
+  Separator  
+-------------
+
+[OK] Mesecons
+Pipeworks loaded!
+18:36:12: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:38
+18:36:12: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:42
+2016-03-13 18:36:14: ACTION[main]:         .__               __                   __   
+2016-03-13 18:36:14: ACTION[main]:   _____ |__| ____   _____/  |_  ____   _______/  |_ 
+2016-03-13 18:36:14: ACTION[main]:  /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+2016-03-13 18:36:14: ACTION[main]: |  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+2016-03-13 18:36:14: ACTION[main]: |__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+2016-03-13 18:36:14: ACTION[main]:       \/        \/     \/          \/     \/        
+2016-03-13 18:36:14: ACTION[main]: World at [/home/daniel/.minetest/worlds/new4]
+2016-03-13 18:36:14: ACTION[main]: Server for gameid="minetest" listening on 0.0.0.0:53346.
+2016-03-13 18:37:09: ERROR[main]: generateImage(): Could not load image "turtle_turtle_inv.png" while building texture
+2016-03-13 18:37:09: ERROR[main]: generateImage(): Creating a dummy image for "turtle_turtle_inv.png"
+2016-03-13 18:37:11: ACTION[ServerThread]: singleplayer [127.0.0.1] joins game. 
+2016-03-13 18:37:11: ACTION[ServerThread]: singleplayer joins game. List of players: singleplayer
+2016-03-13 18:37:12: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 18:37:12: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 18:40:38: ACTION[ServerThread]: singleplayer places node miners_robots:robot_simple_off at (-201,37,113)
+2016-03-13 18:40:38: ACTION[ServerThread]: facedir: 1
+2016-03-13 18:41:04: ACTION[ServerThread]: singleplayer digs miners_robots:robot_simple_off at (-201,38,113)
+
+
+-------------
+  Separator  
+-------------
+
+2016-03-13 19:43:51: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 19:43:51: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+
+
+-------------
+  Separator  
+-------------
+
+2016-03-13 20:08:44: ACTION[main]: WARNING: loading exception handler test module!
+2016-03-13 20:08:44: ERROR[main]: NodeResolver: failed to resolve node name 'mapgen_river_water_source'.
+2016-03-13 20:08:44: ERROR[main]: NodeResolver: failed to resolve node name 'mapgen_river_water_source'.
+2016-03-13 20:08:44: ERROR[main]: NodeResolver: failed to resolve node name 'mapgen_river_water_source'.
+2016-03-13 20:08:44: ACTION[main]:         .__               __                   __   
+2016-03-13 20:08:44: ACTION[main]:   _____ |__| ____   _____/  |_  ____   _______/  |_ 
+2016-03-13 20:08:44: ACTION[main]:  /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+2016-03-13 20:08:44: ACTION[main]: |  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+2016-03-13 20:08:44: ACTION[main]: |__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+2016-03-13 20:08:44: ACTION[main]:       \/        \/     \/          \/     \/        
+2016-03-13 20:08:44: ACTION[main]: World at [/home/daniel/.minetest/worlds/tymek7]
+2016-03-13 20:08:44: ACTION[main]: Server for gameid="minimal" listening on 0.0.0.0:30000.
+[minimal] giving initial stuff to player
+2016-03-13 20:08:50: ACTION[ServerThread]: daniel82 [127.0.0.1] joins game. 
+2016-03-13 20:08:50: ACTION[ServerThread]: daniel82 joins game. List of players: daniel82
+2016-03-13 20:09:29: ACTION[ServerThread]: Inventory fields 3: player=daniel82, fields={
+	quit = "true"
+}
+2016-03-13 20:09:29: ACTION[ServerThread]: Inventory fields 2: player=daniel82, fields={
+	quit = "true"
+}
+
+
+-------------
+  Separator  
+-------------
+
+2016-03-13 20:09:49: ACTION[main]: WARNING: Mod name conflict detected: "pyramids"
+2016-03-13 20:09:49: ACTION[main]: Will not load: /usr/share/games/minetest/games/minetest_game/mods/pyramids
+2016-03-13 20:09:49: ACTION[main]: Overridden by: /home/daniel/.minetest/worlds/adventure map/worldmods/pyramids
+2016-03-13 20:09:49: ERROR[main]: mod "qt_dungeons" has unsatisfied dependencies:  "worldedit"
+2016-03-13 20:09:49: ERROR[main]: The following mods could not be found: "unified_inventory"
+20:09:49: WARNING: Undeclared global variable "immortal" accessed at .../.minetest/worlds/adventure map/worldmods/traps/cage.lua:16
+20:09:49: WARNING: Undeclared global variable "immortal" accessed at .../.minetest/worlds/adventure map/worldmods/traps/cage.lua:25
+20:09:49: WARNING: Undeclared global variable "immortl" accessed at .../.minetest/worlds/adventure map/worldmods/traps/cage.lua:36
+20:09:49: WARNING: Undeclared global variable "immortal" accessed at .../.minetest/worlds/adventure map/worldmods/traps/lava.lua:16
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:109
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:141
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:169
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:197
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:225
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:253
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:282
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:310
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:338
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:366
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:394
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:422
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:450
+20:09:49: WARNING: Undeclared global variable "x21" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:451
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:478
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:506
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:534
+20:09:49: WARNING: Undeclared global variable "p3" accessed at ....minetest/worlds/adventure map/worldmods/fences/init.lua:661
+2016-03-13 20:09:49: ACTION[main]: [MOD]inventory_plus -- loaded from /home/daniel/.minetest/worlds/adventure map/worldmods/inventory_plus
+[OK] Mesecons
+Pipeworks loaded!
+20:09:50: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:38
+20:09:50: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:42
+2016-03-13 20:09:54: ACTION[main]:         .__               __                   __   
+2016-03-13 20:09:54: ACTION[main]:   _____ |__| ____   _____/  |_  ____   _______/  |_ 
+2016-03-13 20:09:54: ACTION[main]:  /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+2016-03-13 20:09:54: ACTION[main]: |  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+2016-03-13 20:09:54: ACTION[main]: |__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+2016-03-13 20:09:54: ACTION[main]:       \/        \/     \/          \/     \/        
+2016-03-13 20:09:54: ACTION[main]: World at [/home/daniel/.minetest/worlds/adventure map]
+2016-03-13 20:09:54: ACTION[main]: Server for gameid="minetest" listening on 0.0.0.0:30000.
+2016-03-13 20:10:01: ERROR[main]: generateImage(): Could not load image "default_pinewood.png" while building texture
+2016-03-13 20:10:01: ERROR[main]: generateImage(): Creating a dummy image for "default_pinewood.png"
+2016-03-13 20:10:01: ERROR[main]: generateImage(): Could not load image "default_pinewood.png" while building texture
+2016-03-13 20:10:01: ERROR[main]: generateImage(): Creating a dummy image for "default_pinewood.png"
+2016-03-13 20:10:20: ERROR[main]: generateImage(): Could not load image "default_fence.png" while building texture
+2016-03-13 20:10:20: ERROR[main]: generateImage(): Creating a dummy image for "default_fence.png"
+2016-03-13 20:10:55: ERROR[main]: generateImage(): Could not load image "turtle_turtle_inv.png" while building texture
+2016-03-13 20:10:55: ERROR[main]: generateImage(): Creating a dummy image for "turtle_turtle_inv.png"
+2016-03-13 20:10:57: ACTION[ServerThread]: daniel82 [127.0.0.1] joins game. 
+2016-03-13 20:10:57: ACTION[ServerThread]: daniel82 joins game. List of players: daniel82
+
+
+-------------
+  Separator  
+-------------
+
+[OK] Mesecons
+Pipeworks loaded!
+20:11:25: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:38
+20:11:25: WARNING: Undeclared global variable "bit32" accessed at .../games/minetest/games/minetest_game/mods/turtle/cptr.lua:42
+2016-03-13 20:11:26: ACTION[main]:         .__               __                   __   
+2016-03-13 20:11:26: ACTION[main]:   _____ |__| ____   _____/  |_  ____   _______/  |_ 
+2016-03-13 20:11:26: ACTION[main]:  /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+2016-03-13 20:11:26: ACTION[main]: |  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+2016-03-13 20:11:26: ACTION[main]: |__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+2016-03-13 20:11:26: ACTION[main]:       \/        \/     \/          \/     \/        
+2016-03-13 20:11:26: ACTION[main]: World at [/home/daniel/.minetest/worlds/new4]
+2016-03-13 20:11:26: ACTION[main]: Server for gameid="minetest" listening on 0.0.0.0:30000.
+2016-03-13 20:12:18: ERROR[main]: generateImage(): Could not load image "turtle_turtle_inv.png" while building texture
+2016-03-13 20:12:18: ERROR[main]: generateImage(): Creating a dummy image for "turtle_turtle_inv.png"
+2016-03-13 20:12:20: ACTION[ServerThread]: daniel82 [127.0.0.1] joins game. 
+2016-03-13 20:12:20: ACTION[ServerThread]: daniel82 joins game. List of players: daniel82
+2016-03-13 20:12:21: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 20:12:21: ACTION[main]: Irrlicht: Could not open file of texture: character.png
+2016-03-13 20:12:27: ACTION[ServerThread]: daniel82 digs mesecons_luacontroller:luacontroller0000 at (-1,5,18)
+2016-03-13 20:12:28: ACTION[ServerThread]: daniel82 digs default:sand at (3,2,22)
+2016-03-13 20:12:28: ACTION[ServerThread]: daniel82 digs default:sand at (4,2,22)
+2016-03-13 20:12:30: ACTION[ServerThread]: daniel82 digs default:sand at (3,2,22)
+2016-03-13 20:12:30: ACTION[ServerThread]: daniel82 digs default:sand at (4,2,22)
+2016-03-13 20:12:56: ACTION[ServerThread]: daniel82 takes "pyramids:spawn_egg" from creative inventory
+2016-03-13 20:13:24: ACTION[ServerThread]: daniel82 right-clicks object 16: LuaEntitySAO at (-4.24278,3.51,14.1)
+2016-03-13 20:13:27: ACTION[ServerThread]: daniel82 right-clicks object 17: LuaEntitySAO at (-5.29989,3.51,14.2708)
+2016-03-13 20:14:08: ACTION[ServerThread]: daniel82 punches object 17: LuaEntitySAO at (-4.81791,3.51,14.3)
+2016-03-13 20:14:08: ACTION[ServerThread]: LuaEntitySAO at (-4.81791,3.51,14.3) punched by player daniel82, damage 13 hp, health now 7 hp
+2016-03-13 20:14:09: ACTION[ServerThread]: daniel82 punches object 17: LuaEntitySAO at (-4.9042,3.51,14.3)
+2016-03-13 20:14:09: ACTION[ServerThread]: LuaEntitySAO at (-4.9042,3.51,14.3) punched by player daniel82, damage 13 hp, health now 0 hp
+2016-03-13 20:14:10: ACTION[ServerThread]: daniel82 punches object 22: LuaEntitySAO at (-4.81791,3.51,13.5)
+2016-03-13 20:14:10: ACTION[ServerThread]: LuaEntitySAO at (-4.81791,3.51,13.5) punched by player daniel82, damage 4 hp, health now 16 hp
+2016-03-13 20:14:10: ACTION[ServerThread]: daniel82 punches object 22: LuaEntitySAO at (-4.81791,3.51,14.2375)
+2016-03-13 20:14:10: ACTION[ServerThread]: LuaEntitySAO at (-4.81791,3.51,14.2375) punched by player daniel82, damage 13 hp, health now 3 hp
+2016-03-13 20:14:11: ACTION[ServerThread]: daniel82 punches object 22: LuaEntitySAO at (-4.91355,3.80502,14.3)
+2016-03-13 20:14:11: ACTION[ServerThread]: LuaEntitySAO at (-4.91355,3.80502,14.3) punched by player daniel82, damage 10 hp, health now 0 hp
+2016-03-13 20:14:12: ACTION[ServerThread]: daniel82 punches object 15: LuaEntitySAO at (-4.01791,3.51,14.3)
+2016-03-13 20:14:12: ACTION[ServerThread]: LuaEntitySAO at (-4.01791,3.51,14.3) punched by player daniel82, damage 13 hp, health now 7 hp
+2016-03-13 20:14:12: ACTION[ServerThread]: daniel82 punches object 15: LuaEntitySAO at (-4.01886,3.96222,14.3)
+2016-03-13 20:14:12: ACTION[ServerThread]: LuaEntitySAO at (-4.01886,3.96222,14.3) punched by player daniel82, damage 4 hp, health now 3 hp
+2016-03-13 20:14:12: ACTION[ServerThread]: daniel82 punches object 15: LuaEntitySAO at (-4.0203,3.5706,14.3)
+2016-03-13 20:14:12: ACTION[ServerThread]: LuaEntitySAO at (-4.0203,3.5706,14.3) punched by player daniel82, damage 6 hp, health now 0 hp
+2016-03-13 20:14:23: ACTION[ServerThread]: daniel82 right-clicks object 13: LuaEntitySAO at (-5.53062,2.51,14.9)
+2016-03-13 20:14:23: ACTION[ServerThread]: daniel82 right-clicks object 13: LuaEntitySAO at (-5.546,2.51,14.9)
+2016-03-13 20:14:23: ACTION[ServerThread]: daniel82 right-clicks object 13: LuaEntitySAO at (-5.65618,2.51,14.9)
+2016-03-13 20:14:24: ACTION[ServerThread]: daniel82 right-clicks object 10: LuaEntitySAO at (-6.9,2.51,14.6887)
+2016-03-13 20:14:25: ACTION[ServerThread]: daniel82 right-clicks object 18: LuaEntitySAO at (-5.20328,3.51,14.3413)
+2016-03-13 20:14:26: ACTION[ServerThread]: daniel82 right-clicks object 18: LuaEntitySAO at (-5.84964,3.51,14.0278)
+2016-03-13 20:14:28: ACTION[ServerThread]: daniel82 punches object 18: LuaEntitySAO at (-7.173,3.51,12.5348)
+2016-03-13 20:14:28: ACTION[ServerThread]: LuaEntitySAO at (-7.173,3.51,12.5348) punched by player daniel82, damage 13 hp, health now 7 hp
+2016-03-13 20:14:31: ACTION[ServerThread]: daniel82 punches object 13: LuaEntitySAO at (-7.9,2.51,12.949)
+2016-03-13 20:14:31: ACTION[ServerThread]: LuaEntitySAO at (-7.9,2.51,12.949) punched by player daniel82, damage 13 hp, health now 7 hp
+2016-03-13 20:14:32: ACTION[ServerThread]: daniel82 punches object 13: LuaEntitySAO at (-7.9,2.51,12.949)
+2016-03-13 20:14:32: ACTION[ServerThread]: LuaEntitySAO at (-7.9,2.51,12.949) punched by player daniel82, damage 13 hp, health now 0 hp
+2016-03-13 20:14:34: ACTION[ServerThread]: daniel82 punches object 18: LuaEntitySAO at (-8.1,3.51,11.549)
+2016-03-13 20:14:34: ACTION[ServerThread]: LuaEntitySAO at (-8.1,3.51,11.549) punched by player daniel82, damage 13 hp, health now 0 hp
+2016-03-13 20:14:34: ACTION[ServerThread]: daniel82 punches object 10: LuaEntitySAO at (-8.9,2.51,12.0464)
+2016-03-13 20:14:34: ACTION[ServerThread]: LuaEntitySAO at (-8.9,2.51,12.0464) punched by player daniel82, damage 13 hp, health now 7 hp
+2016-03-13 20:14:35: ACTION[ServerThread]: daniel82 punches object 10: LuaEntitySAO at (-9.11949,2.51,12.0031)
+2016-03-13 20:14:35: ACTION[ServerThread]: LuaEntitySAO at (-9.11949,2.51,12.0031) punched by player daniel82, damage 13 hp, health now 0 hp
+2016-03-13 20:14:40: ACTION[ServerThread]: daniel82 punches object 16: LuaEntitySAO at (-3.54087,3.51,14.1936)
+2016-03-13 20:14:40: ACTION[ServerThread]: LuaEntitySAO at (-3.54087,3.51,14.1936) punched by player daniel82, damage 13 hp, health now 7 hp
+2016-03-13 20:14:40: ACTION[ServerThread]: daniel82 punches object 16: LuaEntitySAO at (-3.42858,3.92552,14.1)
+2016-03-13 20:14:40: ACTION[ServerThread]: LuaEntitySAO at (-3.42858,3.92552,14.1) punched by player daniel82, damage 3 hp, health now 4 hp
+2016-03-13 20:14:41: ACTION[ServerThread]: daniel82 punches object 16: LuaEntitySAO at (-3.00882,3.44466,14.1)
+2016-03-13 20:14:41: ACTION[ServerThread]: LuaEntitySAO at (-3.00882,3.44466,14.1) punched by player daniel82, damage 12 hp, health now 0 hp
+2016-03-13 20:14:42: ACTION[ServerThread]: daniel82 punches object 12: LuaEntitySAO at (-3.76255,3.51,14.9936)
+2016-03-13 20:14:42: ACTION[ServerThread]: LuaEntitySAO at (-3.76255,3.51,14.9936) punched by player daniel82, damage 13 hp, health now 7 hp
+2016-03-13 20:14:42: ACTION[ServerThread]: daniel82 punches object 12: LuaEntitySAO at (-3.9,4.02986,15.1209)
+2016-03-13 20:14:42: ACTION[ServerThread]: LuaEntitySAO at (-3.9,4.02986,15.1209) punched by player daniel82, damage 6 hp, health now 1 hp
+2016-03-13 20:14:42: ACTION[ServerThread]: daniel82 punches object 12: LuaEntitySAO at (-3.9,3.51,15.2401)
+2016-03-13 20:14:42: ACTION[ServerThread]: LuaEntitySAO at (-3.9,3.51,15.2401) punched by player daniel82, damage 5 hp, health now 0 hp
+2016-03-13 20:14:43: ACTION[ServerThread]: daniel82 punches object 7: LuaEntitySAO at (-2.74934,3.51,15.1)
+2016-03-13 20:14:43: ACTION[ServerThread]: LuaEntitySAO at (-2.74934,3.51,15.1) punched by player daniel82, damage 13 hp, health now 7 hp
+2016-03-13 20:14:43: ACTION[ServerThread]: daniel82 punches object 7: LuaEntitySAO at (-2.55557,4.03312,15.1)
+2016-03-13 20:14:43: ACTION[ServerThread]: LuaEntitySAO at (-2.55557,4.03312,15.1) punched by player daniel82, damage 5 hp, health now 2 hp
+2016-03-13 20:14:44: ACTION[ServerThread]: daniel82 punches object 7: LuaEntitySAO at (-2.32558,3.51,15.1)
+2016-03-13 20:14:44: ACTION[ServerThread]: LuaEntitySAO at (-2.32558,3.51,15.1) punched by player daniel82, damage 7 hp, health now 0 hp
+2016-03-13 20:15:12: ACTION[ServerThread]: daniel82 right-clicks object 42: LuaEntitySAO at (-28.4525,7.51,-6.54512)
+2016-03-13 20:15:21: ACTION[ServerThread]: daniel82 right-clicks object 48: LuaEntitySAO at (-35,9.51,-8)
+2016-03-13 20:16:24: ACTION[ServerThread]: daniel82 takes "beds:bed_bottom" from creative inventory
+2016-03-13 20:16:30: ACTION[ServerThread]: daniel82 places node beds:bed_bottom at (-44,13,-4)
+2016-03-13 20:16:30: ACTION[ServerThread]: facedir: 0
+2016-03-13 20:16:59: ACTION[ServerThread]: daniel82 takes "default:sword_diamond" from creative inventory
+2016-03-13 20:17:08: ACTION[ServerThread]: daniel82 right-clicks object 47: LuaEntitySAO at (-31.7481,6.51,-4.9)
+2016-03-13 20:17:08: ACTION[ServerThread]: daniel82 right-clicks object 47: LuaEntitySAO at (-31.7481,6.51,-4.9)
+2016-03-13 20:17:09: ACTION[ServerThread]: daniel82 right-clicks object 39: LuaEntitySAO at (-31.1471,6.51,-4.3139)
+2016-03-13 20:17:10: ACTION[ServerThread]: daniel82 punches object 39: LuaEntitySAO at (-30.8296,6.51,-5.1)
+2016-03-13 20:17:10: ACTION[ServerThread]: LuaEntitySAO at (-30.8296,6.51,-5.1) punched by player daniel82, damage 10 hp, health now 10 hp
+2016-03-13 20:17:10: ACTION[ServerThread]: daniel82 punches object 39: LuaEntitySAO at (-30.9,7.03354,-5.07991)
+2016-03-13 20:17:10: ACTION[ServerThread]: LuaEntitySAO at (-30.9,7.03354,-5.07991) punched by player daniel82, damage 3 hp, health now 7 hp
+2016-03-13 20:17:11: ACTION[ServerThread]: daniel82 punches object 39: LuaEntitySAO at (-30.9,6.51,-5.04853)
+2016-03-13 20:17:11: ACTION[ServerThread]: LuaEntitySAO at (-30.9,6.51,-5.04853) punched by player daniel82, damage 5 hp, health now 2 hp
+2016-03-13 20:17:11: ACTION[ServerThread]: daniel82 punches object 39: LuaEntitySAO at (-30.797,6.51,-5.1)
+2016-03-13 20:17:11: ACTION[ServerThread]: LuaEntitySAO at (-30.797,6.51,-5.1) punched by player daniel82, damage 7 hp, health now 0 hp
+2016-03-13 20:17:12: ACTION[ServerThread]: daniel82 punches object 49: LuaEntitySAO at (-32.7622,7.51,-5.9)
+2016-03-13 20:17:12: ACTION[ServerThread]: LuaEntitySAO at (-32.7622,7.51,-5.9) punched by player daniel82, damage 10 hp, health now 10 hp
+2016-03-13 20:17:13: ACTION[ServerThread]: daniel82 punches object 49: LuaEntitySAO at (-32.9,7.6771,-5.96071)
+2016-03-13 20:17:13: ACTION[ServerThread]: LuaEntitySAO at (-32.9,7.6771,-5.96071) punched by player daniel82, damage 6 hp, health now 4 hp
+2016-03-13 20:17:13: ACTION[ServerThread]: daniel82 punches object 49: LuaEntitySAO at (-32.9685,7.51,-5.97099)
+2016-03-13 20:17:13: ACTION[ServerThread]: LuaEntitySAO at (-32.9685,7.51,-5.97099) punched by player daniel82, damage 4 hp, health now 0 hp
+2016-03-13 20:17:18: ACTION[ServerThread]: daniel82 punches object 47: LuaEntitySAO at (-32.1,6.51,-5.1)
+2016-03-13 20:17:18: ACTION[ServerThread]: LuaEntitySAO at (-32.1,6.51,-5.1) punched by player daniel82, damage 10 hp, health now 10 hp
+2016-03-13 20:17:19: ACTION[ServerThread]: daniel82 punches object 47: LuaEntitySAO at (-32.0217,7.02466,-5.08082)
+2016-03-13 20:17:19: ACTION[ServerThread]: LuaEntitySAO at (-32.0217,7.02466,-5.08082) punched by player daniel82, damage 2 hp, health now 8 hp
+2016-03-13 20:17:19: ACTION[ServerThread]: daniel82 punches object 47: LuaEntitySAO at (-31.9188,6.57784,-5.0556)
+2016-03-13 20:17:19: ACTION[ServerThread]: LuaEntitySAO at (-31.9188,6.57784,-5.0556) punched by player daniel82, damage 3 hp, health now 5 hp
+2016-03-13 20:17:19: ACTION[ServerThread]: daniel82 punches object 47: LuaEntitySAO at (-31.9603,6.51,-5.06743)
+2016-03-13 20:17:19: ACTION[ServerThread]: LuaEntitySAO at (-31.9603,6.51,-5.06743) punched by player daniel82, damage 3 hp, health now 2 hp
+2016-03-13 20:17:20: ACTION[ServerThread]: daniel82 punches object 47: LuaEntitySAO at (-32.1,6.51,-5.1)
+2016-03-13 20:17:20: ACTION[ServerThread]: LuaEntitySAO at (-32.1,6.51,-5.1) punched by player daniel82, damage 10 hp, health now 0 hp
+2016-03-13 20:17:22: ACTION[ServerThread]: daniel82 punches object 45: LuaEntitySAO at (-33.1,6.51,-4.1)
+2016-03-13 20:17:22: ACTION[ServerThread]: LuaEntitySAO at (-33.1,6.51,-4.1) punched by player daniel82, damage 10 hp, health now 10 hp
+2016-03-13 20:17:22: ACTION[ServerThread]: daniel82 punches object 45: LuaEntitySAO at (-33.0641,7.03258,-4.01722)
+2016-03-13 20:17:22: ACTION[ServerThread]: LuaEntitySAO at (-33.0641,7.03258,-4.01722) punched by player daniel82, damage 3 hp, health now 7 hp
+2016-03-13 20:17:22: ACTION[ServerThread]: daniel82 punches object 45: LuaEntitySAO at (-33.0234,6.51,-3.92343)
+2016-03-13 20:17:22: ACTION[ServerThread]: LuaEntitySAO at (-33.0234,6.51,-3.92343) punched by player daniel82, damage 3 hp, health now 4 hp
+2016-03-13 20:17:23: ACTION[ServerThread]: daniel82 punches object 45: LuaEntitySAO at (-33.1,6.51,-4.1)
+2016-03-13 20:17:23: ACTION[ServerThread]: LuaEntitySAO at (-33.1,6.51,-4.1) punched by player daniel82, damage 10 hp, health now 0 hp
+2016-03-13 20:17:25: ACTION[ServerThread]: daniel82 punches object 48: LuaEntitySAO at (-30.9682,5.51,-1.1)
+2016-03-13 20:17:25: ACTION[ServerThread]: LuaEntitySAO at (-30.9682,5.51,-1.1) punched by player daniel82, damage 10 hp, health now 10 hp
+2016-03-13 20:17:25: ACTION[ServerThread]: daniel82 punches object 48: LuaEntitySAO at (-30.8516,5.98292,-0.916533)
+2016-03-13 20:17:25: ACTION[ServerThread]: LuaEntitySAO at (-30.8516,5.98292,-0.916533) punched by player daniel82, damage 4 hp, health now 6 hp
+2016-03-13 20:17:26: ACTION[ServerThread]: daniel82 punches object 48: LuaEntitySAO at (-30.7868,5.55394,-0.814607)
+2016-03-13 20:17:26: ACTION[ServerThread]: LuaEntitySAO at (-30.7868,5.55394,-0.814607) punched by player daniel82, damage 2 hp, health now 4 hp
+2016-03-13 20:17:26: ACTION[ServerThread]: daniel82 punches object 48: LuaEntitySAO at (-30.3489,5.51,-1.1)
+2016-03-13 20:17:26: ACTION[ServerThread]: LuaEntitySAO at (-30.3489,5.51,-1.1) punched by player daniel82, damage 10 hp, health now 0 hp
+2016-03-13 20:17:28: ACTION[ServerThread]: daniel82 punches object 46: LuaEntitySAO at (-30.1,5.51,-2.1)
+2016-03-13 20:17:28: ACTION[ServerThread]: LuaEntitySAO at (-30.1,5.51,-2.1) punched by player daniel82, damage 10 hp, health now 10 hp
+2016-03-13 20:17:28: ACTION[ServerThread]: daniel82 punches object 46: LuaEntitySAO at (-29.9537,5.99362,-1.98153)
+2016-03-13 20:17:28: ACTION[ServerThread]: LuaEntitySAO at (-29.9537,5.99362,-1.98153) punched by player daniel82, damage 3 hp, health now 7 hp
+2016-03-13 20:17:29: ACTION[ServerThread]: daniel82 punches object 46: LuaEntitySAO at (-29.7321,5.51,-1.80196)
+2016-03-13 20:17:29: ACTION[ServerThread]: LuaEntitySAO at (-29.7321,5.51,-1.80196) punched by player daniel82, damage 5 hp, health now 2 hp
+2016-03-13 20:17:29: ACTION[ServerThread]: daniel82 punches object 46: LuaEntitySAO at (-29.7321,5.51,-1.80196)
+2016-03-13 20:17:29: ACTION[ServerThread]: LuaEntitySAO at (-29.7321,5.51,-1.80196) punched by player daniel82, damage 8 hp, health now 0 hp
+2016-03-13 20:17:31: ACTION[ServerThread]: daniel82 punches object 43: LuaEntitySAO at (-27.9,5.51,0.643081)
+2016-03-13 20:17:31: ACTION[ServerThread]: LuaEntitySAO at (-27.9,5.51,0.643081) punched by player daniel82, damage 10 hp, health now 10 hp
+2016-03-13 20:17:31: ACTION[ServerThread]: daniel82 punches object 43: LuaEntitySAO at (-27.9,6.02254,0.765366)
+2016-03-13 20:17:31: ACTION[ServerThread]: LuaEntitySAO at (-27.9,6.02254,0.765366) punched by player daniel82, damage 2 hp, health now 8 hp
+2016-03-13 20:17:31: ACTION[ServerThread]: daniel82 punches object 43: LuaEntitySAO at (-27.9,5.51,1.01311)
+2016-03-13 20:17:31: ACTION[ServerThread]: LuaEntitySAO at (-27.9,5.51,1.01311) punched by player daniel82, damage 5 hp, health now 3 hp
+2016-03-13 20:17:32: ACTION[ServerThread]: daniel82 punches object 43: LuaEntitySAO at (-27.9,5.51,1.1)
+2016-03-13 20:17:32: ACTION[ServerThread]: LuaEntitySAO at (-27.9,5.51,1.1) punched by player daniel82, damage 10 hp, health now 0 hp
+2016-03-13 20:17:34: ACTION[ServerThread]: daniel82 digs default:dirt_with_dry_grass at (-27,6,0)
+2016-03-13 20:17:34: ACTION[ServerThread]: daniel82 digs default:stone at (-27,5,0)
+2016-03-13 20:18:19: ACTION[ServerThread]: daniel82 leaves game. List of players: 
+
+
+-------------
+  Separator  
+-------------
+
+2016-03-13 20:18:29: ERROR[main]: Access denied. Reason: Too many users.
+2016-03-13 20:18:42: ACTION[main]: Client: Contacting remote server "http://lorenger.org/minetest/esm1/"
+2016-03-13 20:18:43: ACTION[main]: Irrlicht: PNG warning: Incorrect bKGD chunk length
+2016-03-13 20:18:44: ACTION[main]: Irrlicht: PNG warning: Incorrect bKGD chunk length
+2016-03-13 20:18:44: ACTION[main]: Irrlicht: PNG warning: Incorrect bKGD chunk length
+2016-03-13 20:18:55: ACTION[main]: Irrlicht: PNG warning: Incorrect bKGD chunk length
+2016-03-13 20:18:55: ACTION[main]: Irrlicht: PNG warning: Incorrect bKGD chunk length
+2016-03-13 20:18:56: ACTION[main]: Irrlicht: PNG warning: Incorrect bKGD chunk length
+2016-03-13 20:18:56: ACTION[main]: Irrlicht: PNG warning: Incorrect bKGD chunk length
+2016-03-13 20:19:05: ERROR[main]: generateImage(): Could not load image "3d_armor_inv_boots_admin.png" while building texture
+2016-03-13 20:19:05: ERROR[main]: generateImage(): Creating a dummy image for "3d_armor_inv_boots_admin.png"
+2016-03-13 20:19:05: ERROR[main]: generateImage(): Could not load image "3d_armor_inv_chestplate_admin.png" while building texture
+2016-03-13 20:19:05: ERROR[main]: generateImage(): Creating a dummy image for "3d_armor_inv_chestplate_admin.png"
+2016-03-13 20:19:05: ERROR[main]: generateImage(): Could not load image "3d_armor_inv_helmet_admin.png" while building texture
+2016-03-13 20:19:05: ERROR[main]: generateImage(): Creating a dummy image for "3d_armor_inv_helmet_admin.png"
+2016-03-13 20:19:05: ERROR[main]: generateImage(): Could not load image "3d_armor_inv_leggings_admin.png" while building texture
+2016-03-13 20:19:05: ERROR[main]: generateImage(): Creating a dummy image for "3d_armor_inv_leggings_admin.png"
+
+
+-------------
+  Separator  
+-------------
+
+2016-03-13 20:20:13: ERROR[main]: generateImage(): Could not load image "invisible.png" while building texture
+2016-03-13 20:20:13: ERROR[main]: generateImage(): Creating a dummy image for "invisible.png"
+
+
+-------------
+  Separator  
+-------------
+
+
+
+-------------
+  Separator  
+-------------
+
