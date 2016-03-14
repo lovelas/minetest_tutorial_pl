@@ -1,0 +1,12 @@
+sleeping mat = Mata do spania
+straw layer = Warstwa słomy
+simple wooden bench = Proste drewniane ławki
+# “table” as in “furniture”
+table = stół
+wagon wheel = koło pociągu
+black roof = czarny dach
+black roof connector = czarne złącze dachu
+black flat roof = czarny płaski dach
+red roof = czerwony dach
+red roof connector = czerwone złącze dachu
+red flat roof = czerwony płaski dach
