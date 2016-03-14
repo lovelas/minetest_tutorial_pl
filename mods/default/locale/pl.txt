@@ -1,0 +1,61 @@
+# Items
+book = książka
+coal lump = bryła węgla
+iron lump = bryła żelaza
+gold lump = bryła złota
+diamond = diament
+steel ingot = sztabka stali
+gold ingot = sztabka złota
+stone = kamień
+coal ore = ruda węgla
+iron ore = ruba żelaza
+gold ore = ruda złota
+diamond ore = ruda diamentu
+stone brick = cegła kamienna
+dirt with grass = ziemia z trawą
+dirt = ziemia
+sand = piasek
+tree trunk = pień drzewa
+leaves = liście 
+ladder = drabina
+wooden planks = drewniane deski
+flowing water = pływnąca woda
+water source = źródło wody
+torch = pochodnia
+storage chest = skrzynia magazynowa
+cobblestone = bruk
+apple = jabłko
+furnace = piec
+
+## Tools
+wooden pickaxe = drewniany kilof 
+stone pickaxe = kamienny kilof
+steel pickaxe = stalowy kilof
+wooden shovel = drewniana łopata
+steel axe = stalowy topór 
+
+
+# Infotexts
+Chest (Rightclick to open) = Skrzynia (Kliknij prawy przycisk myszy aby otworzyć)
+Inactive furnace (Rightclick to examine) = Nieaktywny piec (Kliknij prawy przycisk myszy aby zrewidować)
+Empty furnace (Rightclick to examine) = Pusty piec (Kliknij prawy przycisk myszy aby zrewidować)
+Active furnace (Flame used: %d%%) (Rightclick to examine) = Aktywny piec (Płomień zużywa: %d%%) (Kliknij prawy przycisk myszy aby zrewidować) 
+Furnace without fuel (Rightclick to examine) = Piec bez paliwa (Kliknij prawy przycisk myszy aby zrewidować)
+
+# Formspecs
+## It is okay to shorten the translation if it does not fit into the formspec
+[lewy klik]: wziąć/upuścić stos;   [prawy klik]: weź połowę / upuść 1;   [środkowy klik]: weź 10 / upuść 10;   [Esc] or [I]: Zamknij 
+Chest inventory: Zasoby skrzyni
+Player inventory: Zasoby gracza
+This furnace is active and constantly burning its fuel. = Ten piec jest aktywny i spala swoje paliwo.
+This furnace is inactive. Read the instructions to learn how to activate it. = Ten piec jest nieaktywny. Przeczytaj instrukcje aby go aktywować.
+Back to start = Wróć na początek
+Crafting grid: = Ruszt wytwarzania
+Output slot: = Gniazdo wyjściowe :
+
+## Furnace formspecs
+Fuel: = Paliwo:
+Source: = Źródło:
+Flame: = Płomień:
+Progress: = Postęp:
+Output slots: = Gniazdo wyjściowe:
