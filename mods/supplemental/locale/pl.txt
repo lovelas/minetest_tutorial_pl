@@ -1,0 +1,16 @@
+sticky stone brick = lepka cegła kamienna
+# A kind of stone:
+conglomerate = zlepieniec
+picture frame = rama obrazu
+short spikes = krótkie kolce
+long spikes = długie kolce
+flour = pył 
+white sheet of paper = biały arkusz papieru
+orange sheet of paper = pomarańczowy arkusz papieru
+purple sheet of paper = fioletowy arkusz papieru
+green sheet of paper = zielony arkusz papieru
+wheat = pszenice
+piece of rock = kawałek skały
+# Test liquids are those seen at the viscosity station
+flowing test liquid %i = test płynącej cieczy %i
+test liquid source %i = test źródła cieczy %i
