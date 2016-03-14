@@ -1,0 +1,2 @@
+mounted shield = zamontowana tarcza
+light block = blok światła
