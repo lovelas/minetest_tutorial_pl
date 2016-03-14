@@ -1,0 +1,12 @@
+basalt cobble = kostka bazaltowa
+basalt brick = cegła bazaltowa
+stone brick = cegła kamienna 
+straw = słoma
+lamp = lampa
+marble tile = marmurowe kafle
+medieval glass = średniowieczne szkło
+wooden bars = drewniane belki 
+wooden grille = drewniane kraty
+wooden frame =  drewniana rama
+iron bars = sztabki żelaza
+iron grille = żelazna krata
